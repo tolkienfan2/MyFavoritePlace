@@ -1,13 +1,17 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Ottawa" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -15,11 +19,319 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="canal" translatesAutoresizingMaskIntoConstraints="NO" id="kyp-Y1-QUS">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <color key="backgroundColor" red="0.24682606263982104" green="0.50196078431372548" blue="0.79506606543624159" alpha="1" colorSpace="calibratedRGB"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="CanadaFlag" translatesAutoresizingMaskIntoConstraints="NO" id="NfZ-r3-gsa">
+                                <rect key="frame" x="509" y="543" width="71" height="37"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="71" id="hsX-YP-nsa"/>
+                                    <constraint firstAttribute="height" constant="37" id="wO0-Ep-Fkf"/>
+                                </constraints>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="z6n-xg-RUJ">
+                                <rect key="frame" x="20" y="63" width="298" height="109"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ottawa" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PLe-ed-fOb">
+                                        <rect key="frame" x="0.0" y="0.0" width="298" height="70"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="70" id="4T2-h9-ZHm"/>
+                                            <constraint firstAttribute="width" constant="298" id="moM-Xv-wNH"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Georgia-Bold" family="Georgia" pointSize="80"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                        <color key="highlightedColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                        <color key="shadowColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <size key="shadowOffset" width="-2" height="1"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Canada's Capital" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nmm-7Q-CFR">
+                                        <rect key="frame" x="0.0" y="70" width="298" height="39"/>
+                                        <fontDescription key="fontDescription" name="Georgia-Bold" family="Georgia" pointSize="34"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                        <size key="shadowOffset" width="-1" height="1"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zw9-nr-EzZ" customClass="RoundedButton" customModule="Ottawa" customModuleProvider="target">
+                                <rect key="frame" x="20" y="28" width="100" height="30"/>
+                                <color key="backgroundColor" red="0.47059655441190518" green="0.56947076018779885" blue="0.83441506410256405" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="oPD-X6-82d"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="15"/>
+                                <state key="normal" title="Discover">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="KmW-Jr-Lh6" kind="showDetail" action="showViewController:sender:" id="eqG-Wc-v1E"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="z6n-xg-RUJ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="4pe-Va-UIa"/>
+                            <constraint firstItem="Zw9-nr-EzZ" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="5XY-fw-m3a"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="NfZ-r3-gsa" secondAttribute="bottom" constant="20" id="E5R-bE-9i4"/>
+                            <constraint firstItem="kyp-Y1-QUS" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Ga6-ul-IwP"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="kyp-Y1-QUS" secondAttribute="bottom" id="HiK-BZ-Jcb"/>
+                            <constraint firstItem="Zw9-nr-EzZ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="V5S-6A-Dng"/>
+                            <constraint firstItem="NfZ-r3-gsa" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="Xk4-Nd-jer"/>
+                            <constraint firstAttribute="trailing" secondItem="kyp-Y1-QUS" secondAttribute="trailing" id="kqj-M0-uOM"/>
+                            <constraint firstItem="z6n-xg-RUJ" firstAttribute="top" secondItem="Zw9-nr-EzZ" secondAttribute="bottom" constant="5" id="qE8-DK-Pqv"/>
+                            <constraint firstItem="kyp-Y1-QUS" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="qsr-wS-bGo"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="529" y="526"/>
+        </scene>
+        <!--Attractions-->
+        <scene sceneID="H9x-Vj-N71">
+            <objects>
+                <viewController id="yCv-Bb-U1y" userLabel="Attractions" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Dn2-gk-BdR"/>
+                        <viewControllerLayoutGuide type="bottom" id="h2o-4P-AFC"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="gDY-ac-TY3">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="" systemItem="favorites" id="wKx-oe-o1f" userLabel="Attractions"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1Dp-iK-DFd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1194" y="1284"/>
+        </scene>
+        <!--Info-->
+        <scene sceneID="axK-b3-Xrc">
+            <objects>
+                <viewController id="yKD-YT-Xq7" userLabel="Info" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="gM0-zT-Rvz"/>
+                        <viewControllerLayoutGuide type="bottom" id="XdW-tf-WpK"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="XDT-Fy-ser">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="7lM-9d-EbR">
+                                <rect key="frame" x="20" y="20" width="560" height="580"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="NAv-f6-etL">
+                                        <rect key="frame" x="0.0" y="0.0" width="560" height="370"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Canal-rideau" translatesAutoresizingMaskIntoConstraints="NO" id="wPr-V1-PF9">
+                                                <rect key="frame" x="0.0" y="0.0" width="275" height="370"/>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LWX-7d-VBE">
+                                                <rect key="frame" x="285" y="0.0" width="275" height="199"/>
+                                                <string key="text">Ottawa is in the province of Ontario, where three rivers meet: the Ottawa, the Gatineau and the Rideau. The greater metropolitan area is designated as the National Capital Region and encompasses Ottawa, the neighbouring city of Gatineau (across the Ottawa River and in Quebec) and the surrounding urban and rural communities.</string>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <imageView userInteractionEnabled="NO" contentMode="TopLeft" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Ottawa_skyline" translatesAutoresizingMaskIntoConstraints="NO" id="PSY-Et-bsE">
+                                        <rect key="frame" x="0.0" y="380" width="560" height="200"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="200" id="upW-Dl-wUV"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="7lM-9d-EbR" firstAttribute="trailing" secondItem="XDT-Fy-ser" secondAttribute="trailingMargin" id="Un8-oF-eNh"/>
+                            <constraint firstItem="7lM-9d-EbR" firstAttribute="leading" secondItem="XDT-Fy-ser" secondAttribute="leadingMargin" id="Wfb-Ls-EaW"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="7lM-9d-EbR" secondAttribute="bottom" id="Yrk-DS-ysr"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="7lM-9d-EbR" secondAttribute="trailing" id="ZDo-Of-ke4"/>
+                            <constraint firstItem="7lM-9d-EbR" firstAttribute="top" secondItem="gM0-zT-Rvz" secondAttribute="bottom" id="htm-eA-xCt"/>
+                            <constraint firstItem="7lM-9d-EbR" firstAttribute="leading" secondItem="XDT-Fy-ser" secondAttribute="leadingMargin" id="wju-V8-xbo"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" systemItem="history" id="aCi-hn-tfP" userLabel="Info"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SIF-D1-jyj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1882" y="156"/>
+        </scene>
+        <!--Intro-->
+        <scene sceneID="NTj-WO-P5J">
+            <objects>
+                <viewController id="mz3-4w-c7B" userLabel="Intro" customClass="IntroVC" customModule="Ottawa" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Amm-gE-CwW"/>
+                        <viewControllerLayoutGuide type="bottom" id="CsA-nG-SZI"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="bmC-CN-88U">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="parliament" translatesAutoresizingMaskIntoConstraints="NO" id="yIu-aq-In2">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="551"/>
+                            </imageView>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="top" bounces="NO" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lI3-9l-WtL">
+                                <rect key="frame" x="300" y="35" width="270" height="240"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RdT-tV-YQF" userLabel="contentView">
+                                        <rect key="frame" x="0.0" y="0.0" width="270" height="600"/>
+                                        <subviews>
+                                            <label opaque="NO" multipleTouchEnabled="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" layoutMarginsFollowReadableWidth="YES" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.80000000000000004" translatesAutoresizingMaskIntoConstraints="NO" id="zvh-ap-TYa">
+                                                <rect key="frame" x="13" y="8" width="246" height="342"/>
+                                                <string key="text">Ottawa is Canada’s capital, a dynamic showcase city of more than one million people. Located in Ontario at the Quebec border, it’s a place where you’ll hear English and French spoken in the streets; where you can discover Canada’s proud heritage at impressive national sites and famous landmarks, including the Rideau Canal (a UNESCO World Heritage Site). It’s a city steeped in culture, with world-class museums and galleries displaying stunning national collections and special exhibitions from Canada and around the world.</string>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="zvh-ap-TYa" firstAttribute="height" secondItem="RdT-tV-YQF" secondAttribute="height" id="qND-U0-W8R"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="zvh-ap-TYa" firstAttribute="leading" secondItem="lI3-9l-WtL" secondAttribute="leading" constant="13" id="egG-Oc-oiN"/>
+                                    <constraint firstItem="zvh-ap-TYa" firstAttribute="width" secondItem="lI3-9l-WtL" secondAttribute="width" id="lNY-Rs-kkk"/>
+                                    <constraint firstItem="RdT-tV-YQF" firstAttribute="leading" secondItem="lI3-9l-WtL" secondAttribute="leading" id="mg4-9o-ajV"/>
+                                    <constraint firstItem="RdT-tV-YQF" firstAttribute="top" secondItem="lI3-9l-WtL" secondAttribute="top" id="nO2-RJ-fZO"/>
+                                    <constraint firstAttribute="bottom" secondItem="RdT-tV-YQF" secondAttribute="bottom" id="pQf-bh-jEP"/>
+                                    <constraint firstAttribute="trailing" secondItem="RdT-tV-YQF" secondAttribute="trailing" id="qYn-dD-Di5"/>
+                                    <constraint firstItem="RdT-tV-YQF" firstAttribute="width" secondItem="lI3-9l-WtL" secondAttribute="width" id="tgg-qX-i9l"/>
+                                </constraints>
+                            </scrollView>
+                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="aIS-pv-jYv">
+                                <rect key="frame" x="20" y="35" width="126" height="150"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="BdX-jn-2yV">
+                                        <rect key="frame" x="0.0" y="0.0" width="126" height="42"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Location" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="anW-Id-HPQ">
+                                                <rect key="frame" x="0.0" y="0.0" width="58" height="21"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBold" family="Helvetica Neue" pointSize="17"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="45.4° N, 75.7° W" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dZg-tj-Po7">
+                                                <rect key="frame" x="0.0" y="21" width="126" height="21"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="17"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="X3V-vV-jcT">
+                                        <rect key="frame" x="0.0" y="47" width="126" height="42"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Ottawa time now" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8QN-bi-Osn">
+                                                <rect key="frame" x="0.0" y="0.0" width="115" height="21"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBold" family="Helvetica Neue" pointSize="17"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Current Time" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mXj-P2-pmT">
+                                                <rect key="frame" x="0.0" y="21" width="92" height="21"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="17"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="HJA-BF-wOS">
+                                        <rect key="frame" x="0.0" y="94" width="126" height="56"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="mVE-i1-77e">
+                                                <rect key="frame" x="0.0" y="0.0" width="126" height="21"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Current weather" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MAH-uJ-bTD">
+                                                        <rect key="frame" x="0.0" y="0.0" width="126" height="21"/>
+                                                        <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBold" family="Helvetica Neue" pointSize="17"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" alignment="top" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="uzJ-v0-LnW">
+                                                <rect key="frame" x="0.0" y="21" width="126" height="35"/>
+                                                <subviews>
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kib-WW-eIS">
+                                                        <rect key="frame" x="0.0" y="0.0" width="35" height="35"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="35" id="X2B-aa-Nhh"/>
+                                                            <constraint firstAttribute="width" constant="35" id="wI6-62-Qkg"/>
+                                                        </constraints>
+                                                    </imageView>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Temperature" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JmG-Y7-OCX">
+                                                        <rect key="frame" x="38" y="0.0" width="88" height="21"/>
+                                                        <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="17"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="yIu-aq-In2" secondAttribute="trailing" id="22e-cg-lg1"/>
+                            <constraint firstItem="lI3-9l-WtL" firstAttribute="height" secondItem="bmC-CN-88U" secondAttribute="height" multiplier="0.4" id="77e-U9-2X2"/>
+                            <constraint firstItem="RdT-tV-YQF" firstAttribute="height" secondItem="bmC-CN-88U" secondAttribute="height" id="7fH-do-Wec"/>
+                            <constraint firstItem="lI3-9l-WtL" firstAttribute="width" secondItem="bmC-CN-88U" secondAttribute="width" multiplier="0.45" id="MSM-dG-2u8"/>
+                            <constraint firstItem="yIu-aq-In2" firstAttribute="top" secondItem="bmC-CN-88U" secondAttribute="top" id="PLa-ki-rc4"/>
+                            <constraint firstItem="yIu-aq-In2" firstAttribute="bottom" secondItem="CsA-nG-SZI" secondAttribute="top" id="ira-op-pqJ"/>
+                            <constraint firstItem="yIu-aq-In2" firstAttribute="leading" secondItem="bmC-CN-88U" secondAttribute="leading" id="rR7-CK-vJZ"/>
+                            <constraint firstItem="lI3-9l-WtL" firstAttribute="leading" secondItem="bmC-CN-88U" secondAttribute="centerX" id="w6r-zJ-kHF"/>
+                            <constraint firstItem="lI3-9l-WtL" firstAttribute="top" secondItem="Amm-gE-CwW" secondAttribute="bottom" constant="15" id="yTe-dq-yu0"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" systemItem="featured" id="kaf-LT-M35" userLabel="Intro"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="600" height="600"/>
+                    <connections>
+                        <outlet property="clockDisplay" destination="mXj-P2-pmT" id="6ng-SS-Xmp"/>
+                        <outlet property="temperatureDisplay" destination="JmG-Y7-OCX" id="hts-jj-7ZA"/>
+                        <outlet property="weatherImage" destination="kib-WW-eIS" id="zKo-wu-3Rh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Fbb-oi-i7h" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1888" y="821"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="2fd-TH-MlQ">
+            <objects>
+                <tabBarController id="KmW-Jr-Lh6" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="UmN-5n-Uug">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="mz3-4w-c7B" kind="relationship" relationship="viewControllers" id="Bv3-0u-JsW"/>
+                        <segue destination="yKD-YT-Xq7" kind="relationship" relationship="viewControllers" id="tfV-vG-BsB"/>
+                        <segue destination="yCv-Bb-U1y" kind="relationship" relationship="viewControllers" id="rjD-Gx-AQe"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jZS-XR-rah" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1194" y="526"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="CanadaFlag" width="307" height="154"/>
+        <image name="Canal-rideau" width="2048" height="1536"/>
+        <image name="Ottawa_skyline" width="1200" height="218"/>
+        <image name="canal" width="1450" height="816"/>
+        <image name="parliament" width="500" height="333"/>
+    </resources>
 </document>
