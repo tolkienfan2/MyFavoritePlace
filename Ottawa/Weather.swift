@@ -33,7 +33,6 @@ class Weather {
         let weatherURL: String = "http://api.openweathermap.org/data/2.5/weather?id=6094817" + "&units=metric" + "&APPID=\(key)"
         
         let json = JSON(url: weatherURL)
-        print(json)
         
         let temp = json["main"]["temp"].asDouble!
         temperature = String(temp) + "°C"
@@ -45,21 +44,5 @@ class Weather {
         
         return (temperature, iconURL)
     }
-    
-//    func urlImage(iconURL: String, completion: (image: UIImage?, success: Bool) -> Void) {
-//        guard let url = NSURL(string: iconURL),
-//            let data = NSData(contentsOfURL: url),
-//            let image = UIImage(data: data)
-//            else {
-//                completion(image: nil, success: false);
-//                return
-//        }
-//        print(url)
-//        print(data)
-//        print(image)
-//        
-//        completion(image: image, success: true)
-//    }
-
     
 }
