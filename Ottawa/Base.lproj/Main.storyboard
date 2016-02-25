@@ -5,6 +5,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
         <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -31,19 +32,24 @@
                                 </constraints>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="z6n-xg-RUJ">
-                                <rect key="frame" x="20" y="63" width="298" height="109"/>
+                                <rect key="frame" x="20" y="58" width="298" height="109"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ottawa" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PLe-ed-fOb">
                                         <rect key="frame" x="0.0" y="0.0" width="298" height="70"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="70" id="4T2-h9-ZHm"/>
-                                            <constraint firstAttribute="width" constant="298" id="moM-Xv-wNH"/>
+                                            <constraint firstAttribute="width" constant="298" id="moM-Xv-wNH">
+                                                <variation key="heightClass=regular-widthClass=regular" constant="500"/>
+                                            </constraint>
                                         </constraints>
                                         <fontDescription key="fontDescription" name="Georgia-Bold" family="Georgia" pointSize="80"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                         <color key="highlightedColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                         <color key="shadowColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <size key="shadowOffset" width="-2" height="1"/>
+                                        <variation key="heightClass=regular-widthClass=regular">
+                                            <fontDescription key="fontDescription" name="Georgia-Bold" family="Georgia" pointSize="100"/>
+                                        </variation>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Canada's Capital" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nmm-7Q-CFR">
                                         <rect key="frame" x="0.0" y="70" width="298" height="39"/>
@@ -51,19 +57,28 @@
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
                                         <size key="shadowOffset" width="-1" height="1"/>
+                                        <variation key="heightClass=regular-widthClass=regular">
+                                            <fontDescription key="fontDescription" name="Georgia-Bold" family="Georgia" pointSize="54"/>
+                                        </variation>
                                     </label>
                                 </subviews>
+                                <variation key="heightClass=regular-widthClass=regular" spacing="20"/>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zw9-nr-EzZ" customClass="RoundedButton" customModule="Ottawa" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="tailTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zw9-nr-EzZ" customClass="RoundedButton" customModule="Ottawa" customModuleProvider="target">
                                 <rect key="frame" x="20" y="28" width="100" height="30"/>
                                 <color key="backgroundColor" red="0.47059655441190518" green="0.56947076018779885" blue="0.83441506410256405" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="100" id="oPD-X6-82d"/>
+                                    <constraint firstAttribute="width" constant="100" id="oPD-X6-82d">
+                                        <variation key="heightClass=regular-widthClass=regular" constant="150"/>
+                                    </constraint>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="15"/>
                                 <state key="normal" title="Discover">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="28"/>
+                                </variation>
                                 <connections>
                                     <segue destination="KmW-Jr-Lh6" kind="showDetail" action="showViewController:sender:" id="eqG-Wc-v1E"/>
                                 </connections>
@@ -71,15 +86,21 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="z6n-xg-RUJ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="4pe-Va-UIa"/>
+                            <constraint firstItem="z6n-xg-RUJ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="4pe-Va-UIa">
+                                <variation key="heightClass=regular-widthClass=regular" constant="10"/>
+                            </constraint>
                             <constraint firstItem="Zw9-nr-EzZ" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="5XY-fw-m3a"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="NfZ-r3-gsa" secondAttribute="bottom" constant="20" id="E5R-bE-9i4"/>
                             <constraint firstItem="kyp-Y1-QUS" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Ga6-ul-IwP"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="kyp-Y1-QUS" secondAttribute="bottom" id="HiK-BZ-Jcb"/>
-                            <constraint firstItem="Zw9-nr-EzZ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="V5S-6A-Dng"/>
+                            <constraint firstItem="Zw9-nr-EzZ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="V5S-6A-Dng">
+                                <variation key="heightClass=regular-widthClass=regular" constant="10"/>
+                            </constraint>
                             <constraint firstItem="NfZ-r3-gsa" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="Xk4-Nd-jer"/>
                             <constraint firstAttribute="trailing" secondItem="kyp-Y1-QUS" secondAttribute="trailing" id="kqj-M0-uOM"/>
-                            <constraint firstItem="z6n-xg-RUJ" firstAttribute="top" secondItem="Zw9-nr-EzZ" secondAttribute="bottom" constant="5" id="qE8-DK-Pqv"/>
+                            <constraint firstItem="z6n-xg-RUJ" firstAttribute="top" secondItem="Zw9-nr-EzZ" secondAttribute="bottom" id="qE8-DK-Pqv">
+                                <variation key="heightClass=regular-widthClass=regular" constant="20"/>
+                            </constraint>
                             <constraint firstItem="kyp-Y1-QUS" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="qsr-wS-bGo"/>
                         </constraints>
                     </view>
@@ -101,7 +122,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="" systemItem="favorites" id="wKx-oe-o1f" userLabel="Attractions"/>
+                    <tabBarItem key="tabBarItem" title="" image="Screenshot-30" id="wKx-oe-o1f" userLabel="Attractions"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1Dp-iK-DFd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -110,7 +131,7 @@
         <!--Info-->
         <scene sceneID="axK-b3-Xrc">
             <objects>
-                <viewController id="yKD-YT-Xq7" userLabel="Info" sceneMemberID="viewController">
+                <viewController id="yKD-YT-Xq7" userLabel="Info" customClass="InfoVC" customModule="Ottawa" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="gM0-zT-Rvz"/>
                         <viewControllerLayoutGuide type="bottom" id="XdW-tf-WpK"/>
@@ -119,44 +140,163 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="7lM-9d-EbR">
-                                <rect key="frame" x="20" y="20" width="560" height="580"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="7lM-9d-EbR">
+                                <rect key="frame" x="0.0" y="20" width="600" height="580"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="NAv-f6-etL">
-                                        <rect key="frame" x="0.0" y="0.0" width="560" height="370"/>
-                                        <subviews>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Canal-rideau" translatesAutoresizingMaskIntoConstraints="NO" id="wPr-V1-PF9">
-                                                <rect key="frame" x="0.0" y="0.0" width="275" height="370"/>
-                                            </imageView>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LWX-7d-VBE">
-                                                <rect key="frame" x="285" y="0.0" width="275" height="199"/>
-                                                <string key="text">Ottawa is in the province of Ontario, where three rivers meet: the Ottawa, the Gatineau and the Rideau. The greater metropolitan area is designated as the National Capital Region and encompasses Ottawa, the neighbouring city of Gatineau (across the Ottawa River and in Quebec) and the surrounding urban and rural communities.</string>
-                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
-                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                        </subviews>
-                                    </stackView>
-                                    <imageView userInteractionEnabled="NO" contentMode="TopLeft" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Ottawa_skyline" translatesAutoresizingMaskIntoConstraints="NO" id="PSY-Et-bsE">
-                                        <rect key="frame" x="0.0" y="380" width="560" height="200"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="200" id="upW-Dl-wUV"/>
-                                        </constraints>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Canal-rideau" translatesAutoresizingMaskIntoConstraints="NO" id="wPr-V1-PF9">
+                                        <rect key="frame" x="0.0" y="0.0" width="600" height="340"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Canada_Ottawa_Panorama" translatesAutoresizingMaskIntoConstraints="NO" id="PSY-Et-bsE">
+                                        <rect key="frame" x="0.0" y="340" width="600" height="240"/>
                                     </imageView>
                                 </subviews>
                             </stackView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0wf-cA-1zg">
+                                <rect key="frame" x="60" y="490" width="480" height="72"/>
+                                <color key="backgroundColor" red="0.52156862745098043" green="0.73725490196078436" blue="1" alpha="0.5" colorSpace="calibratedRGB"/>
+                                <string key="text">Ottawa is in the province of Ontario, where three rivers meet: the Ottawa, the Gatineau and the Rideau. The greater metropolitan area is designated as the National Capital Region and encompasses Ottawa, the neighbouring city of Gatineau (across the Ottawa River and in Quebec) and the surrounding urban and rural communities.</string>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <variation key="heightClass=compact">
+                                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="12"/>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                                </variation>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bgt-7j-tgh">
+                                <rect key="frame" x="10" y="214" width="210" height="136"/>
+                                <color key="backgroundColor" white="1" alpha="0.5" colorSpace="calibratedWhite"/>
+                                <string key="text">Founded in 1826 as Bytown, in tandem with the building of the Rideau Canal, Ottawa was conferred city status in 1854 and renamed with the Algonquin word meaning "to trade", in recognition of centuries of Algonquin use of the Ottawa and Rideau rivers as portage. Shortly after, Queen Victoria chose Ottawa as Canada's capital, with its hallmark Parliament Hill buildings being completed within the next several years.</string>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <variation key="heightClass=compact">
+                                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                                </variation>
+                            </textView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="fai-l1-DZc">
+                                <rect key="frame" x="165" y="25" width="135" height="56"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="History &amp;" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kp4-9n-q94">
+                                        <rect key="frame" x="0.0" y="0.0" width="119" height="28"/>
+                                        <fontDescription key="fontDescription" name="Georgia-Bold" family="Georgia" pointSize="24"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                        <variation key="heightClass=regular-widthClass=regular">
+                                            <fontDescription key="fontDescription" name="Georgia-Bold" family="Georgia" pointSize="36"/>
+                                        </variation>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Geography" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ubp-VW-DKz">
+                                        <rect key="frame" x="0.0" y="28" width="135" height="28"/>
+                                        <fontDescription key="fontDescription" name="Georgia-Bold" family="Georgia" pointSize="24"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                        <variation key="heightClass=regular-widthClass=regular">
+                                            <fontDescription key="fontDescription" name="Georgia-Bold" family="Georgia" pointSize="36"/>
+                                        </variation>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.40000000000000002" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="&quot;Canada Ottawa Panorama&quot; by G. Baranski - Own work. Licensed under CC BY-SA 3.0 via Commons" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="unf-Ei-Ucg">
+                                <rect key="frame" x="0.0" y="360" width="482" height="12"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=compact" misplaced="YES">
+                                    <fontDescription key="fontDescription" name="AvenirNextCondensed-Regular" family="Avenir Next Condensed" pointSize="10"/>
+                                    <rect key="frame" x="0.0" y="240" width="482" height="12"/>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
+                                    <fontDescription key="fontDescription" name="AvenirNextCondensed-Regular" family="Avenir Next Condensed" pointSize="8"/>
+                                    <rect key="frame" x="0.0" y="480" width="482" height="12"/>
+                                </variation>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="7lM-9d-EbR" firstAttribute="trailing" secondItem="XDT-Fy-ser" secondAttribute="trailingMargin" id="Un8-oF-eNh"/>
-                            <constraint firstItem="7lM-9d-EbR" firstAttribute="leading" secondItem="XDT-Fy-ser" secondAttribute="leadingMargin" id="Wfb-Ls-EaW"/>
-                            <constraint firstAttribute="bottomMargin" secondItem="7lM-9d-EbR" secondAttribute="bottom" id="Yrk-DS-ysr"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="7lM-9d-EbR" secondAttribute="trailing" id="ZDo-Of-ke4"/>
-                            <constraint firstItem="7lM-9d-EbR" firstAttribute="top" secondItem="gM0-zT-Rvz" secondAttribute="bottom" id="htm-eA-xCt"/>
-                            <constraint firstItem="7lM-9d-EbR" firstAttribute="leading" secondItem="XDT-Fy-ser" secondAttribute="leadingMargin" id="wju-V8-xbo"/>
+                            <constraint firstItem="fai-l1-DZc" firstAttribute="trailing" secondItem="wPr-V1-PF9" secondAttribute="centerX" id="1Vh-Ge-Z2H"/>
+                            <constraint firstItem="bgt-7j-tgh" firstAttribute="trailing" secondItem="7lM-9d-EbR" secondAttribute="trailing" constant="-7" id="1sB-aN-uc6"/>
+                            <constraint firstItem="unf-Ei-Ucg" firstAttribute="leading" secondItem="7lM-9d-EbR" secondAttribute="leading" id="3yu-LV-JCV"/>
+                            <constraint firstAttribute="bottom" secondItem="7lM-9d-EbR" secondAttribute="bottom" id="9Iy-4l-0Z1"/>
+                            <constraint firstAttribute="trailing" secondItem="7lM-9d-EbR" secondAttribute="trailing" id="AAL-KH-Ig7"/>
+                            <constraint firstItem="PSY-Et-bsE" firstAttribute="height" secondItem="XDT-Fy-ser" secondAttribute="height" multiplier="0.4" id="D4T-4A-N14"/>
+                            <constraint firstItem="0wf-cA-1zg" firstAttribute="height" secondItem="PSY-Et-bsE" secondAttribute="height" multiplier="0.3" id="Gmh-Il-aiX"/>
+                            <constraint firstItem="7lM-9d-EbR" firstAttribute="top" secondItem="gM0-zT-Rvz" secondAttribute="bottom" id="HIU-78-1Sc"/>
+                            <constraint firstItem="0wf-cA-1zg" firstAttribute="top" secondItem="unf-Ei-Ucg" secondAttribute="bottom" id="OZp-QX-T1g"/>
+                            <constraint firstItem="bgt-7j-tgh" firstAttribute="height" secondItem="wPr-V1-PF9" secondAttribute="height" multiplier="0.4" id="Uo3-l5-yqq"/>
+                            <constraint firstItem="0wf-cA-1zg" firstAttribute="top" secondItem="PSY-Et-bsE" secondAttribute="centerY" constant="10" id="XYw-Mu-mNh">
+                                <variation key="heightClass=compact" constant="-15"/>
+                            </constraint>
+                            <constraint firstItem="0wf-cA-1zg" firstAttribute="width" secondItem="7lM-9d-EbR" secondAttribute="width" multiplier="0.35" id="Z85-Uh-tmE"/>
+                            <constraint firstItem="7lM-9d-EbR" firstAttribute="leading" secondItem="XDT-Fy-ser" secondAttribute="leading" id="ZUW-vi-1VJ"/>
+                            <constraint firstItem="fai-l1-DZc" firstAttribute="top" secondItem="wPr-V1-PF9" secondAttribute="top" constant="5" id="bVr-hy-8Ls">
+                                <variation key="heightClass=regular-widthClass=regular" constant="20"/>
+                            </constraint>
+                            <constraint firstItem="bgt-7j-tgh" firstAttribute="leading" secondItem="wPr-V1-PF9" secondAttribute="leading" constant="10" id="gSA-Xc-xvb"/>
+                            <constraint firstItem="unf-Ei-Ucg" firstAttribute="top" secondItem="PSY-Et-bsE" secondAttribute="top" id="jx1-1a-VSP"/>
+                            <constraint firstItem="bgt-7j-tgh" firstAttribute="width" secondItem="wPr-V1-PF9" secondAttribute="width" multiplier="0.35" id="knl-XA-LCt"/>
+                            <constraint firstItem="0wf-cA-1zg" firstAttribute="width" secondItem="PSY-Et-bsE" secondAttribute="width" multiplier="0.8" id="r47-TI-A1s"/>
+                            <constraint firstItem="bgt-7j-tgh" firstAttribute="bottom" secondItem="wPr-V1-PF9" secondAttribute="bottom" constant="-10" id="s4y-ar-BZB"/>
+                            <constraint firstItem="0wf-cA-1zg" firstAttribute="height" secondItem="PSY-Et-bsE" secondAttribute="height" multiplier="0.3" id="sc2-zQ-Waw"/>
+                            <constraint firstItem="0wf-cA-1zg" firstAttribute="leading" secondItem="7lM-9d-EbR" secondAttribute="leading" id="uEB-nv-vYM"/>
+                            <constraint firstItem="bgt-7j-tgh" firstAttribute="centerY" secondItem="wPr-V1-PF9" secondAttribute="centerY" id="z4u-kL-AD1"/>
+                            <constraint firstItem="0wf-cA-1zg" firstAttribute="centerX" secondItem="XDT-Fy-ser" secondAttribute="centerX" id="z9V-Uj-Qvb"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="1sB-aN-uc6"/>
+                                <exclude reference="gSA-Xc-xvb"/>
+                                <exclude reference="s4y-ar-BZB"/>
+                                <exclude reference="z4u-kL-AD1"/>
+                                <exclude reference="Gmh-Il-aiX"/>
+                                <exclude reference="OZp-QX-T1g"/>
+                                <exclude reference="XYw-Mu-mNh"/>
+                                <exclude reference="Z85-Uh-tmE"/>
+                                <exclude reference="r47-TI-A1s"/>
+                                <exclude reference="sc2-zQ-Waw"/>
+                                <exclude reference="uEB-nv-vYM"/>
+                                <exclude reference="z9V-Uj-Qvb"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact">
+                            <mask key="constraints">
+                                <include reference="1sB-aN-uc6"/>
+                                <include reference="z4u-kL-AD1"/>
+                                <include reference="Gmh-Il-aiX"/>
+                                <include reference="OZp-QX-T1g"/>
+                                <include reference="Z85-Uh-tmE"/>
+                                <include reference="uEB-nv-vYM"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="constraints">
+                                <include reference="gSA-Xc-xvb"/>
+                                <include reference="s4y-ar-BZB"/>
+                                <include reference="XYw-Mu-mNh"/>
+                                <include reference="r47-TI-A1s"/>
+                                <include reference="sc2-zQ-Waw"/>
+                                <include reference="z9V-Uj-Qvb"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=regular">
+                            <mask key="constraints">
+                                <include reference="gSA-Xc-xvb"/>
+                                <include reference="s4y-ar-BZB"/>
+                                <include reference="XYw-Mu-mNh"/>
+                                <include reference="r47-TI-A1s"/>
+                                <include reference="sc2-zQ-Waw"/>
+                                <include reference="z9V-Uj-Qvb"/>
+                            </mask>
+                        </variation>
                     </view>
-                    <tabBarItem key="tabBarItem" systemItem="history" id="aCi-hn-tfP" userLabel="Info"/>
+                    <tabBarItem key="tabBarItem" image="Info-30" id="aCi-hn-tfP" userLabel="Info"/>
+                    <connections>
+                        <outlet property="geographyText" destination="0wf-cA-1zg" id="m3h-Ku-W3E"/>
+                        <outlet property="historyText" destination="bgt-7j-tgh" id="LHg-NU-zOb"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SIF-D1-jyj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -174,11 +314,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="parliament" translatesAutoresizingMaskIntoConstraints="NO" id="yIu-aq-In2">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Ottawa_-_On_-_Parliament_Buildings_National_Historic_Site_of_Canada_-_Night" translatesAutoresizingMaskIntoConstraints="NO" id="yIu-aq-In2">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="551"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="aIS-pv-jYv">
-                                <rect key="frame" x="12" y="28" width="126" height="150"/>
+                                <rect key="frame" x="20" y="33" width="126" height="150"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="BdX-jn-2yV">
                                         <rect key="frame" x="0.0" y="0.0" width="126" height="42"/>
@@ -188,12 +328,30 @@
                                                 <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBold" family="Helvetica Neue" pointSize="17"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
+                                                <variation key="heightClass=compact">
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBold" family="Helvetica Neue" pointSize="16"/>
+                                                </variation>
+                                                <variation key="heightClass=regular-widthClass=compact">
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBold" family="Helvetica Neue" pointSize="16"/>
+                                                </variation>
+                                                <variation key="heightClass=regular-widthClass=regular">
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBold" family="Helvetica Neue" pointSize="25"/>
+                                                </variation>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="45.4° N, 75.7° W" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dZg-tj-Po7">
                                                 <rect key="frame" x="0.0" y="21" width="126" height="21"/>
                                                 <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="17"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
+                                                <variation key="heightClass=compact">
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="16"/>
+                                                </variation>
+                                                <variation key="heightClass=regular-widthClass=compact">
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="16"/>
+                                                </variation>
+                                                <variation key="heightClass=regular-widthClass=regular">
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="25"/>
+                                                </variation>
                                             </label>
                                         </subviews>
                                     </stackView>
@@ -205,12 +363,30 @@
                                                 <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBold" family="Helvetica Neue" pointSize="17"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
+                                                <variation key="heightClass=compact">
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBold" family="Helvetica Neue" pointSize="16"/>
+                                                </variation>
+                                                <variation key="heightClass=regular-widthClass=compact">
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBold" family="Helvetica Neue" pointSize="16"/>
+                                                </variation>
+                                                <variation key="heightClass=regular-widthClass=regular">
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBold" family="Helvetica Neue" pointSize="25"/>
+                                                </variation>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Current Time" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mXj-P2-pmT">
                                                 <rect key="frame" x="0.0" y="21" width="92" height="21"/>
                                                 <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="17"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
+                                                <variation key="heightClass=compact">
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="16"/>
+                                                </variation>
+                                                <variation key="heightClass=regular-widthClass=compact">
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="16"/>
+                                                </variation>
+                                                <variation key="heightClass=regular-widthClass=regular">
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="25"/>
+                                                </variation>
                                             </label>
                                         </subviews>
                                     </stackView>
@@ -225,6 +401,15 @@
                                                         <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBold" family="Helvetica Neue" pointSize="17"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                         <nil key="highlightedColor"/>
+                                                        <variation key="heightClass=compact">
+                                                            <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBold" family="Helvetica Neue" pointSize="16"/>
+                                                        </variation>
+                                                        <variation key="heightClass=regular-widthClass=compact">
+                                                            <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBold" family="Helvetica Neue" pointSize="16"/>
+                                                        </variation>
+                                                        <variation key="heightClass=regular-widthClass=regular">
+                                                            <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBold" family="Helvetica Neue" pointSize="25"/>
+                                                        </variation>
                                                     </label>
                                                 </subviews>
                                             </stackView>
@@ -243,6 +428,15 @@
                                                         <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="17"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                         <nil key="highlightedColor"/>
+                                                        <variation key="heightClass=compact">
+                                                            <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="16"/>
+                                                        </variation>
+                                                        <variation key="heightClass=regular-widthClass=compact">
+                                                            <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="16"/>
+                                                        </variation>
+                                                        <variation key="heightClass=regular-widthClass=regular">
+                                                            <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="25"/>
+                                                        </variation>
                                                     </label>
                                                 </subviews>
                                             </stackView>
@@ -250,41 +444,100 @@
                                     </stackView>
                                 </subviews>
                             </stackView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g0i-QT-PtC">
-                                <rect key="frame" x="300" y="20" width="250" height="195"/>
-                                <mutableString key="text">Ottawa is Canada’s capital, a dynamic showcase city of more than one million people. Located in Ontario at the Quebec border, it’s a place where you’ll hear English and French spoken in the streets; where you can discover Canada’s proud heritage at impressive national sites and famous landmarks, including the Rideau Canal (a UNESCO World Heritage Site). It’s a city steeped in culture, with world-class museums and galleries displaying stunning national collections and special exhibitions from Canada and around the world.</mutableString>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g0i-QT-PtC">
+                                <rect key="frame" x="30" y="445" width="540" height="88"/>
+                                <string key="text">Ottawa is Canada’s capital, a dynamic showcase city of more than one million people. Located in Ontario at the Quebec border, it’s a place where you’ll hear English and French spoken in the streets; where you can discover Canada’s proud heritage at impressive national sites and famous landmarks, including the Rideau Canal (a UNESCO World Heritage Site). It’s a city steeped in culture, with world-class museums and galleries displaying stunning national collections and special exhibitions from Canada and around the world.</string>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="305" y="28" width="240" height="196"/>
+                                <variation key="heightClass=compact">
+                                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
+                                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
+                                    <rect key="frame" x="300" y="0.0" width="265" height="600"/>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
                                 </variation>
                             </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.5" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Photo by Y Anderson (Own work)  CC BY-SA 3.0 via Commons" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IwA-tw-CXL">
+                                <rect key="frame" x="280" y="537" width="300" height="12"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <fontDescription key="fontDescription" name="AvenirNextCondensed-Regular" family="Avenir Next Condensed" pointSize="8"/>
+                                </variation>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="yIu-aq-In2" secondAttribute="trailing" id="22e-cg-lg1"/>
-                            <constraint firstAttribute="leadingMargin" secondItem="aIS-pv-jYv" secondAttribute="leading" constant="8" id="Abu-X3-8ck"/>
-                            <constraint firstItem="g0i-QT-PtC" firstAttribute="leading" secondItem="bmC-CN-88U" secondAttribute="centerXWithinMargins" id="C6R-dj-hGi"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="g0i-QT-PtC" secondAttribute="trailing" constant="30" id="JlP-kL-XDH"/>
-                            <constraint firstItem="g0i-QT-PtC" firstAttribute="top" secondItem="Amm-gE-CwW" secondAttribute="bottom" id="L6f-Bx-aNq"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="aIS-pv-jYv" secondAttribute="leading" id="Abu-X3-8ck">
+                                <variation key="heightClass=regular-widthClass=regular" constant="-10"/>
+                            </constraint>
+                            <constraint firstItem="g0i-QT-PtC" firstAttribute="bottom" secondItem="yIu-aq-In2" secondAttribute="bottom" constant="-18" id="IGR-4n-aO4"/>
+                            <constraint firstItem="g0i-QT-PtC" firstAttribute="width" secondItem="yIu-aq-In2" secondAttribute="width" multiplier="0.9" id="Onh-uo-gSM"/>
                             <constraint firstItem="yIu-aq-In2" firstAttribute="top" secondItem="bmC-CN-88U" secondAttribute="top" id="PLa-ki-rc4"/>
-                            <constraint firstItem="CsA-nG-SZI" firstAttribute="top" secondItem="g0i-QT-PtC" secondAttribute="bottom" constant="336" id="bl8-mR-WB7"/>
-                            <constraint firstItem="aIS-pv-jYv" firstAttribute="top" secondItem="Amm-gE-CwW" secondAttribute="bottom" constant="8" id="ibt-KC-LGs"/>
+                            <constraint firstItem="g0i-QT-PtC" firstAttribute="leading" secondItem="bmC-CN-88U" secondAttribute="centerX" constant="40" id="X3r-fn-OhI"/>
+                            <constraint firstItem="g0i-QT-PtC" firstAttribute="centerX" secondItem="bmC-CN-88U" secondAttribute="centerX" id="YDN-YP-8AA"/>
+                            <constraint firstItem="CsA-nG-SZI" firstAttribute="top" secondItem="IwA-tw-CXL" secondAttribute="bottom" constant="2" id="hNP-WI-pfH"/>
+                            <constraint firstItem="aIS-pv-jYv" firstAttribute="top" secondItem="Amm-gE-CwW" secondAttribute="bottom" constant="13" id="ibt-KC-LGs"/>
                             <constraint firstItem="yIu-aq-In2" firstAttribute="bottom" secondItem="CsA-nG-SZI" secondAttribute="top" id="ira-op-pqJ"/>
+                            <constraint firstItem="g0i-QT-PtC" firstAttribute="width" secondItem="bmC-CN-88U" secondAttribute="width" multiplier="0.4" id="jth-Lk-M1O"/>
+                            <constraint firstItem="g0i-QT-PtC" firstAttribute="height" secondItem="bmC-CN-88U" secondAttribute="height" multiplier="0.4" id="mK2-jk-PFL"/>
                             <constraint firstItem="yIu-aq-In2" firstAttribute="leading" secondItem="bmC-CN-88U" secondAttribute="leading" id="rR7-CK-vJZ"/>
+                            <constraint firstItem="g0i-QT-PtC" firstAttribute="height" secondItem="yIu-aq-In2" secondAttribute="height" multiplier="0.16" id="sxf-we-8lU"/>
+                            <constraint firstItem="g0i-QT-PtC" firstAttribute="top" secondItem="Amm-gE-CwW" secondAttribute="bottom" constant="8" id="uEF-tt-DPa"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="IwA-tw-CXL" secondAttribute="trailing" id="xlW-fX-OO0"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="IGR-4n-aO4"/>
+                                <exclude reference="Onh-uo-gSM"/>
+                                <exclude reference="X3r-fn-OhI"/>
+                                <exclude reference="YDN-YP-8AA"/>
+                                <exclude reference="jth-Lk-M1O"/>
+                                <exclude reference="mK2-jk-PFL"/>
+                                <exclude reference="sxf-we-8lU"/>
+                                <exclude reference="uEF-tt-DPa"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact">
+                            <mask key="constraints">
+                                <include reference="X3r-fn-OhI"/>
+                                <include reference="jth-Lk-M1O"/>
+                                <include reference="mK2-jk-PFL"/>
+                                <include reference="uEF-tt-DPa"/>
+                            </mask>
+                        </variation>
                         <variation key="heightClass=regular-widthClass=compact">
                             <mask key="subviews">
                                 <include reference="g0i-QT-PtC"/>
                             </mask>
+                            <mask key="constraints">
+                                <include reference="IGR-4n-aO4"/>
+                                <include reference="Onh-uo-gSM"/>
+                                <include reference="YDN-YP-8AA"/>
+                                <include reference="sxf-we-8lU"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=regular">
+                            <mask key="constraints">
+                                <include reference="IGR-4n-aO4"/>
+                                <include reference="Onh-uo-gSM"/>
+                                <include reference="YDN-YP-8AA"/>
+                                <include reference="sxf-we-8lU"/>
+                            </mask>
                         </variation>
                     </view>
-                    <tabBarItem key="tabBarItem" systemItem="featured" id="kaf-LT-M35" userLabel="Intro"/>
+                    <tabBarItem key="tabBarItem" image="Geo-fence-30" id="kaf-LT-M35" userLabel="Intro"/>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="600" height="600"/>
                     <connections>
                         <outlet property="clockDisplay" destination="mXj-P2-pmT" id="6ng-SS-Xmp"/>
+                        <outlet property="introText" destination="g0i-QT-PtC" id="7aP-pd-FRk"/>
                         <outlet property="temperatureDisplay" destination="JmG-Y7-OCX" id="hts-jj-7ZA"/>
                         <outlet property="weatherImage" destination="kib-WW-eIS" id="zKo-wu-3Rh"/>
                     </connections>
@@ -296,7 +549,7 @@
         <!--Tab Bar Controller-->
         <scene sceneID="2fd-TH-MlQ">
             <objects>
-                <tabBarController id="KmW-Jr-Lh6" sceneMemberID="viewController">
+                <tabBarController modalTransitionStyle="flipHorizontal" id="KmW-Jr-Lh6" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" id="UmN-5n-Uug">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -315,9 +568,12 @@
     </scenes>
     <resources>
         <image name="CanadaFlag" width="307" height="154"/>
+        <image name="Canada_Ottawa_Panorama" width="4706" height="800"/>
         <image name="Canal-rideau" width="2048" height="1536"/>
-        <image name="Ottawa_skyline" width="1200" height="218"/>
+        <image name="Geo-fence-30" width="30" height="30"/>
+        <image name="Info-30" width="30" height="30"/>
+        <image name="Ottawa_-_On_-_Parliament_Buildings_National_Historic_Site_of_Canada_-_Night" width="2048" height="1365"/>
+        <image name="Screenshot-30" width="30" height="30"/>
         <image name="canal" width="1450" height="816"/>
-        <image name="parliament" width="500" height="333"/>
     </resources>
 </document>

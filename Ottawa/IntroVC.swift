@@ -15,6 +15,7 @@ class IntroVC: UIViewController {
     @IBOutlet weak var clockDisplay: UILabel!
     @IBOutlet weak var temperatureDisplay: UILabel!
     @IBOutlet weak var weatherImage: UIImageView!
+    @IBOutlet weak var introText: UITextView!
 
     let clock = Clock()
     let weather = Weather()
@@ -28,6 +29,8 @@ class IntroVC: UIViewController {
     
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
+        dispatch_async(dispatch_get_main_queue(), {self.introText.scrollRangeToVisible(NSMakeRange(0, 0))} )
+        
         updateClock()
         displayTemperature()
     }

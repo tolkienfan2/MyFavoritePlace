@@ -18,6 +18,7 @@
 		4596BB001C7D271E00B338C0 /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4596BAFF1C7D271E00B338C0 /* Weather.swift */; };
 		45A567B81C7A9E1400B7985F /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45A567B71C7A9E1400B7985F /* RoundedButton.swift */; };
 		45BFFD0B1C7E1F7100E42D93 /* JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45BFFD0A1C7E1F7100E42D93 /* JSON.swift */; };
+		45BFFD131C7F76D200E42D93 /* InfoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45BFFD121C7F76D200E42D93 /* InfoVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		4596BAFF1C7D271E00B338C0 /* Weather.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Weather.swift; sourceTree = "<group>"; };
 		45A567B71C7A9E1400B7985F /* RoundedButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
 		45BFFD0A1C7E1F7100E42D93 /* JSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSON.swift; sourceTree = "<group>"; };
+		45BFFD121C7F76D200E42D93 /* InfoVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +87,7 @@
 			children = (
 				455570CC1C7A071500C62A44 /* ViewController.swift */,
 				4596BAF91C7CA0E000B338C0 /* IntroVC.swift */,
+				45BFFD121C7F76D200E42D93 /* InfoVC.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -189,6 +192,7 @@
 				4596BAFC1C7CAFF300B338C0 /* Clock.swift in Sources */,
 				4596BAFA1C7CA0E000B338C0 /* IntroVC.swift in Sources */,
 				45BFFD0B1C7E1F7100E42D93 /* JSON.swift in Sources */,
+				45BFFD131C7F76D200E42D93 /* InfoVC.swift in Sources */,
 				455570D31C7A071500C62A44 /* Ottawa.xcdatamodeld in Sources */,
 				455570CD1C7A071500C62A44 /* ViewController.swift in Sources */,
 				455570CB1C7A071500C62A44 /* AppDelegate.swift in Sources */,
