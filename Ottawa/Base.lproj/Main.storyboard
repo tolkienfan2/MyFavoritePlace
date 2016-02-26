@@ -25,13 +25,6 @@
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                                 <color key="backgroundColor" red="0.24682606263982104" green="0.50196078431372548" blue="0.79506606543624159" alpha="1" colorSpace="calibratedRGB"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="CanadaFlag" translatesAutoresizingMaskIntoConstraints="NO" id="NfZ-r3-gsa">
-                                <rect key="frame" x="509" y="543" width="71" height="37"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="71" id="hsX-YP-nsa"/>
-                                    <constraint firstAttribute="height" constant="37" id="wO0-Ep-Fkf"/>
-                                </constraints>
-                            </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="z6n-xg-RUJ">
                                 <rect key="frame" x="20" y="58" width="298" height="109"/>
                                 <subviews>
@@ -91,13 +84,11 @@
                                 <variation key="heightClass=regular-widthClass=regular" constant="10"/>
                             </constraint>
                             <constraint firstItem="Zw9-nr-EzZ" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="5XY-fw-m3a"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="NfZ-r3-gsa" secondAttribute="bottom" constant="20" id="E5R-bE-9i4"/>
                             <constraint firstItem="kyp-Y1-QUS" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Ga6-ul-IwP"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="kyp-Y1-QUS" secondAttribute="bottom" id="HiK-BZ-Jcb"/>
                             <constraint firstItem="Zw9-nr-EzZ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="V5S-6A-Dng">
                                 <variation key="heightClass=regular-widthClass=regular" constant="10"/>
                             </constraint>
-                            <constraint firstItem="NfZ-r3-gsa" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="Xk4-Nd-jer"/>
                             <constraint firstAttribute="trailing" secondItem="kyp-Y1-QUS" secondAttribute="trailing" id="kqj-M0-uOM"/>
                             <constraint firstItem="z6n-xg-RUJ" firstAttribute="top" secondItem="Zw9-nr-EzZ" secondAttribute="bottom" id="qE8-DK-Pqv">
                                 <variation key="heightClass=regular-widthClass=regular" constant="20"/>
@@ -122,35 +113,54 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="YbW-ya-Fyx">
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="YbW-ya-Fyx" userLabel="MainStack">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="0me-Pi-2un">
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="0me-Pi-2un" userLabel="TopStack">
                                         <rect key="frame" x="0.0" y="0.0" width="600" height="300"/>
                                         <subviews>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="675px-Royal_Canadian_Mint_Ottawa" translatesAutoresizingMaskIntoConstraints="NO" id="tDY-gN-pJk">
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Royal_Canadian_Mint_Ottawa" translatesAutoresizingMaskIntoConstraints="NO" id="tDY-gN-pJk">
                                                 <rect key="frame" x="0.0" y="0.0" width="300" height="300"/>
                                                 <accessibility key="accessibilityConfiguration">
                                                     <accessibilityTraits key="traits" image="YES" notEnabled="YES"/>
                                                 </accessibility>
                                             </imageView>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="RememberanceDay2015" translatesAutoresizingMaskIntoConstraints="NO" id="UKv-JB-yb8">
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="260" verticalHuggingPriority="260" horizontalCompressionResistancePriority="740" verticalCompressionResistancePriority="740" image="RememberanceDay2015" translatesAutoresizingMaskIntoConstraints="NO" id="UKv-JB-yb8">
                                                 <rect key="frame" x="300" y="0.0" width="300" height="300"/>
                                                 <accessibility key="accessibilityConfiguration">
                                                     <accessibilityTraits key="traits" image="YES" notEnabled="YES"/>
                                                 </accessibility>
                                             </imageView>
                                         </subviews>
+                                        <variation key="heightClass=regular-widthClass=compact" axis="vertical"/>
                                     </stackView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Royal_Canadian_Mint_Ottawa" translatesAutoresizingMaskIntoConstraints="NO" id="g79-SB-5m6">
+                                        <rect key="frame" x="0.0" y="0.0" width="300" height="300"/>
+                                        <accessibility key="accessibilityConfiguration">
+                                            <accessibilityTraits key="traits" image="YES" notEnabled="YES"/>
+                                        </accessibility>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="260" verticalHuggingPriority="260" horizontalCompressionResistancePriority="740" verticalCompressionResistancePriority="740" image="RememberanceDay2015" translatesAutoresizingMaskIntoConstraints="NO" id="FqD-bA-RHj">
+                                        <rect key="frame" x="300" y="0.0" width="300" height="300"/>
+                                        <accessibility key="accessibilityConfiguration">
+                                            <accessibilityTraits key="traits" image="YES" notEnabled="YES"/>
+                                        </accessibility>
+                                    </imageView>
                                     <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" bounces="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4DC-oZ-yJI">
                                         <rect key="frame" x="0.0" y="300" width="600" height="300"/>
                                         <subviews>
                                             <imageView multipleTouchEnabled="YES" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Winterlude" translatesAutoresizingMaskIntoConstraints="NO" id="1or-Ww-Crd">
-                                                <rect key="frame" x="0.0" y="-45" width="1248" height="390"/>
+                                                <rect key="frame" x="0.0" y="-100" width="1600" height="500"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="1or-Ww-Crd" secondAttribute="height" multiplier="16:5" id="hub-Jb-WI6"/>
                                                 </constraints>
+                                                <variation key="heightClass=compact" misplaced="YES">
+                                                    <rect key="frame" x="0.0" y="-150" width="1600" height="500"/>
+                                                </variation>
                                                 <variation key="heightClass=compact-widthClass=regular" preservesSuperviewLayoutMargins="YES"/>
+                                                <variation key="heightClass=regular-widthClass=regular" misplaced="YES">
+                                                    <rect key="frame" x="0.0" y="-50" width="1600" height="500"/>
+                                                </variation>
                                             </imageView>
                                         </subviews>
                                         <constraints>
@@ -159,10 +169,41 @@
                                             <constraint firstItem="1or-Ww-Crd" firstAttribute="height" secondItem="4DC-oZ-yJI" secondAttribute="height" multiplier="1.3" id="QJn-xg-sqm">
                                                 <variation key="heightClass=compact-widthClass=regular" constant="0.0"/>
                                             </constraint>
+                                            <constraint firstItem="1or-Ww-Crd" firstAttribute="height" secondItem="4DC-oZ-yJI" secondAttribute="height" id="UBq-ev-ezc"/>
                                             <constraint firstItem="1or-Ww-Crd" firstAttribute="centerY" secondItem="4DC-oZ-yJI" secondAttribute="centerY" id="fEs-F7-afm"/>
                                         </constraints>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="QJn-xg-sqm"/>
+                                                <exclude reference="UBq-ev-ezc"/>
+                                            </mask>
+                                        </variation>
+                                        <variation key="heightClass=compact" ambiguous="YES">
+                                            <rect key="frame" x="0.0" y="200" width="600" height="200"/>
+                                            <mask key="constraints">
+                                                <include reference="QJn-xg-sqm"/>
+                                            </mask>
+                                        </variation>
+                                        <variation key="heightClass=compact-widthClass=compact" ambiguous="YES">
+                                            <rect key="frame" x="0.0" y="200" width="400" height="200"/>
+                                        </variation>
                                         <variation key="heightClass=compact-widthClass=regular" ambiguous="YES">
                                             <rect key="frame" x="0.0" y="200" width="800" height="200"/>
+                                            <mask key="constraints">
+                                                <include reference="QJn-xg-sqm"/>
+                                            </mask>
+                                        </variation>
+                                        <variation key="heightClass=regular-widthClass=compact" ambiguous="YES">
+                                            <rect key="frame" x="0.0" y="533" width="400" height="267"/>
+                                            <mask key="constraints">
+                                                <include reference="UBq-ev-ezc"/>
+                                            </mask>
+                                        </variation>
+                                        <variation key="heightClass=regular-widthClass=regular" ambiguous="YES">
+                                            <rect key="frame" x="0.0" y="400" width="800" height="400"/>
+                                            <mask key="constraints">
+                                                <include reference="UBq-ev-ezc"/>
+                                            </mask>
                                         </variation>
                                     </scrollView>
                                 </subviews>
@@ -173,34 +214,76 @@
                                     <constraint firstItem="4DC-oZ-yJI" firstAttribute="width" secondItem="YbW-ya-Fyx" secondAttribute="width" id="vfe-fZ-6ni"/>
                                 </constraints>
                                 <variation key="default">
+                                    <mask key="subviews">
+                                        <exclude reference="g79-SB-5m6"/>
+                                        <exclude reference="FqD-bA-RHj"/>
+                                    </mask>
                                     <mask key="constraints">
                                         <exclude reference="j9m-oA-1yh"/>
                                     </mask>
                                 </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="subviews">
+                                        <exclude reference="0me-Pi-2un"/>
+                                        <include reference="g79-SB-5m6"/>
+                                        <include reference="FqD-bA-RHj"/>
+                                    </mask>
+                                </variation>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mVt-fk-CnB" customClass="RoundedButton" customModule="Ottawa" customModuleProvider="target">
-                                <rect key="frame" x="28" y="28" width="98" height="30"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="15"/>
-                                <state key="normal" title="Places to See">
+                            <button opaque="NO" contentMode="scaleAspectFit" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mVt-fk-CnB" customClass="RoundedButton" customModule="Ottawa" customModuleProvider="target">
+                                <rect key="frame" x="28" y="28" width="111" height="30"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="20"/>
+                                <state key="normal" title=" Sights ">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <variation key="heightClass=compact">
+                                    <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="16"/>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="14"/>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="25"/>
+                                </variation>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M4o-Ip-pJO" customClass="RoundedButton" customModule="Ottawa" customModuleProvider="target">
-                                <rect key="frame" x="480" y="28" width="92" height="30"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="15"/>
-                                <state key="normal" title="Things to Do">
+                            <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M4o-Ip-pJO" customClass="RoundedButton" customModule="Ottawa" customModuleProvider="target">
+                                <rect key="frame" x="404" y="256" width="171" height="36"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="20"/>
+                                <state key="normal" title=" Culture &amp; Events ">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <variation key="heightClass=compact" misplaced="YES">
+                                    <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="16"/>
+                                    <rect key="frame" x="401" y="144" width="171" height="36"/>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="14"/>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=regular" misplaced="YES">
+                                    <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="25"/>
+                                    <rect key="frame" x="566" y="338" width="213" height="42"/>
+                                </variation>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zWQ-zm-cd5" customClass="RoundedButton" customModule="Ottawa" customModuleProvider="target">
-                                <rect key="frame" x="494" y="513" width="78" height="30"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="15"/>
-                                <state key="normal" title="Winterlude">
+                                <rect key="frame" x="460" y="507" width="115" height="36"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="20"/>
+                                <state key="normal" title=" Winterlude ">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <variation key="heightClass=compact" misplaced="YES">
+                                    <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="16"/>
+                                    <rect key="frame" x="457" y="307" width="115" height="36"/>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="14"/>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=regular" misplaced="YES">
+                                    <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="25"/>
+                                    <rect key="frame" x="636" y="701" width="143" height="42"/>
+                                </variation>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Adk-Fl-zRi">
-                                <rect key="frame" x="20" y="303" width="71" height="75"/>
+                                <rect key="frame" x="20" y="320" width="71" height="75"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="Adk-Fl-zRi" secondAttribute="height" multiplier="55:58" id="vUG-sz-ZwS"/>
                                 </constraints>
@@ -211,17 +294,26 @@
                         <constraints>
                             <constraint firstItem="Adk-Fl-zRi" firstAttribute="leading" secondItem="gDY-ac-TY3" secondAttribute="leadingMargin" id="47h-Na-eoS"/>
                             <constraint firstItem="YbW-ya-Fyx" firstAttribute="height" secondItem="gDY-ac-TY3" secondAttribute="height" id="8Ds-c2-TQa"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="M4o-Ip-pJO" secondAttribute="trailing" constant="8" id="Ase-zt-0iX"/>
-                            <constraint firstItem="M4o-Ip-pJO" firstAttribute="top" secondItem="Dn2-gk-BdR" secondAttribute="bottom" constant="8" id="DlM-yK-9c8"/>
-                            <constraint firstItem="mVt-fk-CnB" firstAttribute="leading" secondItem="gDY-ac-TY3" secondAttribute="leadingMargin" constant="8" id="Ex3-Ij-hGV"/>
-                            <constraint firstItem="mVt-fk-CnB" firstAttribute="top" secondItem="Dn2-gk-BdR" secondAttribute="bottom" constant="8" id="GWt-OM-OWE"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="M4o-Ip-pJO" secondAttribute="trailing" constant="5" id="Ase-zt-0iX">
+                                <variation key="heightClass=regular-widthClass=compact" constant="0.0"/>
+                            </constraint>
+                            <constraint firstItem="mVt-fk-CnB" firstAttribute="leading" secondItem="gDY-ac-TY3" secondAttribute="leadingMargin" constant="5" id="Ex3-Ij-hGV">
+                                <variation key="heightClass=regular-widthClass=compact" constant="0.0"/>
+                            </constraint>
+                            <constraint firstItem="mVt-fk-CnB" firstAttribute="top" secondItem="Dn2-gk-BdR" secondAttribute="bottom" constant="8" id="GWt-OM-OWE">
+                                <variation key="heightClass=compact" constant="0.0"/>
+                                <variation key="heightClass=regular-widthClass=compact" constant="0.0"/>
+                            </constraint>
                             <constraint firstItem="YbW-ya-Fyx" firstAttribute="centerX" secondItem="gDY-ac-TY3" secondAttribute="centerX" id="aqm-sC-Qnp"/>
                             <constraint firstItem="YbW-ya-Fyx" firstAttribute="centerY" secondItem="gDY-ac-TY3" secondAttribute="centerY" id="b8u-JC-FN8"/>
                             <constraint firstItem="YbW-ya-Fyx" firstAttribute="width" secondItem="gDY-ac-TY3" secondAttribute="width" id="crY-Qu-vtn"/>
+                            <constraint firstItem="4DC-oZ-yJI" firstAttribute="top" secondItem="M4o-Ip-pJO" secondAttribute="bottom" constant="8" id="ezZ-6q-ulG"/>
                             <constraint firstItem="Adk-Fl-zRi" firstAttribute="height" secondItem="4DC-oZ-yJI" secondAttribute="height" multiplier="0.25" id="mFO-aq-rWw"/>
-                            <constraint firstItem="Adk-Fl-zRi" firstAttribute="centerY" secondItem="gDY-ac-TY3" secondAttribute="centerY" constant="40" id="mrc-ub-I1j"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="zWQ-zm-cd5" secondAttribute="trailing" constant="8" id="nf7-wh-bz3"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="zWQ-zm-cd5" secondAttribute="trailing" constant="5" id="nf7-wh-bz3">
+                                <variation key="heightClass=regular-widthClass=compact" constant="0.0"/>
+                            </constraint>
                             <constraint firstItem="h2o-4P-AFC" firstAttribute="top" secondItem="zWQ-zm-cd5" secondAttribute="bottom" constant="8" id="ola-cv-t5l"/>
+                            <constraint firstItem="Adk-Fl-zRi" firstAttribute="top" secondItem="4DC-oZ-yJI" secondAttribute="top" constant="20" id="tx6-GI-GQn"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="" image="Screenshot-30" id="wKx-oe-o1f" userLabel="Attractions"/>
@@ -326,9 +418,8 @@
                                     <fontDescription key="fontDescription" name="AvenirNextCondensed-Regular" family="Avenir Next Condensed" pointSize="10"/>
                                     <rect key="frame" x="0.0" y="240" width="482" height="12"/>
                                 </variation>
-                                <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
+                                <variation key="heightClass=regular-widthClass=compact">
                                     <fontDescription key="fontDescription" name="AvenirNextCondensed-Regular" family="Avenir Next Condensed" pointSize="8"/>
-                                    <rect key="frame" x="0.0" y="480" width="482" height="12"/>
                                 </variation>
                             </label>
                         </subviews>
@@ -684,15 +775,14 @@
         </scene>
     </scenes>
     <resources>
-        <image name="675px-Royal_Canadian_Mint_Ottawa" width="674" height="817"/>
-        <image name="CanadaFlag" width="307" height="154"/>
         <image name="Canada_Ottawa_Panorama" width="4706" height="800"/>
         <image name="Canal-rideau" width="2048" height="1536"/>
         <image name="Geo-fence-30" width="30" height="30"/>
         <image name="Info-30" width="30" height="30"/>
         <image name="Ottawa2017" width="220" height="232"/>
         <image name="Ottawa_-_On_-_Parliament_Buildings_National_Historic_Site_of_Canada_-_Night" width="2048" height="1365"/>
-        <image name="RememberanceDay2015" width="478" height="428"/>
+        <image name="RememberanceDay2015" width="478" height="540"/>
+        <image name="Royal_Canadian_Mint_Ottawa" width="478" height="579"/>
         <image name="Screenshot-30" width="30" height="30"/>
         <image name="Winterlude" width="1600" height="500"/>
         <image name="canal" width="1450" height="816"/>
