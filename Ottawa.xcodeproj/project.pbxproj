@@ -19,6 +19,12 @@
 		45A567B81C7A9E1400B7985F /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45A567B71C7A9E1400B7985F /* RoundedButton.swift */; };
 		45BFFD0B1C7E1F7100E42D93 /* JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45BFFD0A1C7E1F7100E42D93 /* JSON.swift */; };
 		45BFFD131C7F76D200E42D93 /* InfoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45BFFD121C7F76D200E42D93 /* InfoVC.swift */; };
+		45BFFD161C7F9DA000E42D93 /* WinterludeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45BFFD141C7F9DA000E42D93 /* WinterludeVC.swift */; };
+		45BFFD171C7F9DA000E42D93 /* WinterludeVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 45BFFD151C7F9DA000E42D93 /* WinterludeVC.xib */; };
+		45BFFD1A1C7F9DC200E42D93 /* SightsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45BFFD181C7F9DC200E42D93 /* SightsVC.swift */; };
+		45BFFD1B1C7F9DC200E42D93 /* SightsVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 45BFFD191C7F9DC200E42D93 /* SightsVC.xib */; };
+		45BFFD1E1C7F9E5400E42D93 /* EventsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45BFFD1C1C7F9E5400E42D93 /* EventsVC.swift */; };
+		45BFFD1F1C7F9E5400E42D93 /* EventsVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 45BFFD1D1C7F9E5400E42D93 /* EventsVC.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +42,12 @@
 		45A567B71C7A9E1400B7985F /* RoundedButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
 		45BFFD0A1C7E1F7100E42D93 /* JSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSON.swift; sourceTree = "<group>"; };
 		45BFFD121C7F76D200E42D93 /* InfoVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoVC.swift; sourceTree = "<group>"; };
+		45BFFD141C7F9DA000E42D93 /* WinterludeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WinterludeVC.swift; sourceTree = "<group>"; };
+		45BFFD151C7F9DA000E42D93 /* WinterludeVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WinterludeVC.xib; sourceTree = "<group>"; };
+		45BFFD181C7F9DC200E42D93 /* SightsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SightsVC.swift; sourceTree = "<group>"; };
+		45BFFD191C7F9DC200E42D93 /* SightsVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SightsVC.xib; sourceTree = "<group>"; };
+		45BFFD1C1C7F9E5400E42D93 /* EventsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventsVC.swift; sourceTree = "<group>"; };
+		45BFFD1D1C7F9E5400E42D93 /* EventsVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EventsVC.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,9 +85,7 @@
 				4596BAF31C7CA02400B338C0 /* Controllers */,
 				4596BAF41C7CA02C00B338C0 /* Utilities */,
 				455570CA1C7A071500C62A44 /* AppDelegate.swift */,
-				455570CE1C7A071500C62A44 /* Main.storyboard */,
 				455570D41C7A071500C62A44 /* Assets.xcassets */,
-				455570D61C7A071500C62A44 /* LaunchScreen.storyboard */,
 				455570D91C7A071500C62A44 /* Info.plist */,
 				455570D11C7A071500C62A44 /* Ottawa.xcdatamodeld */,
 			);
@@ -88,6 +98,9 @@
 				455570CC1C7A071500C62A44 /* ViewController.swift */,
 				4596BAF91C7CA0E000B338C0 /* IntroVC.swift */,
 				45BFFD121C7F76D200E42D93 /* InfoVC.swift */,
+				45BFFD181C7F9DC200E42D93 /* SightsVC.swift */,
+				45BFFD1C1C7F9E5400E42D93 /* EventsVC.swift */,
+				45BFFD141C7F9DA000E42D93 /* WinterludeVC.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -113,6 +126,11 @@
 		4596BAF61C7CA04A00B338C0 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				455570D61C7A071500C62A44 /* LaunchScreen.storyboard */,
+				455570CE1C7A071500C62A44 /* Main.storyboard */,
+				45BFFD151C7F9DA000E42D93 /* WinterludeVC.xib */,
+				45BFFD191C7F9DC200E42D93 /* SightsVC.xib */,
+				45BFFD1D1C7F9E5400E42D93 /* EventsVC.xib */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -175,9 +193,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				45BFFD1B1C7F9DC200E42D93 /* SightsVC.xib in Resources */,
 				455570D81C7A071500C62A44 /* LaunchScreen.storyboard in Resources */,
+				45BFFD171C7F9DA000E42D93 /* WinterludeVC.xib in Resources */,
 				455570D51C7A071500C62A44 /* Assets.xcassets in Resources */,
 				455570D01C7A071500C62A44 /* Main.storyboard in Resources */,
+				45BFFD1F1C7F9E5400E42D93 /* EventsVC.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -196,7 +217,10 @@
 				455570D31C7A071500C62A44 /* Ottawa.xcdatamodeld in Sources */,
 				455570CD1C7A071500C62A44 /* ViewController.swift in Sources */,
 				455570CB1C7A071500C62A44 /* AppDelegate.swift in Sources */,
+				45BFFD1A1C7F9DC200E42D93 /* SightsVC.swift in Sources */,
 				45A567B81C7A9E1400B7985F /* RoundedButton.swift in Sources */,
+				45BFFD161C7F9DA000E42D93 /* WinterludeVC.swift in Sources */,
+				45BFFD1E1C7F9E5400E42D93 /* EventsVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

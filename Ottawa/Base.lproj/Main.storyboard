@@ -4,6 +4,7 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
         <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
     </dependencies>
@@ -120,7 +121,108 @@
                     <view key="view" contentMode="scaleToFill" id="gDY-ac-TY3">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="YbW-ya-Fyx">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="0me-Pi-2un">
+                                        <rect key="frame" x="0.0" y="0.0" width="600" height="300"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="675px-Royal_Canadian_Mint_Ottawa" translatesAutoresizingMaskIntoConstraints="NO" id="tDY-gN-pJk">
+                                                <rect key="frame" x="0.0" y="0.0" width="300" height="300"/>
+                                                <accessibility key="accessibilityConfiguration">
+                                                    <accessibilityTraits key="traits" image="YES" notEnabled="YES"/>
+                                                </accessibility>
+                                            </imageView>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="RememberanceDay2015" translatesAutoresizingMaskIntoConstraints="NO" id="UKv-JB-yb8">
+                                                <rect key="frame" x="300" y="0.0" width="300" height="300"/>
+                                                <accessibility key="accessibilityConfiguration">
+                                                    <accessibilityTraits key="traits" image="YES" notEnabled="YES"/>
+                                                </accessibility>
+                                            </imageView>
+                                        </subviews>
+                                    </stackView>
+                                    <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" bounces="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4DC-oZ-yJI">
+                                        <rect key="frame" x="0.0" y="300" width="600" height="300"/>
+                                        <subviews>
+                                            <imageView multipleTouchEnabled="YES" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Winterlude" translatesAutoresizingMaskIntoConstraints="NO" id="1or-Ww-Crd">
+                                                <rect key="frame" x="0.0" y="-45" width="1248" height="390"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="1or-Ww-Crd" secondAttribute="height" multiplier="16:5" id="hub-Jb-WI6"/>
+                                                </constraints>
+                                                <variation key="heightClass=compact-widthClass=regular" preservesSuperviewLayoutMargins="YES"/>
+                                            </imageView>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="1or-Ww-Crd" firstAttribute="leading" secondItem="4DC-oZ-yJI" secondAttribute="leading" id="7ia-Sv-zdF"/>
+                                            <constraint firstAttribute="trailing" secondItem="1or-Ww-Crd" secondAttribute="trailing" id="H66-Nt-bEc"/>
+                                            <constraint firstItem="1or-Ww-Crd" firstAttribute="height" secondItem="4DC-oZ-yJI" secondAttribute="height" multiplier="1.3" id="QJn-xg-sqm">
+                                                <variation key="heightClass=compact-widthClass=regular" constant="0.0"/>
+                                            </constraint>
+                                            <constraint firstItem="1or-Ww-Crd" firstAttribute="centerY" secondItem="4DC-oZ-yJI" secondAttribute="centerY" id="fEs-F7-afm"/>
+                                        </constraints>
+                                        <variation key="heightClass=compact-widthClass=regular" ambiguous="YES">
+                                            <rect key="frame" x="0.0" y="200" width="800" height="200"/>
+                                        </variation>
+                                    </scrollView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="0me-Pi-2un" firstAttribute="top" secondItem="YbW-ya-Fyx" secondAttribute="top" id="8Kv-xE-L2V"/>
+                                    <constraint firstItem="4DC-oZ-yJI" firstAttribute="bottom" secondItem="0me-Pi-2un" secondAttribute="bottom" id="j9m-oA-1yh"/>
+                                    <constraint firstItem="0me-Pi-2un" firstAttribute="centerX" secondItem="YbW-ya-Fyx" secondAttribute="centerX" id="ncF-eo-AOd"/>
+                                    <constraint firstItem="4DC-oZ-yJI" firstAttribute="width" secondItem="YbW-ya-Fyx" secondAttribute="width" id="vfe-fZ-6ni"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="j9m-oA-1yh"/>
+                                    </mask>
+                                </variation>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mVt-fk-CnB" customClass="RoundedButton" customModule="Ottawa" customModuleProvider="target">
+                                <rect key="frame" x="28" y="28" width="98" height="30"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="15"/>
+                                <state key="normal" title="Places to See">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M4o-Ip-pJO" customClass="RoundedButton" customModule="Ottawa" customModuleProvider="target">
+                                <rect key="frame" x="480" y="28" width="92" height="30"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="15"/>
+                                <state key="normal" title="Things to Do">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zWQ-zm-cd5" customClass="RoundedButton" customModule="Ottawa" customModuleProvider="target">
+                                <rect key="frame" x="494" y="513" width="78" height="30"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="15"/>
+                                <state key="normal" title="Winterlude">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Adk-Fl-zRi">
+                                <rect key="frame" x="20" y="303" width="71" height="75"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Adk-Fl-zRi" secondAttribute="height" multiplier="55:58" id="vUG-sz-ZwS"/>
+                                </constraints>
+                                <state key="normal" image="Ottawa2017"/>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Adk-Fl-zRi" firstAttribute="leading" secondItem="gDY-ac-TY3" secondAttribute="leadingMargin" id="47h-Na-eoS"/>
+                            <constraint firstItem="YbW-ya-Fyx" firstAttribute="height" secondItem="gDY-ac-TY3" secondAttribute="height" id="8Ds-c2-TQa"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="M4o-Ip-pJO" secondAttribute="trailing" constant="8" id="Ase-zt-0iX"/>
+                            <constraint firstItem="M4o-Ip-pJO" firstAttribute="top" secondItem="Dn2-gk-BdR" secondAttribute="bottom" constant="8" id="DlM-yK-9c8"/>
+                            <constraint firstItem="mVt-fk-CnB" firstAttribute="leading" secondItem="gDY-ac-TY3" secondAttribute="leadingMargin" constant="8" id="Ex3-Ij-hGV"/>
+                            <constraint firstItem="mVt-fk-CnB" firstAttribute="top" secondItem="Dn2-gk-BdR" secondAttribute="bottom" constant="8" id="GWt-OM-OWE"/>
+                            <constraint firstItem="YbW-ya-Fyx" firstAttribute="centerX" secondItem="gDY-ac-TY3" secondAttribute="centerX" id="aqm-sC-Qnp"/>
+                            <constraint firstItem="YbW-ya-Fyx" firstAttribute="centerY" secondItem="gDY-ac-TY3" secondAttribute="centerY" id="b8u-JC-FN8"/>
+                            <constraint firstItem="YbW-ya-Fyx" firstAttribute="width" secondItem="gDY-ac-TY3" secondAttribute="width" id="crY-Qu-vtn"/>
+                            <constraint firstItem="Adk-Fl-zRi" firstAttribute="height" secondItem="4DC-oZ-yJI" secondAttribute="height" multiplier="0.25" id="mFO-aq-rWw"/>
+                            <constraint firstItem="Adk-Fl-zRi" firstAttribute="centerY" secondItem="gDY-ac-TY3" secondAttribute="centerY" constant="40" id="mrc-ub-I1j"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="zWQ-zm-cd5" secondAttribute="trailing" constant="8" id="nf7-wh-bz3"/>
+                            <constraint firstItem="h2o-4P-AFC" firstAttribute="top" secondItem="zWQ-zm-cd5" secondAttribute="bottom" constant="8" id="ola-cv-t5l"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="" image="Screenshot-30" id="wKx-oe-o1f" userLabel="Attractions"/>
                 </viewController>
@@ -174,18 +276,27 @@
                                 <variation key="heightClass=compact">
                                     <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
                                 </variation>
+                                <variation key="heightClass=regular" ambiguous="YES" misplaced="YES">
+                                    <rect key="frame" x="10" y="214" width="210" height="184"/>
+                                </variation>
                                 <variation key="heightClass=regular-widthClass=compact">
                                     <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
                                 </variation>
                             </textView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="fai-l1-DZc">
-                                <rect key="frame" x="165" y="25" width="135" height="56"/>
+                                <rect key="frame" x="180" y="25" width="135" height="56"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="History &amp;" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kp4-9n-q94">
                                         <rect key="frame" x="0.0" y="0.0" width="119" height="28"/>
                                         <fontDescription key="fontDescription" name="Georgia-Bold" family="Georgia" pointSize="24"/>
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
+                                        <variation key="heightClass=compact">
+                                            <fontDescription key="fontDescription" name="Georgia-Bold" family="Georgia" pointSize="18"/>
+                                        </variation>
+                                        <variation key="heightClass=regular-widthClass=compact">
+                                            <fontDescription key="fontDescription" name="Georgia-Bold" family="Georgia" pointSize="16"/>
+                                        </variation>
                                         <variation key="heightClass=regular-widthClass=regular">
                                             <fontDescription key="fontDescription" name="Georgia-Bold" family="Georgia" pointSize="36"/>
                                         </variation>
@@ -195,6 +306,12 @@
                                         <fontDescription key="fontDescription" name="Georgia-Bold" family="Georgia" pointSize="24"/>
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
+                                        <variation key="heightClass=compact">
+                                            <fontDescription key="fontDescription" name="Georgia-Bold" family="Georgia" pointSize="18"/>
+                                        </variation>
+                                        <variation key="heightClass=regular-widthClass=compact">
+                                            <fontDescription key="fontDescription" name="Georgia-Bold" family="Georgia" pointSize="16"/>
+                                        </variation>
                                         <variation key="heightClass=regular-widthClass=regular">
                                             <fontDescription key="fontDescription" name="Georgia-Bold" family="Georgia" pointSize="36"/>
                                         </variation>
@@ -217,7 +334,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="fai-l1-DZc" firstAttribute="trailing" secondItem="wPr-V1-PF9" secondAttribute="centerX" id="1Vh-Ge-Z2H"/>
+                            <constraint firstItem="fai-l1-DZc" firstAttribute="trailing" secondItem="wPr-V1-PF9" secondAttribute="centerX" constant="15" id="1Vh-Ge-Z2H"/>
                             <constraint firstItem="bgt-7j-tgh" firstAttribute="trailing" secondItem="7lM-9d-EbR" secondAttribute="trailing" constant="-7" id="1sB-aN-uc6"/>
                             <constraint firstItem="unf-Ei-Ucg" firstAttribute="leading" secondItem="7lM-9d-EbR" secondAttribute="leading" id="3yu-LV-JCV"/>
                             <constraint firstAttribute="bottom" secondItem="7lM-9d-EbR" secondAttribute="bottom" id="9Iy-4l-0Z1"/>
@@ -567,13 +684,17 @@
         </scene>
     </scenes>
     <resources>
+        <image name="675px-Royal_Canadian_Mint_Ottawa" width="674" height="817"/>
         <image name="CanadaFlag" width="307" height="154"/>
         <image name="Canada_Ottawa_Panorama" width="4706" height="800"/>
         <image name="Canal-rideau" width="2048" height="1536"/>
         <image name="Geo-fence-30" width="30" height="30"/>
         <image name="Info-30" width="30" height="30"/>
+        <image name="Ottawa2017" width="220" height="232"/>
         <image name="Ottawa_-_On_-_Parliament_Buildings_National_Historic_Site_of_Canada_-_Night" width="2048" height="1365"/>
+        <image name="RememberanceDay2015" width="478" height="428"/>
         <image name="Screenshot-30" width="30" height="30"/>
+        <image name="Winterlude" width="1600" height="500"/>
         <image name="canal" width="1450" height="816"/>
     </resources>
 </document>
