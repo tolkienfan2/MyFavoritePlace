@@ -10,26 +10,20 @@ import UIKit
 
 class WinterludeVC: UIViewController {
 
+    @IBOutlet weak var backButton: RoundedButton!
+    @IBOutlet weak var winterludeText: UITextView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
     
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+        dispatch_async(dispatch_get_main_queue(), {self.winterludeText.scrollRangeToVisible(NSMakeRange(0, 0))} )
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
     }
-    */
-
+    
+    @IBAction func goAttractions(sender: AnyObject) {
+        self.dismissViewControllerAnimated(true, completion: nil)
+    }
 }
