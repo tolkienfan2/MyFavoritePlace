@@ -158,8 +158,8 @@
                                 </subviews>
                                 <variation key="heightClass=regular-widthClass=compact" distribution="fillProportionally"/>
                             </stackView>
-                            <button hidden="YES" opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mVt-fk-CnB" customClass="RoundedButton" customModule="Ottawa" customModuleProvider="target">
-                                <rect key="frame" x="25" y="5" width="72" height="36"/>
+                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mVt-fk-CnB" customClass="RoundedButton" customModule="Ottawa" customModuleProvider="target">
+                                <rect key="frame" x="20" y="5" width="72" height="36"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="20"/>
                                 <state key="normal" title=" Sights ">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -175,8 +175,8 @@
                                     <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="25"/>
                                 </variation>
                             </button>
-                            <button hidden="YES" opaque="NO" contentMode="center" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M4o-Ip-pJO" customClass="RoundedButton" customModule="Ottawa" customModuleProvider="target">
-                                <rect key="frame" x="434" y="0.0" width="171" height="36"/>
+                            <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M4o-Ip-pJO" customClass="RoundedButton" customModule="Ottawa" customModuleProvider="target">
+                                <rect key="frame" x="409" y="259" width="171" height="36"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="20"/>
                                 <state key="normal" title=" Culture &amp; Events ">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -194,8 +194,8 @@
                                     <rect key="frame" x="566" y="338" width="213" height="42"/>
                                 </variation>
                             </button>
-                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zWQ-zm-cd5" customClass="RoundedButton" customModule="Ottawa" customModuleProvider="target">
-                                <rect key="frame" x="460" y="507" width="115" height="36"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zWQ-zm-cd5" customClass="RoundedButton" customModule="Ottawa" customModuleProvider="target">
+                                <rect key="frame" x="465" y="510" width="115" height="36"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="20"/>
                                 <state key="normal" title=" Winterlude ">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -217,8 +217,11 @@
                                     <segue destination="umC-kH-Ai6" kind="show" identifier="goWinterlude" id="PU1-yQ-Jco"/>
                                 </connections>
                             </button>
-                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Adk-Fl-zRi">
-                                <rect key="frame" x="20" y="483" width="57" height="60"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Adk-Fl-zRi">
+                                <rect key="frame" x="20" y="456" width="85" height="90"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Adk-Fl-zRi" secondAttribute="height" multiplier="55:58" id="Dxu-UC-bMf"/>
+                                </constraints>
                                 <state key="normal" image="Ottawa2017"/>
                                 <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
                                     <rect key="frame" x="20" y="690" width="51" height="53"/>
@@ -227,11 +230,18 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="h2o-4P-AFC" firstAttribute="top" secondItem="zWQ-zm-cd5" secondAttribute="bottom" constant="5" id="33c-fZ-x2V"/>
+                            <constraint firstItem="h2o-4P-AFC" firstAttribute="top" secondItem="Adk-Fl-zRi" secondAttribute="bottom" constant="5" id="9IV-i8-50O"/>
+                            <constraint firstItem="Adk-Fl-zRi" firstAttribute="leading" secondItem="gDY-ac-TY3" secondAttribute="leadingMargin" id="GRN-Kf-O58"/>
                             <constraint firstItem="SJN-jG-WIC" firstAttribute="leading" secondItem="gDY-ac-TY3" secondAttribute="leading" id="GZu-xA-e7k"/>
+                            <constraint firstItem="M4o-Ip-pJO" firstAttribute="bottom" secondItem="cT8-FW-lyb" secondAttribute="bottom" constant="-5" id="S3o-7g-HY8"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="zWQ-zm-cd5" secondAttribute="trailing" id="TBy-Pi-3zM"/>
+                            <constraint firstItem="Adk-Fl-zRi" firstAttribute="height" secondItem="MxD-k5-BRP" secondAttribute="height" multiplier="0.3" id="U2k-35-4pp"/>
                             <constraint firstItem="mVt-fk-CnB" firstAttribute="top" secondItem="gDY-ac-TY3" secondAttribute="topMargin" constant="5" id="ZMN-c4-UoS"/>
-                            <constraint firstItem="mVt-fk-CnB" firstAttribute="leading" secondItem="gDY-ac-TY3" secondAttribute="leadingMargin" constant="5" id="Zla-Un-Re3"/>
+                            <constraint firstItem="mVt-fk-CnB" firstAttribute="leading" secondItem="gDY-ac-TY3" secondAttribute="leadingMargin" id="Zla-Un-Re3"/>
                             <constraint firstItem="SJN-jG-WIC" firstAttribute="width" secondItem="gDY-ac-TY3" secondAttribute="width" id="dok-4O-qDK"/>
                             <constraint firstItem="SJN-jG-WIC" firstAttribute="top" secondItem="gDY-ac-TY3" secondAttribute="top" id="heb-Hm-8uB"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="M4o-Ip-pJO" secondAttribute="trailing" id="w0c-7Q-prY"/>
                             <constraint firstItem="SJN-jG-WIC" firstAttribute="height" secondItem="gDY-ac-TY3" secondAttribute="height" id="w6U-iu-J5h"/>
                         </constraints>
                     </view>
