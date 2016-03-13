@@ -135,25 +135,39 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="SJN-jG-WIC" userLabel="PhotoStack">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="cT8-FW-lyb" userLabel="TopStack">
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="cT8-FW-lyb" userLabel="TopStack">
                                         <rect key="frame" x="0.0" y="0.0" width="600" height="300"/>
                                         <subviews>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Royal_Canadian_Mint_Ottawa" translatesAutoresizingMaskIntoConstraints="NO" id="YdP-YD-op2">
                                                 <rect key="frame" x="0.0" y="0.0" width="300" height="300"/>
+                                                <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
+                                                    <rect key="frame" x="0.0" y="0.0" width="400" height="279"/>
+                                                </variation>
                                             </imageView>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="261" verticalHuggingPriority="261" horizontalCompressionResistancePriority="740" verticalCompressionResistancePriority="740" image="RememberanceDay2015" translatesAutoresizingMaskIntoConstraints="NO" id="Zzy-HP-9kr">
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="500" verticalHuggingPriority="500" horizontalCompressionResistancePriority="500" verticalCompressionResistancePriority="500" image="RememberanceDay2015" translatesAutoresizingMaskIntoConstraints="NO" id="Zzy-HP-9kr">
                                                 <rect key="frame" x="300" y="0.0" width="300" height="300"/>
+                                                <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
+                                                    <rect key="frame" x="0.0" y="279" width="400" height="280"/>
+                                                </variation>
                                             </imageView>
                                         </subviews>
-                                        <variation key="heightClass=regular-widthClass=compact" axis="vertical"/>
+                                        <variation key="heightClass=regular-widthClass=compact" axis="vertical" distribution="fillEqually" misplaced="YES">
+                                            <rect key="frame" x="0.0" y="0.0" width="400" height="559"/>
+                                        </variation>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="MxD-k5-BRP" userLabel="BottomStack">
                                         <rect key="frame" x="0.0" y="300" width="600" height="300"/>
                                         <subviews>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Winterlude" translatesAutoresizingMaskIntoConstraints="NO" id="cyX-qw-366">
                                                 <rect key="frame" x="0.0" y="0.0" width="600" height="300"/>
+                                                <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
+                                                    <rect key="frame" x="0.0" y="0.0" width="400" height="241"/>
+                                                </variation>
                                             </imageView>
                                         </subviews>
+                                        <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
+                                            <rect key="frame" x="0.0" y="559" width="400" height="241"/>
+                                        </variation>
                                     </stackView>
                                 </subviews>
                                 <variation key="heightClass=regular-widthClass=compact" distribution="fillProportionally"/>
@@ -167,9 +181,8 @@
                                 <variation key="heightClass=compact">
                                     <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="16"/>
                                 </variation>
-                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                <variation key="heightClass=regular-widthClass=compact">
                                     <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="14"/>
-                                    <rect key="frame" x="20" y="20" width="50" height="29"/>
                                 </variation>
                                 <variation key="heightClass=regular-widthClass=regular">
                                     <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="25"/>
@@ -181,13 +194,11 @@
                                 <state key="normal" title=" Culture &amp; Events ">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <variation key="heightClass=compact" misplaced="YES">
+                                <variation key="heightClass=compact">
                                     <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="16"/>
-                                    <rect key="frame" x="401" y="144" width="171" height="36"/>
                                 </variation>
-                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                <variation key="heightClass=regular-widthClass=compact">
                                     <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="14"/>
-                                    <rect key="frame" x="260" y="509" width="120" height="29"/>
                                 </variation>
                                 <variation key="heightClass=regular-widthClass=regular" misplaced="YES">
                                     <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="25"/>
@@ -204,9 +215,8 @@
                                     <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="16"/>
                                     <rect key="frame" x="457" y="307" width="115" height="36"/>
                                 </variation>
-                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                <variation key="heightClass=regular-widthClass=compact">
                                     <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="14"/>
-                                    <rect key="frame" x="300" y="714" width="80" height="29"/>
                                 </variation>
                                 <variation key="heightClass=regular-widthClass=regular" misplaced="YES">
                                     <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="25"/>
@@ -223,9 +233,6 @@
                                     <constraint firstAttribute="width" secondItem="Adk-Fl-zRi" secondAttribute="height" multiplier="55:58" id="Dxu-UC-bMf"/>
                                 </constraints>
                                 <state key="normal" image="Ottawa2017"/>
-                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="20" y="690" width="51" height="53"/>
-                                </variation>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -237,7 +244,10 @@
                             <constraint firstItem="M4o-Ip-pJO" firstAttribute="bottom" secondItem="cT8-FW-lyb" secondAttribute="bottom" constant="-5" id="S3o-7g-HY8"/>
                             <constraint firstAttribute="trailingMargin" secondItem="zWQ-zm-cd5" secondAttribute="trailing" id="TBy-Pi-3zM"/>
                             <constraint firstItem="Adk-Fl-zRi" firstAttribute="height" secondItem="MxD-k5-BRP" secondAttribute="height" multiplier="0.3" id="U2k-35-4pp"/>
-                            <constraint firstItem="mVt-fk-CnB" firstAttribute="top" secondItem="gDY-ac-TY3" secondAttribute="topMargin" constant="5" id="ZMN-c4-UoS"/>
+                            <constraint firstItem="mVt-fk-CnB" firstAttribute="top" secondItem="gDY-ac-TY3" secondAttribute="topMargin" constant="5" id="ZMN-c4-UoS">
+                                <variation key="heightClass=regular-widthClass=compact" constant="10"/>
+                                <variation key="heightClass=regular-widthClass=regular" constant="15"/>
+                            </constraint>
                             <constraint firstItem="mVt-fk-CnB" firstAttribute="leading" secondItem="gDY-ac-TY3" secondAttribute="leadingMargin" id="Zla-Un-Re3"/>
                             <constraint firstItem="SJN-jG-WIC" firstAttribute="width" secondItem="gDY-ac-TY3" secondAttribute="width" id="dok-4O-qDK"/>
                             <constraint firstItem="SJN-jG-WIC" firstAttribute="top" secondItem="gDY-ac-TY3" secondAttribute="top" id="heb-Hm-8uB"/>
@@ -256,7 +266,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1Dp-iK-DFd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1830" y="698"/>
+            <point key="canvasLocation" x="1778" y="724"/>
         </scene>
         <!--Info-->
         <scene sceneID="axK-b3-Xrc">
@@ -884,24 +894,6 @@
             <point key="canvasLocation" x="1128" y="-62"/>
         </scene>
         <!--View Controller-->
-        <scene sceneID="Q1p-4j-KHt">
-            <objects>
-                <viewController id="GD2-3W-tEN" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="y9g-qB-QOh"/>
-                        <viewControllerLayoutGuide type="bottom" id="Dze-JT-dQy"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="bNz-kb-C1x">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="9ry-IZ-HLi" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1842" y="-62"/>
-        </scene>
-        <!--View Controller-->
         <scene sceneID="So9-gj-AZx">
             <objects>
                 <viewController id="aOj-2O-0cJ" sceneMemberID="viewController">
@@ -937,7 +929,7 @@
                                     <rect key="frame" x="0.0" y="0.0" width="400" height="800"/>
                                 </variation>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="WinterludeTitle" translatesAutoresizingMaskIntoConstraints="NO" id="azm-f2-n8Z">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="WinterludeTitle" translatesAutoresizingMaskIntoConstraints="NO" id="azm-f2-n8Z" customClass="RoundedEdgeImage" customModule="Ottawa" customModuleProvider="target">
                                 <rect key="frame" x="60" y="477" width="480" height="74"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
@@ -945,11 +937,11 @@
                                 </variation>
                             </imageView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="oI9-Rx-D8d" userLabel="WinterludeText">
-                                <rect key="frame" x="35" y="71" width="530" height="229"/>
+                                <rect key="frame" x="35" y="81" width="530" height="219"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
                                 <string key="text">Winterlude, the Capital's winter celebration, is held in Ottawa–Gatineau each February. It was created in 1979 to celebrate Canada's unique northern climate and culture.
 
 Skate on the world's largest skating rink, the Rideau Canal Skateway. Check out the gorgeous ice sculptures by artists from around the globe, in Confederation Park. And don't forget to play in North America's largest snow playground, at the Snowflake Kingdom in Jacques Cartier Park. There’s fun for the entire family!</string>
-                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                 <variation key="heightClass=compact">
@@ -958,22 +950,29 @@ Skate on the world's largest skating rink, the Rideau Canal Skateway. Check out 
                                 <variation key="heightClass=regular-widthClass=compact">
                                     <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
                                 </variation>
-                                <variation key="heightClass=regular-widthClass=regular">
+                                <variation key="heightClass=regular-widthClass=regular" misplaced="YES">
                                     <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="30"/>
+                                    <rect key="frame" x="65" y="94" width="670" height="251"/>
                                 </variation>
                             </textView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="CSE" translatesAutoresizingMaskIntoConstraints="NO" id="4q6-49-zVT">
-                                <rect key="frame" x="20" y="20" width="133" height="51"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="CSE" translatesAutoresizingMaskIntoConstraints="NO" id="4q6-49-zVT" customClass="RoundedEdgeImage" customModule="Ottawa" customModuleProvider="target">
+                                <rect key="frame" x="20" y="25" width="133" height="51"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="4q6-49-zVT" secondAttribute="height" multiplier="13:5" id="9va-Y3-Jf6"/>
                                 </constraints>
+                                <variation key="heightClass=regular-widthClass=regular" misplaced="YES">
+                                    <rect key="frame" x="20" y="25" width="168" height="64"/>
+                                </variation>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VoP-tE-Hzo" customClass="RoundedButton" customModule="Ottawa" customModuleProvider="target">
-                                <rect key="frame" x="530" y="20" width="35" height="30"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
-                                <state key="normal" title="Back">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VoP-tE-Hzo" customClass="RoundedButton" customModule="Ottawa" customModuleProvider="target">
+                                <rect key="frame" x="522" y="25" width="43" height="30"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="15"/>
+                                <state key="normal" title=" Back ">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="25"/>
+                                </variation>
                                 <connections>
                                     <action selector="goAttractions:" destination="umC-kH-Ai6" eventType="touchUpInside" id="cVg-KG-fOu"/>
                                 </connections>
@@ -982,15 +981,15 @@ Skate on the world's largest skating rink, the Rideau Canal Skateway. Check out 
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="4q6-49-zVT" firstAttribute="width" secondItem="oI9-Rx-D8d" secondAttribute="width" multiplier="0.25" id="2Ry-9X-5R3"/>
-                            <constraint firstItem="4q6-49-zVT" firstAttribute="top" secondItem="nsz-fS-d2F" secondAttribute="bottom" id="3oA-fR-XFW"/>
+                            <constraint firstItem="4q6-49-zVT" firstAttribute="top" secondItem="nsz-fS-d2F" secondAttribute="bottom" constant="5" id="3oA-fR-XFW"/>
                             <constraint firstItem="EJi-N2-sdP" firstAttribute="top" secondItem="orP-X9-3fi" secondAttribute="top" id="3rX-ud-5vD"/>
                             <constraint firstItem="pSr-x8-j07" firstAttribute="top" secondItem="azm-f2-n8Z" secondAttribute="bottom" id="41K-fg-i3I"/>
                             <constraint firstItem="EJi-N2-sdP" firstAttribute="leading" secondItem="orP-X9-3fi" secondAttribute="leading" id="5u4-Rt-UnS"/>
                             <constraint firstItem="4q6-49-zVT" firstAttribute="leading" secondItem="orP-X9-3fi" secondAttribute="leadingMargin" id="9lx-H0-MnB"/>
-                            <constraint firstItem="4q6-49-zVT" firstAttribute="bottom" secondItem="oI9-Rx-D8d" secondAttribute="top" id="R5q-wi-zJp"/>
+                            <constraint firstItem="4q6-49-zVT" firstAttribute="bottom" secondItem="oI9-Rx-D8d" secondAttribute="top" constant="-5" id="R5q-wi-zJp"/>
                             <constraint firstItem="VoP-tE-Hzo" firstAttribute="trailing" secondItem="oI9-Rx-D8d" secondAttribute="trailing" id="XYG-hc-SGC"/>
                             <constraint firstItem="oI9-Rx-D8d" firstAttribute="bottom" secondItem="orP-X9-3fi" secondAttribute="centerY" id="YLZ-ES-D1v">
-                                <variation key="heightClass=regular-widthClass=compact" constant="-20"/>
+                                <variation key="heightClass=regular-widthClass=compact" constant="-40"/>
                                 <variation key="heightClass=regular-widthClass=regular" constant="-55"/>
                             </constraint>
                             <constraint firstAttribute="trailingMargin" secondItem="azm-f2-n8Z" secondAttribute="trailing" constant="40" id="bFV-LJ-56K"/>
@@ -998,7 +997,7 @@ Skate on the world's largest skating rink, the Rideau Canal Skateway. Check out 
                             <constraint firstAttribute="trailing" secondItem="EJi-N2-sdP" secondAttribute="trailing" id="ggU-aW-SRI"/>
                             <constraint firstItem="pSr-x8-j07" firstAttribute="top" secondItem="EJi-N2-sdP" secondAttribute="bottom" id="jmP-81-sOs"/>
                             <constraint firstItem="azm-f2-n8Z" firstAttribute="leading" secondItem="orP-X9-3fi" secondAttribute="leadingMargin" constant="40" id="l9d-qT-4t3"/>
-                            <constraint firstItem="VoP-tE-Hzo" firstAttribute="top" secondItem="nsz-fS-d2F" secondAttribute="bottom" id="mSP-x9-fTM"/>
+                            <constraint firstItem="VoP-tE-Hzo" firstAttribute="top" secondItem="nsz-fS-d2F" secondAttribute="bottom" constant="5" id="mSP-x9-fTM"/>
                             <constraint firstItem="oI9-Rx-D8d" firstAttribute="leading" secondItem="orP-X9-3fi" secondAttribute="leadingMargin" constant="15" id="pJD-0z-948">
                                 <variation key="heightClass=regular-widthClass=regular" constant="45"/>
                             </constraint>
@@ -1027,7 +1026,7 @@ Skate on the world's largest skating rink, the Rideau Canal Skateway. Check out 
         <image name="Ottawa_-_On_-_Parliament_Buildings_National_Historic_Site_of_Canada_-_Night" width="2048" height="1365"/>
         <image name="RememberanceDay2015" width="478" height="540"/>
         <image name="RideauSkateway" width="2048" height="1558"/>
-        <image name="Royal_Canadian_Mint_Ottawa" width="478" height="579"/>
+        <image name="Royal_Canadian_Mint_Ottawa" width="478" height="540"/>
         <image name="Screenshot-30" width="30" height="30"/>
         <image name="Winterlude" width="1600" height="500"/>
         <image name="WinterludeTitle" width="647" height="74"/>

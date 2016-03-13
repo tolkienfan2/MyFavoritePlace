@@ -2,34 +2,54 @@
 //  SightsVC.swift
 //  Ottawa
 //
-//  Created by Minni K Ang on 2016-02-25.
+//  Created by Minni K Ang on 2016-03-02.
 //  Copyright © 2016 Minni K Ang. All rights reserved.
 //
 
 import UIKit
 
-class SightsVC: UIViewController {
-
+class SightsVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
+    
+    @IBOutlet weak var tableView: UITableView!
+ 
+    var sightSection = SightsDataSource().loadSights()
+    let dataSource = SightsDataSource()
+    var sights = []
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        self.tableView.delegate = self
+        self.tableView.dataSource = self
+        self.sights = dataSource.loadSightData()
+       
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+        return sightSection.count
+    }
+
+    func tableView(tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        return sightSection[section].heading
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return sightSection[section].items.count
     }
-    */
 
+    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        
+        let sight = self.sights[indexPath.row] as? Sight
+        
+        if let cell = tableView.dequeueReusableCellWithIdentifier("sightDisplayCell", forIndexPath: indexPath) as? SightsTableViewCell {
+            cell.sightName.text = sight?.name
+            cell.sightPhoto.image = sight?.photo
+            cell.sightText.text = sight?.text
+            return cell
+            
+        } else {
+        
+            return SightsTableViewCell()
+                
+        }
+    }
 }

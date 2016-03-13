@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4549B9AE1C8512B800AFD38D /* RoundedEdgeImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4549B9AD1C8512B800AFD38D /* RoundedEdgeImage.swift */; };
 		455570CB1C7A071500C62A44 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 455570CA1C7A071500C62A44 /* AppDelegate.swift */; };
 		455570CD1C7A071500C62A44 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 455570CC1C7A071500C62A44 /* ViewController.swift */; };
 		455570D01C7A071500C62A44 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 455570CE1C7A071500C62A44 /* Main.storyboard */; };
@@ -18,14 +19,18 @@
 		4596BB001C7D271E00B338C0 /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4596BAFF1C7D271E00B338C0 /* Weather.swift */; };
 		459A2D4E1C8289AE00C2AE9E /* AttractionsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 459A2D4D1C8289AE00C2AE9E /* AttractionsVC.swift */; };
 		45A567B81C7A9E1400B7985F /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45A567B71C7A9E1400B7985F /* RoundedButton.swift */; };
+		45AFA9531C87A44F00533E18 /* SightsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45AFA9521C87A44F00533E18 /* SightsVC.swift */; };
+		45AFA9551C87AE1F00533E18 /* SightsDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45AFA9541C87AE1F00533E18 /* SightsDataSource.swift */; };
+		45AFA9571C87C6AC00533E18 /* SightsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45AFA9561C87C6AC00533E18 /* SightsTableViewCell.swift */; };
 		45BFFD0B1C7E1F7100E42D93 /* JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45BFFD0A1C7E1F7100E42D93 /* JSON.swift */; };
 		45BFFD131C7F76D200E42D93 /* InfoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45BFFD121C7F76D200E42D93 /* InfoVC.swift */; };
 		45BFFD161C7F9DA000E42D93 /* WinterludeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45BFFD141C7F9DA000E42D93 /* WinterludeVC.swift */; };
-		45BFFD1A1C7F9DC200E42D93 /* SightsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45BFFD181C7F9DC200E42D93 /* SightsVC.swift */; };
 		45BFFD1E1C7F9E5400E42D93 /* EventsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45BFFD1C1C7F9E5400E42D93 /* EventsVC.swift */; };
+		45D240981C95A24C007DAA96 /* Sight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45D240971C95A24C007DAA96 /* Sight.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4549B9AD1C8512B800AFD38D /* RoundedEdgeImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedEdgeImage.swift; sourceTree = "<group>"; };
 		455570C71C7A071500C62A44 /* Ottawa.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ottawa.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		455570CA1C7A071500C62A44 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		455570CC1C7A071500C62A44 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -39,11 +44,14 @@
 		4596BAFF1C7D271E00B338C0 /* Weather.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Weather.swift; sourceTree = "<group>"; };
 		459A2D4D1C8289AE00C2AE9E /* AttractionsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AttractionsVC.swift; sourceTree = "<group>"; };
 		45A567B71C7A9E1400B7985F /* RoundedButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
+		45AFA9521C87A44F00533E18 /* SightsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SightsVC.swift; sourceTree = "<group>"; };
+		45AFA9541C87AE1F00533E18 /* SightsDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SightsDataSource.swift; sourceTree = "<group>"; };
+		45AFA9561C87C6AC00533E18 /* SightsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SightsTableViewCell.swift; sourceTree = "<group>"; };
 		45BFFD0A1C7E1F7100E42D93 /* JSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSON.swift; sourceTree = "<group>"; };
 		45BFFD121C7F76D200E42D93 /* InfoVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoVC.swift; sourceTree = "<group>"; };
 		45BFFD141C7F9DA000E42D93 /* WinterludeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WinterludeVC.swift; sourceTree = "<group>"; };
-		45BFFD181C7F9DC200E42D93 /* SightsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SightsVC.swift; sourceTree = "<group>"; };
 		45BFFD1C1C7F9E5400E42D93 /* EventsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventsVC.swift; sourceTree = "<group>"; };
+		45D240971C95A24C007DAA96 /* Sight.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Sight.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,10 +102,10 @@
 				455570CC1C7A071500C62A44 /* ViewController.swift */,
 				4596BAF91C7CA0E000B338C0 /* IntroVC.swift */,
 				45BFFD121C7F76D200E42D93 /* InfoVC.swift */,
-				45BFFD181C7F9DC200E42D93 /* SightsVC.swift */,
 				45BFFD1C1C7F9E5400E42D93 /* EventsVC.swift */,
 				45BFFD141C7F9DA000E42D93 /* WinterludeVC.swift */,
 				459A2D4D1C8289AE00C2AE9E /* AttractionsVC.swift */,
+				45AFA9521C87A44F00533E18 /* SightsVC.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -109,6 +117,7 @@
 				4596BAFB1C7CAFF300B338C0 /* Clock.swift */,
 				4596BAFF1C7D271E00B338C0 /* Weather.swift */,
 				45BFFD0A1C7E1F7100E42D93 /* JSON.swift */,
+				4549B9AD1C8512B800AFD38D /* RoundedEdgeImage.swift */,
 			);
 			name = Utilities;
 			sourceTree = "<group>";
@@ -116,6 +125,8 @@
 		4596BAF51C7CA03800B338C0 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				45AFA9541C87AE1F00533E18 /* SightsDataSource.swift */,
+				45D240971C95A24C007DAA96 /* Sight.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -125,6 +136,7 @@
 			children = (
 				455570D61C7A071500C62A44 /* LaunchScreen.storyboard */,
 				455570CE1C7A071500C62A44 /* Main.storyboard */,
+				45AFA9561C87C6AC00533E18 /* SightsTableViewCell.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -161,6 +173,7 @@
 				TargetAttributes = {
 					455570C61C7A071500C62A44 = {
 						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = 7LVD7K98P2;
 					};
 				};
 			};
@@ -200,6 +213,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4549B9AE1C8512B800AFD38D /* RoundedEdgeImage.swift in Sources */,
 				4596BB001C7D271E00B338C0 /* Weather.swift in Sources */,
 				4596BAFC1C7CAFF300B338C0 /* Clock.swift in Sources */,
 				4596BAFA1C7CA0E000B338C0 /* IntroVC.swift in Sources */,
@@ -209,10 +223,13 @@
 				459A2D4E1C8289AE00C2AE9E /* AttractionsVC.swift in Sources */,
 				455570CD1C7A071500C62A44 /* ViewController.swift in Sources */,
 				455570CB1C7A071500C62A44 /* AppDelegate.swift in Sources */,
-				45BFFD1A1C7F9DC200E42D93 /* SightsVC.swift in Sources */,
+				45AFA9571C87C6AC00533E18 /* SightsTableViewCell.swift in Sources */,
+				45D240981C95A24C007DAA96 /* Sight.swift in Sources */,
 				45A567B81C7A9E1400B7985F /* RoundedButton.swift in Sources */,
 				45BFFD161C7F9DA000E42D93 /* WinterludeVC.swift in Sources */,
+				45AFA9531C87A44F00533E18 /* SightsVC.swift in Sources */,
 				45BFFD1E1C7F9E5400E42D93 /* EventsVC.swift in Sources */,
+				45AFA9551C87AE1F00533E18 /* SightsDataSource.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -325,10 +342,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Ottawa/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.CreativeIce.Ottawa;
+				PRODUCT_BUNDLE_IDENTIFIER = ca.CreativeIce.Ottawa;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -336,10 +356,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Ottawa/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.CreativeIce.Ottawa;
+				PRODUCT_BUNDLE_IDENTIFIER = ca.CreativeIce.Ottawa;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
