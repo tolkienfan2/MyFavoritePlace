@@ -15,42 +15,91 @@ class SightsDataSource {
     
     init() {
         
-        let sight1 = Sight(name: "National Gallery of Canada", photo: UIImage(named: "NationalGallery")!, text: "More Information")
-        let sight2 = Sight(name: "Canadian Museum of Nature", photo: UIImage(named: "NatureMuseum")!, text: "More Information")
-        let sight3 = Sight(name: "Canadian Museum of History", photo: UIImage(named: "HistoryMuseum")!, text: "More Information")
-        let sight4 = Sight(name: "Canadian War Museum", photo: UIImage(named: "WarMuseum")!, text: "More Information")
-        let sight5 = Sight(name: "Diefenbunker", photo: UIImage(named: "Diefenbunker")!, text: "More Information")
-        let sight6 = Sight(name: "Canada Agriculture Museum", photo: UIImage(named: "AgriMuseum")!, text: "More Information")
-        let sight7 = Sight(name: "Canada Science and Technology Museum", photo: UIImage(named: "ScienceMuseum")!, text: "More Information")
-        let sight8 = Sight(name: "Canada Aviation and Space Museum", photo: UIImage(named: "SpaceMuseum")!, text: "More Information")
-        let sight9 = Sight(name: "Parliament Hill", photo: UIImage(named: "ParliamentHill")!, text: "More Information")
-        let sight10 = Sight(name: "Chateau Laurier", photo: UIImage(named: "ChateauLaurier")!, text: "More Information")
-        let sight11 = Sight(name: "24 Sussex Drive", photo: UIImage(named: "24Sussex")!, text: "More Information")
-        let sight12 = Sight(name: "Notre Dame Basilica", photo: UIImage(named: "NotreDame")!, text: "More Information")
-        let sight13 = Sight(name: "Rideau Hall", photo: UIImage(named: "RideauHall")!, text: "More Information")
-        let sight14 = Sight(name: "Confederation Square", photo: UIImage(named: "Square")!, text: "More Information")
-        let sight15 = Sight(name: "Royal Canadian Mint", photo: UIImage(named: "Mint")!, text: "More Information")
+        let sight1 = Sight(name: "National Gallery of Canada", photo: UIImage(named: "NationalGallery")!,
+            address: "380 Sussex Drive, downtown",
+            text:
+            "1200 art works from the Middle Ages to the present day, displayed on rotation with special exhibitions all year round.")
         
-        sights = [sight1, sight2, sight3, sight4, sight5, sight6, sight7, sight8, sight9, sight10, sight11, sight12, sight13, sight14, sight15]
+        let sight2 = Sight(name: "Canadian Museum of Nature", photo: UIImage(named: "NatureMuseum")!,
+            address: "240 McLeod Street, downtown",
+            text:
+            "Huge collections of natural history exhibits: animals (including dinosaurs and prehistoric mammals), minerals, fossils and plants. ")
+        
+        let sight3 = Sight(name: "Canadian Museum of History", photo: UIImage(named: "HistoryMuseum")!,
+            address: "100 Laurier Street, Gatineau",
+            text:
+            "Canada's most visited museum, with detailed insight into 20 thousand years of human history. Includes the Canadian Children's Museum.")
+        
+        let sight4 = Sight(name: "Canadian War Museum", photo: UIImage(named: "WarMuseum")!,
+            address: "1 Vimy Place, downtown",
+            text:
+            "Covers all aspects of Canada's military history, with emphasis on the human experience of war.")
+        
+        let sight5 = Sight(name: "Diefenbunker", photo: UIImage(named: "Diefenbunker")!,
+            address: "3929 Carp Road, Carp",
+            text:
+            "Cold War museum, located in an enormous underground bunker designed to house Canada's government in case of nuclear war.")
+        
+        let sight6 = Sight(name: "Canada Agriculture and Food Museum", photo: UIImage(named: "AgriMuseum")!,
+            address: "861 Prince of Wales Drive",
+            text:
+            "Canada’s unique agricultural heritage is featured here, where you can explore the sights and sounds of typical farm life.")
+        
+        let sight7 = Sight(name: "Canada Science and Technology Museum", photo: UIImage(named: "ScienceMuseum")!,
+            address: "2421 Lancaster Road",
+            text:
+            "Currently closed for renovation, the museum is set to reopen in the fall of 2017 with five all-new main galleries.")
+        
+        let sight8 = Sight(name: "Canada Aviation and Space Museum", photo: UIImage(named: "SpaceMuseum")!,
+            address: "11 Aviation Parkway",
+            text:
+            "Over 130 original aircraft from around the world. Try the flight simulator or come in the summer and take a short flight in a 1939 biplane.")
+        
+        let sight9 = Sight(name: "Parliament Hill", photo: UIImage(named: "ParliamentHill")!,
+            address: "11 Wellington Street, downtown",
+            text:
+            "Discover the history, functions and art of Canada’s Parliament with a free guided tour. Home to Canada's government.")
+        
+        let sight10 = Sight(name: "Chateau Laurier", photo: UIImage(named: "ChateauLaurier")!,
+            address: "1 Rideau Street, downtown",
+            text:
+            "Designated a national historic site since 1980, this Ottawa landmark is a hotel designed in French Gothic Châteauesque style to complement the adjacent Parliament buildings.")
+        
+        let sight11 = Sight(name: "24 Sussex Drive", photo: UIImage(named: "24Sussex")!,
+            address: "24 Sussex Drive, downtown",
+            text:
+            "Completed in 1868, 24 Sussex has been the official residence of Canada's Prime Minister since 1951. Now awaiting major renovations, current Prime Minister Justin Trudeau and his family however live elsewhere.")
+        
+        let sight12 = Sight(name: "Notre Dame Basilica", photo: UIImage(named: "NotreDame")!,
+            address: "385 Sussex Drive, downtown",
+            text:
+            "Ottawa's oldest standing church, and an exceptional example of the Gothic Revival architectural style.")
+        
+        let sight13 = Sight(name: "Rideau Hall", photo: UIImage(named: "RideauHall")!,
+            address: "1 Sussex Drive, downtown",
+            text:
+            "The official residence in Ottawa of the Canadian monarch and the Governor General of Canada. Open to the public for guided tours.")
+        
+        let sight14 = Sight(name: "Confederation Square", photo: UIImage(named: "Square")!,
+            address: "Elgin & Wellington intersection",
+            text:
+            "The second most important ceremonial centre in Ottawa, after Parliament Hill, and site of the National War Memorial with the Tomb of the Unknown Soldier.")
+        
+        let sight15 = Sight(name: "Royal Canadian Mint", photo: UIImage(named: "Mint")!,
+            address: "320 Sussex Drive, downtown",
+            text:
+            "Produces all of Canada's circulation coins and manufactures circulation coins on behalf of other countries. Open to the public for guided tours.")
+        
+        let sight16 = Sight(name: "Rideau Canal (UNESCO World Heritage Site)", photo: UIImage(named: "RideauCanal")!,
+            address: "Between Chateau Laurier and Parliament Hill, downtown",
+            text:
+            "The oldest continuously operated canal system in North America, originally opened for military purposes in 1832 but now used mainly for pleasure boating.")
+
+        sights = [sight1, sight2, sight3, sight4, sight5, sight6, sight7, sight8, sight9, sight10, sight11, sight12, sight13, sight14, sight15, sight16]
     }
     
     func loadSightData() -> [Sight] {
         return sights
     }
-    
-    
-    func loadSights() -> [Section] {
-        
-        var sightsArray = [Section]()
-        
-        let museums = Section(title: "Museums", objects: [sights[0], sights[1], sights[2], sights[3], sights[4], sights[5], sights[6], sights[7]])
-        let landmarks = Section(title: "Landmarks", objects: [sights[8], sights[9], sights[10], sights[11], sights[12], sights[13], sights[14]])
-        
-        sightsArray.append(museums)
-        sightsArray.append(landmarks)
-        
-        return sightsArray
-    }
-    
     
 }

@@ -9,26 +9,17 @@
 import Foundation
 import UIKit
 
-struct Section {
-    var heading: String
-    var items: [Sight]
-    
-    init(title: String, objects: [Sight]) {
-        heading = title
-        items = objects
-    }
-}
-
-
 class Sight {
     
     var name: String
     var photo: UIImage?
+    var address: String
     var text: String
     
-    init(name: String, photo: UIImage?, text: String) {
+    init(name: String, photo: UIImage?, address: String, text: String) {
         self.name = name
         self.photo = photo
+        self.address = address
         self.text = text
         
     }

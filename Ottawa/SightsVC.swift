@@ -14,7 +14,6 @@ class SightsVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
  
     @IBOutlet weak var backButton: RoundedButton!
     
-    var sightSection = SightsDataSource().loadSights()
     let dataSource = SightsDataSource()
     var sights = []
     
@@ -27,15 +26,11 @@ class SightsVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
     }
 
     func numberOfSectionsInTableView(tableView: UITableView) -> Int {
-        return sightSection.count
+        return 1
     }
 
-    func tableView(tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-        return sightSection[section].heading
-    }
-    
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return sightSection[section].items.count
+        return sights.count
     }
 
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
@@ -45,6 +40,7 @@ class SightsVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
         if let cell = tableView.dequeueReusableCellWithIdentifier("sightDisplayCell", forIndexPath: indexPath) as? SightsTableViewCell {
             cell.sightName.text = sight?.name
             cell.sightPhoto.image = sight?.photo
+            cell.sightAddress.text = sight?.address
             cell.sightText.text = sight?.text
             return cell
             

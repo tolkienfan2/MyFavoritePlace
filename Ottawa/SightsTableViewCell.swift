@@ -13,6 +13,8 @@ class SightsTableViewCell: UITableViewCell {
     @IBOutlet weak var sightName: UILabel!
     
     @IBOutlet weak var sightPhoto: UIImageView!
+    
+    @IBOutlet weak var sightAddress: UILabel!
   
     @IBOutlet weak var sightText: UILabel!
 
@@ -24,11 +26,12 @@ class SightsTableViewCell: UITableViewCell {
 
     }
 
-    func configureCell(name: String, photo: UIImage, text: String) {
+    func configureCell(name: String, photo: UIImage, address: String, text: String) {
     
         sightName.text = name
         sightPhoto.image = photo
         sightText.text = text
+        sightAddress.text = address
         
     }
 
