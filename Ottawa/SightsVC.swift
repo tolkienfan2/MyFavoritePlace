@@ -27,7 +27,6 @@ class SightsVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
     }
 
     func numberOfSectionsInTableView(tableView: UITableView) -> Int {
-//        return 1
         return sightSection.count
     }
 
@@ -37,7 +36,6 @@ class SightsVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return sightSection[section].items.count
-//        return sights.count
     }
 
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {

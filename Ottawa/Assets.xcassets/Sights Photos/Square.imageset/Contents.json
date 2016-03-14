@@ -2,11 +2,11 @@
   "images" : [
     {
       "idiom" : "universal",
+      "filename" : "Confederation_Square_Ottawa.jpg",
       "scale" : "1x"
     },
     {
       "idiom" : "universal",
-      "filename" : "Confederation_Square_Ottawa.jpg",
       "scale" : "2x"
     },
     {
