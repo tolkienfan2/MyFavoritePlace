@@ -12,6 +12,8 @@ class SightsVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
     @IBOutlet weak var tableView: UITableView!
  
+    @IBOutlet weak var backButton: RoundedButton!
+    
     var sightSection = SightsDataSource().loadSights()
     let dataSource = SightsDataSource()
     var sights = []
@@ -25,6 +27,7 @@ class SightsVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
     }
 
     func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+//        return 1
         return sightSection.count
     }
 
@@ -34,6 +37,7 @@ class SightsVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return sightSection[section].items.count
+//        return sights.count
     }
 
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
@@ -51,5 +55,9 @@ class SightsVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
             return SightsTableViewCell()
                 
         }
+    }
+    
+    @IBAction func goBack(sender: AnyObject) {
+        self.dismissViewControllerAnimated(true, completion: nil)
     }
 }

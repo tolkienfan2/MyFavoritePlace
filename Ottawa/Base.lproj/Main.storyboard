@@ -8,6 +8,15 @@
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="HelveticaNeue.ttc">
+            <string>HelveticaNeue</string>
+            <string>HelveticaNeue</string>
+            <string>HelveticaNeue</string>
+            <string>HelveticaNeue</string>
+            <string>HelveticaNeue</string>
+        </mutableArray>
+    </customFonts>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -120,6 +129,81 @@
             </objects>
             <point key="canvasLocation" x="446" y="-62"/>
         </scene>
+        <!--SightsVC-->
+        <scene sceneID="aRn-lX-ipa">
+            <objects>
+                <viewController id="8li-6Y-Fd5" customClass="SightsVC" customModule="Ottawa" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Wdn-Lc-MFt"/>
+                        <viewControllerLayoutGuide type="bottom" id="0U4-dr-Mkn"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="NHe-b9-scY">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LHr-xA-6my">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="63"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H4k-oZ-OTU" customClass="RoundedButton" customModule="Ottawa" customModuleProvider="target">
+                                        <rect key="frame" x="485" y="23" width="58" height="30"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                        <state key="normal" title=" Back ">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="goBack:" destination="8li-6Y-Fd5" eventType="touchUpInside" id="8xL-PQ-aEE"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="105" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="s25-Mo-M4S">
+                                <rect key="frame" x="0.0" y="71" width="600" height="529"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="sightDisplayCell" rowHeight="105" id="zk5-IZ-z3u" customClass="SightsTableViewCell" customModule="Ottawa" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="600" height="105"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="zk5-IZ-z3u" id="3pr-la-hYh">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="104"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="SUq-9K-zWU">
+                                                    <rect key="frame" x="17" y="0.0" width="106" height="104"/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u9c-fF-LDN">
+                                                    <rect key="frame" x="131" y="8" width="469" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JOE-5V-PPj">
+                                                    <rect key="frame" x="131" y="31" width="469" height="65"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="sightName" destination="u9c-fF-LDN" id="8VB-6V-c58"/>
+                                            <outlet property="sightPhoto" destination="SUq-9K-zWU" id="anS-qk-DJd"/>
+                                            <outlet property="sightText" destination="JOE-5V-PPj" id="NL4-WG-qM0"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="backButton" destination="H4k-oZ-OTU" id="HmX-mm-jaz"/>
+                        <outlet property="tableView" destination="s25-Mo-M4S" id="9RA-fI-oU2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oMx-YZ-vr7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1844" y="-58"/>
+        </scene>
         <!--Attractions-->
         <scene sceneID="H9x-Vj-N71">
             <objects>
@@ -187,6 +271,10 @@
                                 <variation key="heightClass=regular-widthClass=regular">
                                     <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="25"/>
                                 </variation>
+                                <connections>
+                                    <action selector="goSights:" destination="yCv-Bb-U1y" eventType="touchUpInside" id="7UB-9a-xnO"/>
+                                    <segue destination="8li-6Y-Fd5" kind="show" identifier="goSights" id="g8Y-OI-Ker"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M4o-Ip-pJO" customClass="RoundedButton" customModule="Ottawa" customModuleProvider="target">
                                 <rect key="frame" x="409" y="259" width="171" height="36"/>
@@ -260,7 +348,7 @@
                     <connections>
                         <outlet property="birthdayButton" destination="Adk-Fl-zRi" id="ZvM-aY-Avn"/>
                         <outlet property="eventsButton" destination="M4o-Ip-pJO" id="ZMe-vK-yxm"/>
-                        <outlet property="sightsButton" destination="mVt-fk-CnB" id="iT3-Ug-jBg"/>
+                        <outlet property="sightsButton" destination="mVt-fk-CnB" id="hge-uo-Upn"/>
                         <outlet property="winterludeButton" destination="zWQ-zm-cd5" id="IgT-hX-nqV"/>
                     </connections>
                 </viewController>

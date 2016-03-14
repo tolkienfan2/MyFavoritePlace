@@ -26,5 +26,9 @@ class AttractionsVC: UIViewController {
     @IBAction func goWinterlude(sender: AnyObject) {
         performSegueWithIdentifier("goWinterlude", sender: nil)
     }
+    
+    @IBAction func goSights(sender: AnyObject) {
+         performSegueWithIdentifier("goSights", sender: nil)
+    }
 
 }

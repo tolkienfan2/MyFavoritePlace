@@ -43,10 +43,8 @@ class SightsDataSource {
         
         var sightsArray = [Section]()
         
-        var objects = [Sight]()
-        
-        let museums = Section(title: "Museums", objects: [objects[0], objects[1], objects[2], objects[3], objects[4], objects[5], objects[6], objects[7]])
-        let landmarks = Section(title: "Landmarks", objects: [objects[8], objects[9], objects[10], objects[11], objects[12], objects[13], objects[14]])
+        let museums = Section(title: "Museums", objects: [sights[0], sights[1], sights[2], sights[3], sights[4], sights[5], sights[6], sights[7]])
+        let landmarks = Section(title: "Landmarks", objects: [sights[8], sights[9], sights[10], sights[11], sights[12], sights[13], sights[14]])
         
         sightsArray.append(museums)
         sightsArray.append(landmarks)
