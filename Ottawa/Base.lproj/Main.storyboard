@@ -379,7 +379,9 @@
                         <constraints>
                             <constraint firstItem="SJN-jG-WIC" firstAttribute="leading" secondItem="gDY-ac-TY3" secondAttribute="leading" id="GZu-xA-e7k"/>
                             <constraint firstItem="mVt-fk-CnB" firstAttribute="bottom" secondItem="M4o-Ip-pJO" secondAttribute="bottom" id="IBi-KG-3O0"/>
-                            <constraint firstItem="M4o-Ip-pJO" firstAttribute="bottom" secondItem="cT8-FW-lyb" secondAttribute="bottom" constant="-5" id="S3o-7g-HY8"/>
+                            <constraint firstItem="M4o-Ip-pJO" firstAttribute="bottom" secondItem="cT8-FW-lyb" secondAttribute="bottom" constant="-5" id="S3o-7g-HY8">
+                                <variation key="heightClass=compact" constant="-15"/>
+                            </constraint>
                             <constraint firstItem="zWQ-zm-cd5" firstAttribute="bottom" secondItem="MxD-k5-BRP" secondAttribute="bottomMargin" constant="-60" id="T24-vn-fAy"/>
                             <constraint firstAttribute="trailingMargin" secondItem="zWQ-zm-cd5" secondAttribute="trailing" id="TBy-Pi-3zM"/>
                             <constraint firstItem="mVt-fk-CnB" firstAttribute="leading" secondItem="gDY-ac-TY3" secondAttribute="leadingMargin" id="Zla-Un-Re3"/>
@@ -1018,10 +1020,10 @@
             </objects>
             <point key="canvasLocation" x="446" y="698"/>
         </scene>
-        <!--Tab Bar Controller-->
+        <!--Custom Tab Bar Controller-->
         <scene sceneID="2fd-TH-MlQ">
             <objects>
-                <tabBarController modalTransitionStyle="crossDissolve" id="KmW-Jr-Lh6" sceneMemberID="viewController">
+                <tabBarController modalTransitionStyle="crossDissolve" id="KmW-Jr-Lh6" customClass="CustomTabBarController" customModule="Ottawa" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" id="UmN-5n-Uug">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -1248,6 +1250,8 @@ IN WINTER
                     </view>
                     <connections>
                         <outlet property="backButton" destination="oPv-o1-JSM" id="da8-ed-pRf"/>
+                        <outlet property="cultureText" destination="21B-Lp-hTb" id="ez4-t4-1Rx"/>
+                        <outlet property="festivalText" destination="Mp5-7P-NAD" id="je7-4e-4mo"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ckv-BG-hLb" userLabel="First Responder" sceneMemberID="firstResponder"/>
