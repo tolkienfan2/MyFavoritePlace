@@ -44,9 +44,8 @@
                                 <state key="normal" title=" Discover ">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <variation key="heightClass=regular-widthClass=regular" misplaced="YES">
+                                <variation key="heightClass=regular-widthClass=regular">
                                     <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="35"/>
-                                    <rect key="frame" x="50" y="28" width="175" height="28"/>
                                 </variation>
                                 <connections>
                                     <segue destination="KmW-Jr-Lh6" kind="showDetail" action="showViewController:sender:" id="eqG-Wc-v1E"/>
@@ -59,19 +58,12 @@
                                 <color key="highlightedColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                 <color key="shadowColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <size key="shadowOffset" width="-2" height="1"/>
-                                <variation key="heightClass=compact" misplaced="YES">
-                                    <rect key="frame" x="30" y="56" width="270" height="78"/>
-                                </variation>
                                 <variation key="heightClass=compact-widthClass=regular" misplaced="YES">
                                     <fontDescription key="fontDescription" name="Georgia-Bold" family="Georgia" pointSize="88"/>
                                     <rect key="frame" x="30" y="56" width="370" height="95"/>
                                 </variation>
-                                <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
-                                    <rect key="frame" x="30" y="56" width="170" height="61"/>
-                                </variation>
-                                <variation key="heightClass=regular-widthClass=regular" misplaced="YES">
+                                <variation key="heightClass=regular-widthClass=regular">
                                     <fontDescription key="fontDescription" name="Georgia-Bold" family="Georgia" pointSize="130"/>
-                                    <rect key="frame" x="50" y="56" width="350" height="95"/>
                                 </variation>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleAspectFit" verticalHuggingPriority="251" text="Canada's Capital" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="13" translatesAutoresizingMaskIntoConstraints="NO" id="Nmm-7Q-CFR">
@@ -80,21 +72,14 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                                 <size key="shadowOffset" width="-1" height="1"/>
-                                <variation key="heightClass=compact" misplaced="YES">
-                                    <rect key="frame" x="30" y="134" width="270" height="29"/>
-                                </variation>
                                 <variation key="heightClass=compact-widthClass=compact" misplaced="YES">
                                     <rect key="frame" x="30" y="131" width="170" height="39"/>
                                 </variation>
                                 <variation key="heightClass=compact-widthClass=regular" misplaced="YES">
                                     <rect key="frame" x="30" y="151" width="370" height="44"/>
                                 </variation>
-                                <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
-                                    <rect key="frame" x="30" y="117" width="170" height="29"/>
-                                </variation>
-                                <variation key="heightClass=regular-widthClass=regular" misplaced="YES">
+                                <variation key="heightClass=regular-widthClass=regular">
                                     <fontDescription key="fontDescription" name="Georgia-Bold" family="Georgia" pointSize="55"/>
-                                    <rect key="frame" x="50" y="151" width="350" height="44"/>
                                 </variation>
                             </label>
                         </subviews>
@@ -144,11 +129,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="bottom" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LHr-xA-6my">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="0.0"/>
+                            <view contentMode="bottom" translatesAutoresizingMaskIntoConstraints="NO" id="LHr-xA-6my">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="63"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="Gv4-JB-NIZ">
-                                        <rect key="frame" x="166" y="281" width="268" height="30"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="Gv4-JB-NIZ">
+                                        <rect key="frame" x="166" y="27" width="268" height="30"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H4k-oZ-OTU" customClass="RoundedButton" customModule="Ottawa" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="0.0" width="43" height="30"/>
@@ -156,6 +141,9 @@
                                                 <state key="normal" title=" Back ">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 </state>
+                                                <variation key="heightClass=regular-widthClass=regular">
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="25"/>
+                                                </variation>
                                                 <connections>
                                                     <action selector="goBack:" destination="8li-6Y-Fd5" eventType="touchUpInside" id="8xL-PQ-aEE"/>
                                                 </connections>
@@ -163,8 +151,11 @@
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="  Sightseeing in Ottawa  " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CDX-FX-Tlb">
                                                 <rect key="frame" x="48" y="0.0" width="220" height="30"/>
                                                 <fontDescription key="fontDescription" name="Georgia-Bold" family="Georgia" pointSize="18"/>
-                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
+                                                <variation key="heightClass=regular-widthClass=regular">
+                                                    <fontDescription key="fontDescription" name="Georgia-Bold" family="Georgia" pointSize="25"/>
+                                                </variation>
                                             </label>
                                         </subviews>
                                     </stackView>
@@ -214,7 +205,7 @@
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="fXb-8r-ZsQ">
                                                                     <rect key="frame" x="0.0" y="18" width="473" height="15"/>
                                                                     <fontDescription key="fontDescription" name="HelveticaNeue-ThinItalic" family="Helvetica Neue" pointSize="12"/>
-                                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                                     <nil key="highlightedColor"/>
                                                                     <variation key="heightClass=compact-widthClass=regular" misplaced="YES">
                                                                         <rect key="frame" x="0.0" y="18" width="673" height="15"/>
@@ -333,9 +324,8 @@
                                 <variation key="heightClass=compact">
                                     <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="16"/>
                                 </variation>
-                                <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
+                                <variation key="heightClass=regular-widthClass=compact">
                                     <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="14"/>
-                                    <rect key="frame" x="20" y="20" width="50" height="29"/>
                                 </variation>
                                 <variation key="heightClass=regular-widthClass=regular">
                                     <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="25"/>
@@ -351,17 +341,14 @@
                                 <state key="normal" title=" Winterlude ">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <variation key="heightClass=compact" misplaced="YES">
+                                <variation key="heightClass=compact">
                                     <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="16"/>
-                                    <rect key="frame" x="457" y="307" width="115" height="36"/>
                                 </variation>
-                                <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
+                                <variation key="heightClass=regular-widthClass=compact">
                                     <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="14"/>
-                                    <rect key="frame" x="300" y="717" width="80" height="29"/>
                                 </variation>
-                                <variation key="heightClass=regular-widthClass=regular" misplaced="YES">
+                                <variation key="heightClass=regular-widthClass=regular">
                                     <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="25"/>
-                                    <rect key="frame" x="636" y="701" width="143" height="42"/>
                                 </variation>
                                 <connections>
                                     <action selector="goWinterlude:" destination="yCv-Bb-U1y" eventType="touchUpInside" id="XU7-VF-uv6"/>
@@ -377,13 +364,11 @@
                                 <variation key="heightClass=compact">
                                     <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="16"/>
                                 </variation>
-                                <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
+                                <variation key="heightClass=regular-widthClass=compact">
                                     <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="14"/>
-                                    <rect key="frame" x="5" y="447" width="246" height="29"/>
                                 </variation>
-                                <variation key="heightClass=regular-widthClass=regular" misplaced="YES">
+                                <variation key="heightClass=regular-widthClass=regular">
                                     <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="25"/>
-                                    <rect key="frame" x="566" y="338" width="213" height="42"/>
                                 </variation>
                                 <connections>
                                     <segue destination="aOj-2O-0cJ" kind="show" identifier="goEvents" id="R09-1N-fls"/>
@@ -479,12 +464,11 @@
                                 <variation key="heightClass=regular-widthClass=compact">
                                     <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
                                 </variation>
-                                <variation key="heightClass=regular-widthClass=regular" misplaced="YES">
+                                <variation key="heightClass=regular-widthClass=regular">
                                     <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="30"/>
-                                    <rect key="frame" x="60" y="651" width="700" height="91"/>
                                 </variation>
                             </textView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bgt-7j-tgh">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bgt-7j-tgh" customClass="RoundedEdgeTextView" customModule="Ottawa" customModuleProvider="target">
                                 <rect key="frame" x="10" y="214" width="210" height="136"/>
                                 <color key="backgroundColor" white="1" alpha="0.5" colorSpace="calibratedWhite"/>
                                 <string key="text">Founded in 1826 as Bytown, in tandem with the building of the Rideau Canal, Ottawa was conferred city status in 1854 and renamed with the Algonquin word meaning "to trade", in recognition of centuries of Algonquin use of the Ottawa and Rideau rivers as portage. Shortly after, Queen Victoria chose Ottawa as Canada's capital, with its hallmark Parliament Hill buildings being completed within the next several years.</string>
@@ -703,7 +687,7 @@
                                     <rect key="frame" x="-304" y="0.0" width="904" height="551"/>
                                 </variation>
                             </imageView>
-                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="aIS-pv-jYv">
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="aIS-pv-jYv">
                                 <rect key="frame" x="20" y="20" width="239" height="252"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="BdX-jn-2yV">
@@ -886,9 +870,6 @@
                                         </variation>
                                         <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
                                             <rect key="frame" x="0.0" y="86" width="160" height="93"/>
-                                        </variation>
-                                        <variation key="heightClass=regular-widthClass=regular" misplaced="YES">
-                                            <rect key="frame" x="0.0" y="150" width="239" height="86"/>
                                         </variation>
                                     </stackView>
                                 </subviews>
@@ -1081,13 +1062,19 @@
                                             <constraint firstAttribute="width" secondItem="3O3-2A-eET" secondAttribute="height" multiplier="220:232" id="5Kp-An-2aH"/>
                                         </constraints>
                                     </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="wJT-5o-OP6">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="wJT-5o-OP6" customClass="RoundedEdgeLabel" customModule="Ottawa" customModuleProvider="target">
                                         <rect key="frame" x="142" y="0.0" width="398" height="150"/>
                                         <color key="backgroundColor" red="0.25098040700000002" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <string key="text">In 2017 Canada celebrates its 150th birthday! As Ottawa is Canada’s Capital, many of the most exciting birthday events will happen right here, including the biggest Canada Day celebration ever and many special events planned for all year long.</string>
                                         <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
+                                        <variation key="heightClass=compact">
+                                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                        </variation>
+                                        <variation key="heightClass=regular-widthClass=compact">
+                                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                                        </variation>
                                         <variation key="heightClass=regular-widthClass=regular">
                                             <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="25"/>
                                         </variation>
@@ -1112,167 +1099,128 @@
                                     <action selector="goAttractions:" destination="aOj-2O-0cJ" eventType="touchUpInside" id="d9m-eT-YCb"/>
                                 </connections>
                             </button>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" alpha="0.69999999999999996" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mp5-7P-NAD">
-                                <rect key="frame" x="20" y="51" width="300" height="180"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <mutableString key="text">In Spring• Ottawa Maple SugarFest• Ottawa International Writers Festival• Ottawa ComicCon• International Children’s Festival• Canadian Tulip Festival• Tamarack Ottawa Race WeekendIn Summer• Doors Open Ottawa• WESTfest• Ottawa Fringe Festival• Ottawa Dragon Boat Festival• Ottawa Ribfest• CANADA DAY!• TD Ottawa Jazz Festival• RBC Bluesfest• Music &amp; Beyond classical music festival• Ottawa Busker Festival• Bytown Days• Ottawa Chamberfest• Sound of Light• Nokia Sunday BikedaysIn Autumn• Gatineau Hot Air Balloon Festival• Northern Lights sound &amp; light show• City Folk Festival• Carp Fair• Oktoberfest• International Writers Festival• Ottawa International Animation Festival• Remembrance Day CeremonyIn Winter• Winterlude Festival</mutableString>
-                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                <variation key="heightClass=compact">
-                                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="12"/>
-                                </variation>
-                                <variation key="heightClass=regular-widthClass=regular" misplaced="YES">
-                                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
-                                    <rect key="frame" x="20" y="51" width="400" height="240"/>
-                                </variation>
-                            </textView>
                             <label opaque="NO" userInteractionEnabled="NO" alpha="0.80000000000000004" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Major Annual Events" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OLq-eN-oUv">
-                                <rect key="frame" x="20" y="30" width="300" height="21"/>
+                                <rect key="frame" x="20" y="30" width="270" height="21"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBlack" family="Helvetica Neue" pointSize="17"/>
                                 <color key="textColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
-                                <variation key="heightClass=regular-widthClass=regular" misplaced="YES">
+                                <variation key="heightClass=regular-widthClass=regular">
                                     <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBlack" family="Helvetica Neue" pointSize="22"/>
-                                    <rect key="frame" x="20" y="30" width="400" height="21"/>
                                 </variation>
                             </label>
-                            <textView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" editable="NO" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="21B-Lp-hTb">
-                                <rect key="frame" x="386" y="53" width="194" height="116"/>
-                                <attributedString key="attributedText">
-                                    <fragment>
-                                        <string key="content">DON'T MISS THESE!
+                            <textView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" alpha="0.90000000000000002" contentMode="scaleToFill" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="21B-Lp-hTb" customClass="RoundedEdgeTextView" customModule="Ottawa" customModuleProvider="target">
+                                <rect key="frame" x="340" y="50" width="240" height="120"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.7981411638" colorSpace="calibratedRGB"/>
+                                <string key="text">DON'T MISS THESE!
 Cultural attractions
-</string>
-                                        <attributes>
-                                            <color key="NSBackgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.48259698275862067" colorSpace="calibratedRGB"/>
-                                            <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                            <font key="NSFont" size="12" name="HelveticaNeue-CondensedBold"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" tailIndent="432" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
-                                                <tabStops/>
-                                            </paragraphStyle>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment>
-                                        <string key="content">• Byward Market
+• Byward Market
 • Changing of the Guard
 • Diverse cuisine
 • National Arts Centre: concerts &amp; shows
 • Thriving local theatre scene
-</string>
-                                        <attributes>
-                                            <color key="NSBackgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.48259698275862067" colorSpace="calibratedRGB"/>
-                                            <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                            <font key="NSFont" size="12" name="HelveticaNeue-CondensedBold"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" headIndent="14.199999999999999" tailIndent="432" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
-                                                <tabStops/>
-                                            </paragraphStyle>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment>
-                                        <string key="content">
+
 Local adventures
-</string>
-                                        <attributes>
-                                            <color key="NSBackgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.48259698275862067" colorSpace="calibratedRGB"/>
-                                            <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                            <font key="NSFont" size="12" name="HelveticaNeue-CondensedBold"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" tailIndent="432" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
-                                                <tabStops/>
-                                            </paragraphStyle>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment>
-                                        <string key="content">• Scenic biking &amp; hiking
+• Scenic biking &amp; hiking
 • Whitewater rafting &amp; kayaking
 • City tours: bus, boat, air, bike or feet!
-</string>
-                                        <attributes>
-                                            <color key="NSBackgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.48259698275862067" colorSpace="calibratedRGB"/>
-                                            <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                            <font key="NSFont" size="12" name="HelveticaNeue-CondensedBold"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" headIndent="14.199999999999999" tailIndent="432" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
-                                                <tabStops/>
-                                            </paragraphStyle>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment>
-                                        <string key="content">
+
 Ottawa sports teams
-</string>
-                                        <attributes>
-                                            <color key="NSBackgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.48259698275862067" colorSpace="calibratedRGB"/>
-                                            <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                            <font key="NSFont" size="12" name="HelveticaNeue-CondensedBold"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" tailIndent="432" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
-                                                <tabStops/>
-                                            </paragraphStyle>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment>
-                                        <string key="content">• Ottawa Senators (hockey)
+• Ottawa Senators (hockey)
 • Ottawa Fury (soccer)
 • Ottawa Redblacks (Canadian football)
 • Ottawa Champions (baseball)
-</string>
-                                        <attributes>
-                                            <color key="NSBackgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.48259698275862067" colorSpace="calibratedRGB"/>
-                                            <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                            <font key="NSFont" size="12" name="HelveticaNeue-CondensedBold"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" headIndent="14.199999999999999" tailIndent="432" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
-                                                <tabStops/>
-                                            </paragraphStyle>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment>
-                                        <string key="content">
+
 Interactive kid &amp; family activities
-</string>
-                                        <attributes>
-                                            <color key="NSBackgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.48259698275862067" colorSpace="calibratedRGB"/>
-                                            <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                            <font key="NSFont" size="12" name="HelveticaNeue-CondensedBold"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" tailIndent="432" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
-                                                <tabStops/>
-                                            </paragraphStyle>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment>
-                                        <string key="content">• Children’s Museum
+• Children’s Museum
 • Saunders Farm (hedge mazes)
 • Eco-Odysee (water maze)
 • Agriculture &amp; Food Museum
 • Valleyview Little Animal Farm
 • Pirate Adventures
 </string>
-                                        <attributes>
-                                            <color key="NSBackgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.48259698275862067" colorSpace="calibratedRGB"/>
-                                            <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                            <font key="NSFont" size="12" name="HelveticaNeue-CondensedBold"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" headIndent="14.199999999999999" tailIndent="432" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
-                                                <tabStops/>
-                                            </paragraphStyle>
-                                        </attributes>
-                                    </fragment>
-                                </attributedString>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <variation key="heightClass=compact">
+                                    <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBold" family="Helvetica Neue" pointSize="12"/>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBold" family="Helvetica Neue" pointSize="12"/>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBold" family="Helvetica Neue" pointSize="16"/>
+                                </variation>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" alpha="0.69999999999999996" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mp5-7P-NAD">
+                                <rect key="frame" x="20" y="51" width="270" height="180"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <mutableString key="text">IN SPRING
+• Ottawa Maple SugarFest
+• Ottawa International Writers Festival
+• Ottawa ComicCon
+• International Children’s Festival
+• Canadian Tulip Festival
+• Tamarack Ottawa Race Weekend
+IN SUMMER
+• Doors Open Ottawa
+• WESTfest
+• Ottawa Fringe Festival
+• Ottawa Dragon Boat Festival
+• Ottawa Ribfest
+• CANADA DAY!
+• TD Ottawa Jazz Festival
+• RBC Bluesfest
+• Music &amp; Beyond classical music festival
+• Ottawa Busker Festival
+• Bytown Days
+• Ottawa Chamberfest
+• Sound of Light
+• Nokia Sunday Bikedays
+IN AUTUMN
+• Gatineau Hot Air Balloon Festival
+• Northern Lights sound &amp; light show
+• City Folk Festival
+• Carp Fair
+• Oktoberfest
+• International Writers Festival
+• Ottawa International Animation Festival
+• Remembrance Day Ceremony
+IN WINTER
+• Winterlude Festival
+</mutableString>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <variation key="heightClass=compact">
+                                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="12"/>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="12"/>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                </variation>
                             </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="21B-Lp-hTb" firstAttribute="width" secondItem="isM-1E-5Zu" secondAttribute="width" multiplier="0.35" id="0f5-2c-15i"/>
+                            <constraint firstItem="21B-Lp-hTb" firstAttribute="width" secondItem="isM-1E-5Zu" secondAttribute="width" multiplier="0.4" id="0f5-2c-15i">
+                                <variation key="heightClass=compact" constant="-30"/>
+                            </constraint>
                             <constraint firstItem="21B-Lp-hTb" firstAttribute="top" secondItem="oPv-o1-JSM" secondAttribute="bottom" constant="5" id="50X-D9-sC6"/>
                             <constraint firstItem="QJ5-Fl-Rah" firstAttribute="bottom" secondItem="Qyh-vD-jMQ" secondAttribute="top" id="FiI-t2-yFX"/>
                             <constraint firstItem="QJ5-Fl-Rah" firstAttribute="leading" secondItem="isM-1E-5Zu" secondAttribute="leading" id="NFw-kQ-3DT"/>
                             <constraint firstAttribute="trailingMargin" secondItem="oPv-o1-JSM" secondAttribute="trailing" constant="15" id="NeU-kZ-csE"/>
                             <constraint firstItem="WUn-e8-AHs" firstAttribute="centerX" secondItem="isM-1E-5Zu" secondAttribute="centerX" id="Orn-iP-yZk"/>
-                            <constraint firstItem="Mp5-7P-NAD" firstAttribute="width" secondItem="isM-1E-5Zu" secondAttribute="width" multiplier="0.5" id="PyH-R7-3Fz"/>
+                            <constraint firstItem="Mp5-7P-NAD" firstAttribute="width" secondItem="isM-1E-5Zu" secondAttribute="width" multiplier="0.45" id="PyH-R7-3Fz"/>
                             <constraint firstItem="QJ5-Fl-Rah" firstAttribute="top" secondItem="isM-1E-5Zu" secondAttribute="topMargin" id="Qy1-Yc-RSM"/>
                             <constraint firstItem="WUn-e8-AHs" firstAttribute="height" secondItem="isM-1E-5Zu" secondAttribute="height" multiplier="0.25" id="Ra6-36-Yn7"/>
                             <constraint firstAttribute="trailingMargin" secondItem="21B-Lp-hTb" secondAttribute="trailing" id="TXJ-Zn-5wi"/>
                             <constraint firstItem="WUn-e8-AHs" firstAttribute="centerX" secondItem="isM-1E-5Zu" secondAttribute="centerX" id="Us3-jY-CyI"/>
                             <constraint firstItem="Mp5-7P-NAD" firstAttribute="top" secondItem="OLq-eN-oUv" secondAttribute="bottom" id="Vyv-Ww-S9x"/>
-                            <constraint firstItem="Mp5-7P-NAD" firstAttribute="height" secondItem="isM-1E-5Zu" secondAttribute="height" multiplier="0.3" id="XM6-P9-xmY"/>
+                            <constraint firstItem="Mp5-7P-NAD" firstAttribute="height" secondItem="isM-1E-5Zu" secondAttribute="height" multiplier="0.3" id="XM6-P9-xmY">
+                                <variation key="heightClass=regular-widthClass=compact" constant="30"/>
+                            </constraint>
                             <constraint firstItem="WUn-e8-AHs" firstAttribute="width" secondItem="isM-1E-5Zu" secondAttribute="width" multiplier="0.9" id="aaa-P7-tO6"/>
                             <constraint firstItem="Qyh-vD-jMQ" firstAttribute="top" secondItem="WUn-e8-AHs" secondAttribute="bottom" constant="8" id="deM-jy-p41"/>
                             <constraint firstItem="OLq-eN-oUv" firstAttribute="width" secondItem="Mp5-7P-NAD" secondAttribute="width" id="eHV-do-fx4"/>
@@ -1320,18 +1268,12 @@ Interactive kid &amp; family activities
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="RideauSkateway" translatesAutoresizingMaskIntoConstraints="NO" id="EJi-N2-sdP">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="551"/>
-                                <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
-                                    <rect key="frame" x="0.0" y="0.0" width="400" height="800"/>
-                                </variation>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="WinterludeTitle" translatesAutoresizingMaskIntoConstraints="NO" id="azm-f2-n8Z" customClass="RoundedEdgeImage" customModule="Ottawa" customModuleProvider="target">
                                 <rect key="frame" x="60" y="477" width="480" height="74"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
-                                    <rect key="frame" x="60" y="726" width="280" height="74"/>
-                                </variation>
                             </imageView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="oI9-Rx-D8d" userLabel="WinterludeText">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="oI9-Rx-D8d" userLabel="WinterludeText" customClass="RoundedEdgeTextView" customModule="Ottawa" customModuleProvider="target">
                                 <rect key="frame" x="35" y="81" width="530" height="219"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
                                 <string key="text">Winterlude, the Capital's winter celebration, is held in Ottawa–Gatineau each February. It was created in 1979 to celebrate Canada's unique northern climate and culture.
@@ -1345,9 +1287,8 @@ Skate on the world's largest skating rink, the Rideau Canal Skateway. Check out 
                                 <variation key="heightClass=regular-widthClass=compact">
                                     <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
                                 </variation>
-                                <variation key="heightClass=regular-widthClass=regular" misplaced="YES">
+                                <variation key="heightClass=regular-widthClass=regular">
                                     <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="30"/>
-                                    <rect key="frame" x="65" y="94" width="670" height="251"/>
                                 </variation>
                             </textView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="CSE" translatesAutoresizingMaskIntoConstraints="NO" id="4q6-49-zVT" customClass="RoundedEdgeImage" customModule="Ottawa" customModuleProvider="target">
@@ -1355,9 +1296,6 @@ Skate on the world's largest skating rink, the Rideau Canal Skateway. Check out 
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="4q6-49-zVT" secondAttribute="height" multiplier="13:5" id="9va-Y3-Jf6"/>
                                 </constraints>
-                                <variation key="heightClass=regular-widthClass=regular" misplaced="YES">
-                                    <rect key="frame" x="20" y="25" width="168" height="64"/>
-                                </variation>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VoP-tE-Hzo" customClass="RoundedButton" customModule="Ottawa" customModuleProvider="target">
                                 <rect key="frame" x="520" y="25" width="45" height="30"/>
