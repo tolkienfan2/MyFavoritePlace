@@ -16,6 +16,8 @@
             <string>HelveticaNeue</string>
             <string>HelveticaNeue</string>
             <string>HelveticaNeue</string>
+            <string>HelveticaNeue</string>
+            <string>HelveticaNeue</string>
         </mutableArray>
     </customFonts>
     <scenes>
@@ -202,6 +204,9 @@
                                                                     <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBlack" family="Helvetica Neue" pointSize="15"/>
                                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                                     <nil key="highlightedColor"/>
+                                                                    <variation key="heightClass=compact-widthClass=regular" misplaced="YES">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="673" height="18"/>
+                                                                    </variation>
                                                                     <variation key="heightClass=regular-widthClass=regular">
                                                                         <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBlack" family="Helvetica Neue" pointSize="25"/>
                                                                     </variation>
@@ -211,6 +216,9 @@
                                                                     <fontDescription key="fontDescription" name="HelveticaNeue-ThinItalic" family="Helvetica Neue" pointSize="12"/>
                                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                                     <nil key="highlightedColor"/>
+                                                                    <variation key="heightClass=compact-widthClass=regular" misplaced="YES">
+                                                                        <rect key="frame" x="0.0" y="18" width="673" height="15"/>
+                                                                    </variation>
                                                                     <variation key="heightClass=regular-widthClass=regular">
                                                                         <fontDescription key="fontDescription" name="HelveticaNeue-ThinItalic" family="Helvetica Neue" pointSize="18"/>
                                                                     </variation>
@@ -220,13 +228,22 @@
                                                                     <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="12"/>
                                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                                     <nil key="highlightedColor"/>
+                                                                    <variation key="heightClass=compact-widthClass=regular" misplaced="YES">
+                                                                        <rect key="frame" x="0.0" y="33" width="673" height="14"/>
+                                                                    </variation>
                                                                     <variation key="heightClass=regular-widthClass=regular">
                                                                         <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
                                                                     </variation>
                                                                 </label>
                                                             </subviews>
+                                                            <variation key="heightClass=compact-widthClass=regular" misplaced="YES">
+                                                                <rect key="frame" x="111" y="0.0" width="673" height="47"/>
+                                                            </variation>
                                                         </stackView>
                                                     </subviews>
+                                                    <variation key="heightClass=compact-widthClass=regular" misplaced="YES">
+                                                        <rect key="frame" x="8" y="8" width="784" height="104"/>
+                                                    </variation>
                                                 </stackView>
                                             </subviews>
                                             <color key="backgroundColor" red="0.52156862749999999" green="0.73725490199999999" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -351,16 +368,6 @@
                                     <segue destination="umC-kH-Ai6" kind="show" identifier="goWinterlude" id="PU1-yQ-Jco"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Adk-Fl-zRi">
-                                <rect key="frame" x="20" y="456" width="85" height="90"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="Adk-Fl-zRi" secondAttribute="height" multiplier="55:58" id="Dxu-UC-bMf"/>
-                                </constraints>
-                                <state key="normal" image="Ottawa2017"/>
-                                <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
-                                    <rect key="frame" x="20" y="666" width="76" height="80"/>
-                                </variation>
-                            </button>
                             <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M4o-Ip-pJO" customClass="RoundedButton" customModule="Ottawa" customModuleProvider="target">
                                 <rect key="frame" x="409" y="259" width="171" height="36"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="20"/>
@@ -378,18 +385,18 @@
                                     <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="25"/>
                                     <rect key="frame" x="566" y="338" width="213" height="42"/>
                                 </variation>
+                                <connections>
+                                    <segue destination="aOj-2O-0cJ" kind="show" identifier="goEvents" id="R09-1N-fls"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="h2o-4P-AFC" firstAttribute="top" secondItem="Adk-Fl-zRi" secondAttribute="bottom" constant="5" id="9IV-i8-50O"/>
-                            <constraint firstItem="Adk-Fl-zRi" firstAttribute="leading" secondItem="gDY-ac-TY3" secondAttribute="leadingMargin" id="GRN-Kf-O58"/>
                             <constraint firstItem="SJN-jG-WIC" firstAttribute="leading" secondItem="gDY-ac-TY3" secondAttribute="leading" id="GZu-xA-e7k"/>
                             <constraint firstItem="mVt-fk-CnB" firstAttribute="bottom" secondItem="M4o-Ip-pJO" secondAttribute="bottom" id="IBi-KG-3O0"/>
                             <constraint firstItem="M4o-Ip-pJO" firstAttribute="bottom" secondItem="cT8-FW-lyb" secondAttribute="bottom" constant="-5" id="S3o-7g-HY8"/>
                             <constraint firstItem="zWQ-zm-cd5" firstAttribute="bottom" secondItem="MxD-k5-BRP" secondAttribute="bottomMargin" constant="-60" id="T24-vn-fAy"/>
                             <constraint firstAttribute="trailingMargin" secondItem="zWQ-zm-cd5" secondAttribute="trailing" id="TBy-Pi-3zM"/>
-                            <constraint firstItem="Adk-Fl-zRi" firstAttribute="height" secondItem="MxD-k5-BRP" secondAttribute="height" multiplier="0.3" id="U2k-35-4pp"/>
                             <constraint firstItem="mVt-fk-CnB" firstAttribute="leading" secondItem="gDY-ac-TY3" secondAttribute="leadingMargin" id="Zla-Un-Re3"/>
                             <constraint firstItem="SJN-jG-WIC" firstAttribute="width" secondItem="gDY-ac-TY3" secondAttribute="width" id="dok-4O-qDK"/>
                             <constraint firstItem="SJN-jG-WIC" firstAttribute="top" secondItem="gDY-ac-TY3" secondAttribute="top" id="heb-Hm-8uB"/>
@@ -405,7 +412,6 @@
                                 <include reference="dok-4O-qDK"/>
                                 <include reference="heb-Hm-8uB"/>
                                 <include reference="w6U-iu-J5h"/>
-                                <include reference="U2k-35-4pp"/>
                                 <include reference="S3o-7g-HY8"/>
                             </mask>
                         </variation>
@@ -413,7 +419,6 @@
                     <tabBarItem key="tabBarItem" title="" image="Screenshot-30" id="wKx-oe-o1f" userLabel="Attractions"/>
                     <navigationItem key="navigationItem" id="6kN-lQ-Kdp"/>
                     <connections>
-                        <outlet property="birthdayButton" destination="Adk-Fl-zRi" id="ZvM-aY-Avn"/>
                         <outlet property="eventsButton" destination="M4o-Ip-pJO" id="ZMe-vK-yxm"/>
                         <outlet property="sightsButton" destination="mVt-fk-CnB" id="hge-uo-Upn"/>
                         <outlet property="winterludeButton" destination="zWQ-zm-cd5" id="IgT-hX-nqV"/>
@@ -474,8 +479,9 @@
                                 <variation key="heightClass=regular-widthClass=compact">
                                     <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
                                 </variation>
-                                <variation key="heightClass=regular-widthClass=regular">
+                                <variation key="heightClass=regular-widthClass=regular" misplaced="YES">
                                     <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="30"/>
+                                    <rect key="frame" x="60" y="651" width="700" height="91"/>
                                 </variation>
                             </textView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bgt-7j-tgh">
@@ -660,6 +666,8 @@
                             <mask key="constraints">
                                 <include reference="gSA-Xc-xvb"/>
                                 <include reference="s4y-ar-BZB"/>
+                                <exclude reference="D2C-h9-ubK"/>
+                                <exclude reference="MFm-V6-lhi"/>
                                 <include reference="XYw-Mu-mNh"/>
                                 <include reference="r47-TI-A1s"/>
                                 <exclude reference="sc2-zQ-Waw"/>
@@ -1048,10 +1056,10 @@
             </objects>
             <point key="canvasLocation" x="1128" y="-62"/>
         </scene>
-        <!--View Controller-->
+        <!--EventsVC-->
         <scene sceneID="So9-gj-AZx">
             <objects>
-                <viewController id="aOj-2O-0cJ" sceneMemberID="viewController">
+                <viewController id="aOj-2O-0cJ" customClass="EventsVC" customModule="Ottawa" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="BCb-fJ-GLR"/>
                         <viewControllerLayoutGuide type="bottom" id="Qyh-vD-jMQ"/>
@@ -1059,8 +1067,240 @@
                     <view key="view" contentMode="scaleToFill" id="isM-1E-5Zu">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Tulips" translatesAutoresizingMaskIntoConstraints="NO" id="QJ5-Fl-Rah">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="551"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="WUn-e8-AHs" userLabel="2017 Stack">
+                                <rect key="frame" x="30" y="393" width="540" height="150"/>
+                                <subviews>
+                                    <imageView opaque="NO" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Ottawa2017" translatesAutoresizingMaskIntoConstraints="NO" id="3O3-2A-eET">
+                                        <rect key="frame" x="0.0" y="0.0" width="142" height="150"/>
+                                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="3O3-2A-eET" secondAttribute="height" multiplier="220:232" id="5Kp-An-2aH"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="wJT-5o-OP6">
+                                        <rect key="frame" x="142" y="0.0" width="398" height="150"/>
+                                        <color key="backgroundColor" red="0.25098040700000002" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <string key="text">In 2017 Canada celebrates its 150th birthday! As Ottawa is Canada’s Capital, many of the most exciting birthday events will happen right here, including the biggest Canada Day celebration ever and many special events planned for all year long.</string>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                        <variation key="heightClass=regular-widthClass=regular">
+                                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="25"/>
+                                        </variation>
+                                    </label>
+                                </subviews>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottomMargin" secondItem="wJT-5o-OP6" secondAttribute="bottom" id="IKc-8x-lVH"/>
+                                    <constraint firstItem="wJT-5o-OP6" firstAttribute="top" secondItem="WUn-e8-AHs" secondAttribute="topMargin" id="cZM-Co-u6B"/>
+                                </constraints>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oPv-o1-JSM" customClass="RoundedButton" customModule="Ottawa" customModuleProvider="target">
+                                <rect key="frame" x="520" y="15" width="45" height="30"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="15"/>
+                                <state key="normal" title=" Back ">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="25"/>
+                                </variation>
+                                <connections>
+                                    <action selector="goAttractions:" destination="aOj-2O-0cJ" eventType="touchUpInside" id="d9m-eT-YCb"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" alpha="0.69999999999999996" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mp5-7P-NAD">
+                                <rect key="frame" x="20" y="51" width="300" height="180"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <mutableString key="text">In Spring• Ottawa Maple SugarFest• Ottawa International Writers Festival• Ottawa ComicCon• International Children’s Festival• Canadian Tulip Festival• Tamarack Ottawa Race WeekendIn Summer• Doors Open Ottawa• WESTfest• Ottawa Fringe Festival• Ottawa Dragon Boat Festival• Ottawa Ribfest• CANADA DAY!• TD Ottawa Jazz Festival• RBC Bluesfest• Music &amp; Beyond classical music festival• Ottawa Busker Festival• Bytown Days• Ottawa Chamberfest• Sound of Light• Nokia Sunday BikedaysIn Autumn• Gatineau Hot Air Balloon Festival• Northern Lights sound &amp; light show• City Folk Festival• Carp Fair• Oktoberfest• International Writers Festival• Ottawa International Animation Festival• Remembrance Day CeremonyIn Winter• Winterlude Festival</mutableString>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <variation key="heightClass=compact">
+                                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="12"/>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=regular" misplaced="YES">
+                                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                    <rect key="frame" x="20" y="51" width="400" height="240"/>
+                                </variation>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.80000000000000004" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Major Annual Events" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OLq-eN-oUv">
+                                <rect key="frame" x="20" y="30" width="300" height="21"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBlack" family="Helvetica Neue" pointSize="17"/>
+                                <color key="textColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=regular" misplaced="YES">
+                                    <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBlack" family="Helvetica Neue" pointSize="22"/>
+                                    <rect key="frame" x="20" y="30" width="400" height="21"/>
+                                </variation>
+                            </label>
+                            <textView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" editable="NO" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="21B-Lp-hTb">
+                                <rect key="frame" x="386" y="53" width="194" height="116"/>
+                                <attributedString key="attributedText">
+                                    <fragment>
+                                        <string key="content">DON'T MISS THESE!
+Cultural attractions
+</string>
+                                        <attributes>
+                                            <color key="NSBackgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.48259698275862067" colorSpace="calibratedRGB"/>
+                                            <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="12" name="HelveticaNeue-CondensedBold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" tailIndent="432" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content">• Byward Market
+• Changing of the Guard
+• Diverse cuisine
+• National Arts Centre: concerts &amp; shows
+• Thriving local theatre scene
+</string>
+                                        <attributes>
+                                            <color key="NSBackgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.48259698275862067" colorSpace="calibratedRGB"/>
+                                            <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="12" name="HelveticaNeue-CondensedBold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" headIndent="14.199999999999999" tailIndent="432" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content">
+Local adventures
+</string>
+                                        <attributes>
+                                            <color key="NSBackgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.48259698275862067" colorSpace="calibratedRGB"/>
+                                            <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="12" name="HelveticaNeue-CondensedBold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" tailIndent="432" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content">• Scenic biking &amp; hiking
+• Whitewater rafting &amp; kayaking
+• City tours: bus, boat, air, bike or feet!
+</string>
+                                        <attributes>
+                                            <color key="NSBackgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.48259698275862067" colorSpace="calibratedRGB"/>
+                                            <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="12" name="HelveticaNeue-CondensedBold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" headIndent="14.199999999999999" tailIndent="432" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content">
+Ottawa sports teams
+</string>
+                                        <attributes>
+                                            <color key="NSBackgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.48259698275862067" colorSpace="calibratedRGB"/>
+                                            <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="12" name="HelveticaNeue-CondensedBold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" tailIndent="432" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content">• Ottawa Senators (hockey)
+• Ottawa Fury (soccer)
+• Ottawa Redblacks (Canadian football)
+• Ottawa Champions (baseball)
+</string>
+                                        <attributes>
+                                            <color key="NSBackgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.48259698275862067" colorSpace="calibratedRGB"/>
+                                            <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="12" name="HelveticaNeue-CondensedBold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" headIndent="14.199999999999999" tailIndent="432" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content">
+Interactive kid &amp; family activities
+</string>
+                                        <attributes>
+                                            <color key="NSBackgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.48259698275862067" colorSpace="calibratedRGB"/>
+                                            <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="12" name="HelveticaNeue-CondensedBold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" tailIndent="432" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content">• Children’s Museum
+• Saunders Farm (hedge mazes)
+• Eco-Odysee (water maze)
+• Agriculture &amp; Food Museum
+• Valleyview Little Animal Farm
+• Pirate Adventures
+</string>
+                                        <attributes>
+                                            <color key="NSBackgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.48259698275862067" colorSpace="calibratedRGB"/>
+                                            <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="12" name="HelveticaNeue-CondensedBold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" headIndent="14.199999999999999" tailIndent="432" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="21B-Lp-hTb" firstAttribute="width" secondItem="isM-1E-5Zu" secondAttribute="width" multiplier="0.35" id="0f5-2c-15i"/>
+                            <constraint firstItem="21B-Lp-hTb" firstAttribute="top" secondItem="oPv-o1-JSM" secondAttribute="bottom" constant="5" id="50X-D9-sC6"/>
+                            <constraint firstItem="QJ5-Fl-Rah" firstAttribute="bottom" secondItem="Qyh-vD-jMQ" secondAttribute="top" id="FiI-t2-yFX"/>
+                            <constraint firstItem="QJ5-Fl-Rah" firstAttribute="leading" secondItem="isM-1E-5Zu" secondAttribute="leading" id="NFw-kQ-3DT"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="oPv-o1-JSM" secondAttribute="trailing" constant="15" id="NeU-kZ-csE"/>
+                            <constraint firstItem="WUn-e8-AHs" firstAttribute="centerX" secondItem="isM-1E-5Zu" secondAttribute="centerX" id="Orn-iP-yZk"/>
+                            <constraint firstItem="Mp5-7P-NAD" firstAttribute="width" secondItem="isM-1E-5Zu" secondAttribute="width" multiplier="0.5" id="PyH-R7-3Fz"/>
+                            <constraint firstItem="QJ5-Fl-Rah" firstAttribute="top" secondItem="isM-1E-5Zu" secondAttribute="topMargin" id="Qy1-Yc-RSM"/>
+                            <constraint firstItem="WUn-e8-AHs" firstAttribute="height" secondItem="isM-1E-5Zu" secondAttribute="height" multiplier="0.25" id="Ra6-36-Yn7"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="21B-Lp-hTb" secondAttribute="trailing" id="TXJ-Zn-5wi"/>
+                            <constraint firstItem="WUn-e8-AHs" firstAttribute="centerX" secondItem="isM-1E-5Zu" secondAttribute="centerX" id="Us3-jY-CyI"/>
+                            <constraint firstItem="Mp5-7P-NAD" firstAttribute="top" secondItem="OLq-eN-oUv" secondAttribute="bottom" id="Vyv-Ww-S9x"/>
+                            <constraint firstItem="Mp5-7P-NAD" firstAttribute="height" secondItem="isM-1E-5Zu" secondAttribute="height" multiplier="0.3" id="XM6-P9-xmY"/>
+                            <constraint firstItem="WUn-e8-AHs" firstAttribute="width" secondItem="isM-1E-5Zu" secondAttribute="width" multiplier="0.9" id="aaa-P7-tO6"/>
+                            <constraint firstItem="Qyh-vD-jMQ" firstAttribute="top" secondItem="WUn-e8-AHs" secondAttribute="bottom" constant="8" id="deM-jy-p41"/>
+                            <constraint firstItem="OLq-eN-oUv" firstAttribute="width" secondItem="Mp5-7P-NAD" secondAttribute="width" id="eHV-do-fx4"/>
+                            <constraint firstAttribute="trailing" secondItem="QJ5-Fl-Rah" secondAttribute="trailing" id="hxK-SS-la7"/>
+                            <constraint firstItem="oPv-o1-JSM" firstAttribute="top" secondItem="QJ5-Fl-Rah" secondAttribute="top" constant="15" id="jN6-g6-NeV"/>
+                            <constraint firstItem="21B-Lp-hTb" firstAttribute="height" secondItem="isM-1E-5Zu" secondAttribute="height" multiplier="0.2" id="mYZ-wY-MRf">
+                                <variation key="heightClass=compact" constant="30"/>
+                            </constraint>
+                            <constraint firstItem="OLq-eN-oUv" firstAttribute="centerX" secondItem="Mp5-7P-NAD" secondAttribute="centerX" id="mby-s9-RpJ"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="Mp5-7P-NAD" secondAttribute="leading" id="tcC-0u-aLK"/>
+                            <constraint firstItem="OLq-eN-oUv" firstAttribute="top" secondItem="BCb-fJ-GLR" secondAttribute="bottom" constant="10" id="w3p-hf-Zv5">
+                                <variation key="heightClass=regular-widthClass=compact" constant="22"/>
+                            </constraint>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="Us3-jY-CyI"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="constraints">
+                                <include reference="Us3-jY-CyI"/>
+                            </mask>
+                        </variation>
                     </view>
+                    <connections>
+                        <outlet property="backButton" destination="oPv-o1-JSM" id="da8-ed-pRf"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ckv-BG-hLb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1183,6 +1423,7 @@ Skate on the world's largest skating rink, the Rideau Canal Skateway. Check out 
         <image name="RideauSkateway" width="2048" height="1558"/>
         <image name="Royal_Canadian_Mint_Ottawa" width="478" height="540"/>
         <image name="Screenshot-30" width="30" height="30"/>
+        <image name="Tulips" width="1200" height="900"/>
         <image name="Winterlude" width="1600" height="500"/>
         <image name="WinterludeTitle" width="647" height="74"/>
         <image name="canal" width="1450" height="816"/>

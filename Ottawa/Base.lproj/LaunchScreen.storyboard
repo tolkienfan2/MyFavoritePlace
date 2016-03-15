@@ -34,7 +34,7 @@
                                 <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             </stackView>
                         </subviews>
-                        <color key="backgroundColor" red="0.40000000600000002" green="0.80000001190000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="0.52156862749999999" green="0.73725490199999999" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="KcS-GD-e4a" firstAttribute="width" secondItem="Ze5-6b-2t3" secondAttribute="width" multiplier="0.5" id="27R-2R-Eap"/>
                             <constraint firstItem="KcS-GD-e4a" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="7Ye-Vf-5Xd"/>

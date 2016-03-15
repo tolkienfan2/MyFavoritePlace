@@ -90,12 +90,17 @@ class SightsDataSource {
             text:
             "Produces all of Canada's circulation coins and manufactures circulation coins on behalf of other countries. Open to the public for guided tours.")
         
-        let sight16 = Sight(name: "Rideau Canal (UNESCO World Heritage Site)", photo: UIImage(named: "RideauCanal")!,
+        let sight16 = Sight(name: "Ottawa City Hall", photo: UIImage(named: "CityHall")!,
+            address: "110 Laurier Avenue West, downtown",
+            text:
+            "Two connected buildings: modern wing and heritage building built in 1875. Grounds include fountains and an outdoor ice skating rink.")
+
+        let sight17 = Sight(name: "Rideau Canal (UNESCO World Heritage Site)", photo: UIImage(named: "RideauCanal")!,
             address: "Between Chateau Laurier and Parliament Hill, downtown",
             text:
             "The oldest continuously operated canal system in North America, originally opened for military purposes in 1832 but now used mainly for pleasure boating.")
 
-        sights = [sight1, sight2, sight3, sight4, sight5, sight6, sight7, sight8, sight9, sight10, sight11, sight12, sight13, sight14, sight15, sight16]
+        sights = [sight1, sight2, sight3, sight4, sight5, sight6, sight7, sight8, sight9, sight10, sight11, sight12, sight13, sight14, sight15, sight16, sight17]
     }
     
     func loadSightData() -> [Sight] {

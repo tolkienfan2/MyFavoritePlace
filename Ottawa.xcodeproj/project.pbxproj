@@ -27,6 +27,7 @@
 		45BFFD161C7F9DA000E42D93 /* WinterludeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45BFFD141C7F9DA000E42D93 /* WinterludeVC.swift */; };
 		45BFFD1E1C7F9E5400E42D93 /* EventsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45BFFD1C1C7F9E5400E42D93 /* EventsVC.swift */; };
 		45D240981C95A24C007DAA96 /* Sight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45D240971C95A24C007DAA96 /* Sight.swift */; };
+		45D796E21C9772F900DE1B64 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45D796E11C9772F900DE1B64 /* Event.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +53,7 @@
 		45BFFD141C7F9DA000E42D93 /* WinterludeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WinterludeVC.swift; sourceTree = "<group>"; };
 		45BFFD1C1C7F9E5400E42D93 /* EventsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventsVC.swift; sourceTree = "<group>"; };
 		45D240971C95A24C007DAA96 /* Sight.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Sight.swift; sourceTree = "<group>"; };
+		45D796E11C9772F900DE1B64 /* Event.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,6 +129,7 @@
 			children = (
 				45AFA9541C87AE1F00533E18 /* SightsDataSource.swift */,
 				45D240971C95A24C007DAA96 /* Sight.swift */,
+				45D796E11C9772F900DE1B64 /* Event.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -223,6 +226,7 @@
 				459A2D4E1C8289AE00C2AE9E /* AttractionsVC.swift in Sources */,
 				455570CD1C7A071500C62A44 /* ViewController.swift in Sources */,
 				455570CB1C7A071500C62A44 /* AppDelegate.swift in Sources */,
+				45D796E21C9772F900DE1B64 /* Event.swift in Sources */,
 				45AFA9571C87C6AC00533E18 /* SightsTableViewCell.swift in Sources */,
 				45D240981C95A24C007DAA96 /* Sight.swift in Sources */,
 				45A567B81C7A9E1400B7985F /* RoundedButton.swift in Sources */,

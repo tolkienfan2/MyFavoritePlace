@@ -17,7 +17,6 @@ class AttractionsVC: UIViewController {
     
     @IBOutlet weak var winterludeButton: RoundedButton!
     
-    @IBOutlet weak var birthdayButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,6 +28,10 @@ class AttractionsVC: UIViewController {
     
     @IBAction func goSights(sender: AnyObject) {
          performSegueWithIdentifier("goSights", sender: nil)
+    }
+    
+    @IBAction func goEvents(sender: AnyObject) {
+        performSegueWithIdentifier("goEvents", sender: nil)
     }
 
 }
