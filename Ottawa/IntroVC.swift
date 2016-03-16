@@ -17,6 +17,8 @@ class IntroVC: UIViewController {
     @IBOutlet weak var weatherImage: UIImageView!
     @IBOutlet weak var introText: UITextView!
 
+    @IBOutlet weak var returnButton: UIButton!
+    
     let clock = Clock()
     let weather = Weather()
 
