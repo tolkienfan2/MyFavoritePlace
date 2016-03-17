@@ -34,8 +34,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="canal" translatesAutoresizingMaskIntoConstraints="NO" id="kyp-Y1-QUS">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="canal" translatesAutoresizingMaskIntoConstraints="NO" id="kyp-Y1-QUS">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="551"/>
                                 <color key="backgroundColor" red="0.24682606263982104" green="0.50196078431372548" blue="0.79506606543624159" alpha="1" colorSpace="calibratedRGB"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="tailTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zw9-nr-EzZ" customClass="RoundedButton" customModule="Ottawa" customModuleProvider="target">
@@ -83,8 +83,8 @@
                                     <fontDescription key="fontDescription" name="Georgia-Bold" family="Georgia" pointSize="55"/>
                                 </variation>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I5G-zq-eAL">
-                                <rect key="frame" x="255" y="516" width="92" height="27"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I5G-zq-eAL">
+                                <rect key="frame" x="254" y="516" width="92" height="27"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBlack" family="Helvetica Neue" pointSize="12"/>
                                 <state key="normal" title="Acknowledgments"/>
                                 <connections>
@@ -212,9 +212,6 @@
                                                                     <variation key="heightClass=compact-widthClass=regular" misplaced="YES">
                                                                         <rect key="frame" x="0.0" y="0.0" width="673" height="18"/>
                                                                     </variation>
-                                                                    <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
-                                                                        <rect key="frame" x="0.0" y="0.0" width="273" height="18"/>
-                                                                    </variation>
                                                                     <variation key="heightClass=regular-widthClass=regular">
                                                                         <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBlack" family="Helvetica Neue" pointSize="25"/>
                                                                     </variation>
@@ -226,9 +223,6 @@
                                                                     <nil key="highlightedColor"/>
                                                                     <variation key="heightClass=compact-widthClass=regular" misplaced="YES">
                                                                         <rect key="frame" x="0.0" y="18" width="673" height="15"/>
-                                                                    </variation>
-                                                                    <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
-                                                                        <rect key="frame" x="0.0" y="18" width="273" height="15"/>
                                                                     </variation>
                                                                     <variation key="heightClass=regular-widthClass=regular">
                                                                         <fontDescription key="fontDescription" name="HelveticaNeue-ThinItalic" family="Helvetica Neue" pointSize="18"/>
@@ -242,9 +236,6 @@
                                                                     <variation key="heightClass=compact-widthClass=regular" misplaced="YES">
                                                                         <rect key="frame" x="0.0" y="33" width="673" height="14"/>
                                                                     </variation>
-                                                                    <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
-                                                                        <rect key="frame" x="0.0" y="33" width="273" height="14"/>
-                                                                    </variation>
                                                                     <variation key="heightClass=regular-widthClass=regular">
                                                                         <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
                                                                     </variation>
@@ -253,16 +244,10 @@
                                                             <variation key="heightClass=compact-widthClass=regular" misplaced="YES">
                                                                 <rect key="frame" x="111" y="0.0" width="673" height="47"/>
                                                             </variation>
-                                                            <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
-                                                                <rect key="frame" x="111" y="0.0" width="273" height="47"/>
-                                                            </variation>
                                                         </stackView>
                                                     </subviews>
                                                     <variation key="heightClass=compact-widthClass=regular" misplaced="YES">
                                                         <rect key="frame" x="8" y="8" width="784" height="104"/>
-                                                    </variation>
-                                                    <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
-                                                        <rect key="frame" x="8" y="8" width="384" height="104"/>
                                                     </variation>
                                                 </stackView>
                                             </subviews>
@@ -476,9 +461,9 @@
                                     <rect key="frame" x="0.0" y="20" width="400" height="380"/>
                                 </variation>
                             </stackView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0wf-cA-1zg">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0wf-cA-1zg" customClass="RoundedEdgeTextView" customModule="Ottawa" customModuleProvider="target">
                                 <rect key="frame" x="60" y="490" width="500" height="72"/>
-                                <color key="backgroundColor" red="0.52156862745098043" green="0.73725490196078436" blue="1" alpha="0.5" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.52156862745098043" green="0.73725490196078436" blue="1" alpha="0.60721982758620685" colorSpace="calibratedRGB"/>
                                 <string key="text">Ottawa is in the province of Ontario, where three rivers meet: the Ottawa, the Gatineau and the Rideau. The greater metropolitan area is designated as the National Capital Region and encompasses Ottawa, the neighbouring city of Gatineau (across the Ottawa River and in Quebec) and the surrounding urban and rural communities.</string>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
@@ -590,6 +575,7 @@
                                 <variation key="heightClass=regular-widthClass=compact" constant="-3"/>
                                 <variation key="heightClass=regular-widthClass=regular" constant="11"/>
                             </constraint>
+                            <constraint firstItem="0wf-cA-1zg" firstAttribute="top" secondItem="PSY-Et-bsE" secondAttribute="top" id="Z7h-OD-394"/>
                             <constraint firstItem="0wf-cA-1zg" firstAttribute="width" secondItem="7lM-9d-EbR" secondAttribute="width" multiplier="0.35" id="Z85-Uh-tmE"/>
                             <constraint firstItem="7lM-9d-EbR" firstAttribute="leading" secondItem="XDT-Fy-ser" secondAttribute="leading" id="ZUW-vi-1VJ"/>
                             <constraint firstItem="fai-l1-DZc" firstAttribute="trailing" secondItem="XDT-Fy-ser" secondAttribute="centerX" id="b3N-6y-Gj4">
@@ -601,7 +587,7 @@
                             </constraint>
                             <constraint firstItem="bgt-7j-tgh" firstAttribute="leading" secondItem="wPr-V1-PF9" secondAttribute="leading" constant="10" id="gSA-Xc-xvb"/>
                             <constraint firstAttribute="bottomMargin" secondItem="0wf-cA-1zg" secondAttribute="bottom" constant="38" id="ikv-dY-Ima">
-                                <variation key="heightClass=compact" constant="54"/>
+                                <variation key="heightClass=compact" constant="58"/>
                                 <variation key="heightClass=regular-widthClass=compact" constant="57"/>
                                 <variation key="heightClass=regular-widthClass=regular" constant="58"/>
                             </constraint>
@@ -624,6 +610,7 @@
                                 <exclude reference="z4u-kL-AD1"/>
                                 <exclude reference="Gmh-Il-aiX"/>
                                 <exclude reference="R9J-CS-Pzf"/>
+                                <exclude reference="Z7h-OD-394"/>
                                 <exclude reference="Z85-Uh-tmE"/>
                                 <exclude reference="r47-TI-A1s"/>
                                 <exclude reference="sc2-zQ-Waw"/>
@@ -644,6 +631,7 @@
                                 <exclude reference="MFm-V6-lhi"/>
                                 <include reference="R9J-CS-Pzf"/>
                                 <exclude reference="XYw-Mu-mNh"/>
+                                <include reference="Z7h-OD-394"/>
                                 <exclude reference="Z85-Uh-tmE"/>
                                 <include reference="uEB-nv-vYM"/>
                             </mask>
@@ -696,12 +684,9 @@
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Ottawa_-_On_-_Parliament_Buildings_National_Historic_Site_of_Canada_-_Night" translatesAutoresizingMaskIntoConstraints="NO" id="yIu-aq-In2">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="551"/>
-                                <variation key="heightClass=compact" misplaced="YES">
-                                    <rect key="frame" x="-304" y="0.0" width="904" height="551"/>
-                                </variation>
                             </imageView>
-                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="aIS-pv-jYv">
-                                <rect key="frame" x="20" y="20" width="239" height="252"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="aIS-pv-jYv">
+                                <rect key="frame" x="20" y="20" width="239" height="244"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="BdX-jn-2yV">
                                         <rect key="frame" x="0.0" y="0.0" width="239" height="78"/>
@@ -731,9 +716,8 @@
                                                     <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="14"/>
                                                     <rect key="frame" x="0.0" y="19" width="125" height="17"/>
                                                 </variation>
-                                                <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
+                                                <variation key="heightClass=regular-widthClass=compact">
                                                     <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="16"/>
-                                                    <rect key="frame" x="0.0" y="19" width="160" height="19"/>
                                                 </variation>
                                                 <variation key="heightClass=regular-widthClass=regular" misplaced="YES">
                                                     <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="35"/>
@@ -743,12 +727,6 @@
                                         </subviews>
                                         <variation key="heightClass=compact" misplaced="YES">
                                             <rect key="frame" x="0.0" y="0.0" width="125" height="36"/>
-                                        </variation>
-                                        <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
-                                            <rect key="frame" x="0.0" y="0.0" width="160" height="38"/>
-                                        </variation>
-                                        <variation key="heightClass=regular-widthClass=regular" misplaced="YES">
-                                            <rect key="frame" x="0.0" y="0.0" width="239" height="42"/>
                                         </variation>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="X3V-vV-jcT">
@@ -788,15 +766,12 @@
                                         <variation key="heightClass=compact" misplaced="YES">
                                             <rect key="frame" x="0.0" y="36" width="125" height="36"/>
                                         </variation>
-                                        <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
-                                            <rect key="frame" x="0.0" y="43" width="160" height="38"/>
-                                        </variation>
                                         <variation key="heightClass=regular-widthClass=regular" misplaced="YES">
                                             <rect key="frame" x="0.0" y="57" width="239" height="78"/>
                                         </variation>
                                     </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="HJA-BF-wOS">
-                                        <rect key="frame" x="0.0" y="166" width="239" height="86"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="HJA-BF-wOS">
+                                        <rect key="frame" x="0.0" y="166" width="239" height="78"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="mVE-i1-77e">
                                                 <rect key="frame" x="0.0" y="0.0" width="194" height="36"/>
@@ -818,8 +793,8 @@
                                                     </label>
                                                 </subviews>
                                             </stackView>
-                                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" alignment="top" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="uzJ-v0-LnW">
-                                                <rect key="frame" x="0.0" y="36" width="233" height="50"/>
+                                            <stackView opaque="NO" contentMode="scaleToFill" alignment="top" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="uzJ-v0-LnW">
+                                                <rect key="frame" x="0.0" y="36" width="183" height="42"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Temperature" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="JmG-Y7-OCX">
                                                         <rect key="frame" x="0.0" y="0.0" width="180" height="42"/>
@@ -837,16 +812,13 @@
                                                             <rect key="frame" x="0.0" y="0.0" width="180" height="42"/>
                                                         </variation>
                                                     </label>
-                                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kib-WW-eIS">
-                                                        <rect key="frame" x="183" y="0.0" width="50" height="50"/>
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="kib-WW-eIS">
+                                                        <rect key="frame" x="183" y="0.0" width="0.0" height="0.0"/>
                                                         <variation key="heightClass=compact" misplaced="YES">
                                                             <rect key="frame" x="75" y="0.0" width="50" height="50"/>
                                                         </variation>
                                                         <variation key="heightClass=compact-widthClass=regular" misplaced="YES">
                                                             <rect key="frame" x="75" y="0.0" width="50" height="50"/>
-                                                        </variation>
-                                                        <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
-                                                            <rect key="frame" x="86" y="0.0" width="74" height="74"/>
                                                         </variation>
                                                         <variation key="heightClass=regular-widthClass=regular" misplaced="YES">
                                                             <rect key="frame" x="183" y="0.0" width="50" height="50"/>
@@ -867,9 +839,6 @@
                                                 <variation key="heightClass=compact-widthClass=regular" misplaced="YES">
                                                     <rect key="frame" x="0.0" y="19" width="125" height="50"/>
                                                 </variation>
-                                                <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
-                                                    <rect key="frame" x="0.0" y="19" width="160" height="74"/>
-                                                </variation>
                                                 <variation key="heightClass=regular-widthClass=regular" misplaced="YES">
                                                     <rect key="frame" x="0.0" y="36" width="233" height="50"/>
                                                 </variation>
@@ -881,8 +850,8 @@
                                         <variation key="heightClass=compact-widthClass=regular" misplaced="YES">
                                             <rect key="frame" x="0.0" y="72" width="125" height="69"/>
                                         </variation>
-                                        <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
-                                            <rect key="frame" x="0.0" y="86" width="160" height="93"/>
+                                        <variation key="heightClass=regular-widthClass=regular" misplaced="YES">
+                                            <rect key="frame" x="0.0" y="150" width="239" height="86"/>
                                         </variation>
                                     </stackView>
                                 </subviews>
@@ -890,33 +859,27 @@
                                     <constraint firstAttribute="trailing" secondItem="dZg-tj-Po7" secondAttribute="trailing" id="vPM-rb-b5m"/>
                                 </constraints>
                                 <variation key="heightClass=compact" misplaced="YES" spacing="0.0">
-                                    <rect key="frame" x="20" y="20" width="125" height="141"/>
+                                    <rect key="frame" x="20" y="30" width="125" height="141"/>
                                 </variation>
                                 <variation key="heightClass=compact-widthClass=regular" misplaced="YES">
                                     <rect key="frame" x="20" y="25" width="125" height="141"/>
                                 </variation>
-                                <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
-                                    <rect key="frame" x="20" y="20" width="160" height="179"/>
-                                </variation>
                                 <variation key="heightClass=regular-widthClass=regular" spacing="15"/>
                             </stackView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g0i-QT-PtC">
-                                <rect key="frame" x="28" y="429" width="544" height="95"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g0i-QT-PtC">
+                                <rect key="frame" x="28" y="445" width="544" height="88"/>
                                 <string key="text">Ottawa is Canada’s capital, a dynamic showcase city of more than one million people. Located in Ontario at the Quebec border, it’s a place where you’ll hear English and French spoken in the streets; where you can discover Canada’s proud heritage at impressive national sites and famous landmarks, including the Rideau Canal (a UNESCO World Heritage Site). It’s a city steeped in culture, with world-class museums and galleries displaying stunning national collections and special exhibitions from Canada and around the world.</string>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                <variation key="heightClass=compact" misplaced="YES">
+                                <variation key="heightClass=compact">
                                     <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
-                                    <rect key="frame" x="328" y="20" width="240" height="240"/>
                                 </variation>
-                                <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
+                                <variation key="heightClass=regular-widthClass=compact">
                                     <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
-                                    <rect key="frame" x="300" y="0.0" width="265" height="600"/>
                                 </variation>
-                                <variation key="heightClass=regular-widthClass=regular" misplaced="YES">
+                                <variation key="heightClass=regular-widthClass=regular">
                                     <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="30"/>
-                                    <rect key="frame" x="28" y="445" width="540" height="88"/>
                                 </variation>
                             </textView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="chf-Xk-QRt">
@@ -936,7 +899,6 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="CsA-nG-SZI" firstAttribute="top" secondItem="g0i-QT-PtC" secondAttribute="bottom" constant="27" id="0cb-aD-LjT"/>
                             <constraint firstAttribute="trailing" secondItem="yIu-aq-In2" secondAttribute="trailing" id="22e-cg-lg1"/>
                             <constraint firstItem="chf-Xk-QRt" firstAttribute="top" secondItem="Amm-gE-CwW" secondAttribute="bottom" constant="8" id="9np-sQ-iZa">
                                 <variation key="heightClass=compact" constant="0.0"/>
@@ -950,19 +912,21 @@
                             <constraint firstItem="yIu-aq-In2" firstAttribute="top" secondItem="bmC-CN-88U" secondAttribute="top" id="PLa-ki-rc4"/>
                             <constraint firstItem="aIS-pv-jYv" firstAttribute="bottom" relation="lessThanOrEqual" secondItem="yIu-aq-In2" secondAttribute="centerY" priority="999" id="QPX-gP-6gi"/>
                             <constraint firstAttribute="trailingMargin" secondItem="chf-Xk-QRt" secondAttribute="trailing" constant="8" id="Sah-NK-qcO"/>
+                            <constraint firstItem="aIS-pv-jYv" firstAttribute="top" secondItem="chf-Xk-QRt" secondAttribute="top" id="X3Q-Tc-wVv"/>
                             <constraint firstItem="g0i-QT-PtC" firstAttribute="leading" secondItem="bmC-CN-88U" secondAttribute="centerX" constant="40" id="X3r-fn-OhI">
                                 <variation key="heightClass=compact-widthClass=regular" constant="50"/>
                             </constraint>
                             <constraint firstItem="g0i-QT-PtC" firstAttribute="centerX" secondItem="bmC-CN-88U" secondAttribute="centerX" id="YDN-YP-8AA"/>
                             <constraint firstItem="g0i-QT-PtC" firstAttribute="leading" secondItem="bmC-CN-88U" secondAttribute="leadingMargin" constant="8" id="bfY-4N-1bo"/>
                             <constraint firstItem="aIS-pv-jYv" firstAttribute="top" secondItem="Amm-gE-CwW" secondAttribute="bottom" id="ibt-KC-LGs">
-                                <variation key="heightClass=compact" constant="5"/>
+                                <variation key="heightClass=compact" constant="10"/>
+                                <variation key="heightClass=regular-widthClass=compact" constant="5"/>
                                 <variation key="heightClass=regular-widthClass=regular" constant="20"/>
                             </constraint>
                             <constraint firstItem="yIu-aq-In2" firstAttribute="bottom" secondItem="CsA-nG-SZI" secondAttribute="top" id="ira-op-pqJ"/>
                             <constraint firstItem="g0i-QT-PtC" firstAttribute="width" secondItem="bmC-CN-88U" secondAttribute="width" multiplier="0.4" id="jth-Lk-M1O"/>
                             <constraint firstItem="g0i-QT-PtC" firstAttribute="height" secondItem="bmC-CN-88U" secondAttribute="height" multiplier="0.4" id="mK2-jk-PFL">
-                                <variation key="heightClass=compact" constant="-15"/>
+                                <variation key="heightClass=compact" constant="-40"/>
                             </constraint>
                             <constraint firstItem="yIu-aq-In2" firstAttribute="leading" secondItem="bmC-CN-88U" secondAttribute="leading" id="rR7-CK-vJZ"/>
                             <constraint firstItem="g0i-QT-PtC" firstAttribute="height" secondItem="yIu-aq-In2" secondAttribute="height" multiplier="0.16" id="sxf-we-8lU"/>
@@ -975,7 +939,7 @@
                         <variation key="default">
                             <mask key="constraints">
                                 <exclude reference="HeM-CP-nQm"/>
-                                <exclude reference="IGR-4n-aO4"/>
+                                <exclude reference="X3Q-Tc-wVv"/>
                                 <exclude reference="Onh-uo-gSM"/>
                                 <exclude reference="X3r-fn-OhI"/>
                                 <exclude reference="YDN-YP-8AA"/>
@@ -986,6 +950,7 @@
                         </variation>
                         <variation key="heightClass=compact">
                             <mask key="constraints">
+                                <exclude reference="IGR-4n-aO4"/>
                                 <include reference="X3r-fn-OhI"/>
                                 <exclude reference="bfY-4N-1bo"/>
                                 <include reference="jth-Lk-M1O"/>
@@ -1007,11 +972,13 @@
                                 <include reference="rR7-CK-vJZ"/>
                                 <include reference="x61-V6-dm9"/>
                                 <include reference="QPX-gP-6gi"/>
+                                <include reference="X3Q-Tc-wVv"/>
                                 <include reference="IGR-4n-aO4"/>
                                 <exclude reference="Onh-uo-gSM"/>
                                 <exclude reference="YDN-YP-8AA"/>
                                 <include reference="bfY-4N-1bo"/>
                                 <include reference="sxf-we-8lU"/>
+                                <exclude reference="9np-sQ-iZa"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=regular">
@@ -1056,8 +1023,8 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5Xw-qV-9VG">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="80"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pJB-ji-RxX" customClass="RoundedButton" customModule="Ottawa" customModuleProvider="target">
-                                        <rect key="frame" x="548" y="36" width="42" height="30"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pJB-ji-RxX" customClass="RoundedButton" customModule="Ottawa" customModuleProvider="target">
+                                        <rect key="frame" x="545" y="36" width="45" height="30"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="15"/>
                                         <state key="normal" title=" Back ">
                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -1069,8 +1036,8 @@
                                             <action selector="backButton:" destination="vB6-II-agO" eventType="touchUpInside" id="4sp-d9-GJo"/>
                                         </connections>
                                     </button>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Acknowledgments" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bjf-qS-kRB">
-                                        <rect key="frame" x="231" y="30" width="138" height="20"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Acknowledgments" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bjf-qS-kRB">
+                                        <rect key="frame" x="239" y="31" width="122" height="18"/>
                                         <fontDescription key="fontDescription" name="Georgia" family="Georgia" pointSize="15"/>
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
@@ -1411,9 +1378,8 @@ Skate on the world's largest skating rink, the Rideau Canal Skateway. Check out 
                                 <variation key="heightClass=regular-widthClass=compact">
                                     <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
                                 </variation>
-                                <variation key="heightClass=regular-widthClass=regular" misplaced="YES">
+                                <variation key="heightClass=regular-widthClass=regular">
                                     <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="30"/>
-                                    <rect key="frame" x="65" y="97" width="670" height="248"/>
                                 </variation>
                             </textView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="CSE" translatesAutoresizingMaskIntoConstraints="NO" id="4q6-49-zVT" customClass="RoundedEdgeImage" customModule="Ottawa" customModuleProvider="target">
@@ -1421,9 +1387,6 @@ Skate on the world's largest skating rink, the Rideau Canal Skateway. Check out 
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="4q6-49-zVT" secondAttribute="height" multiplier="13:5" id="9va-Y3-Jf6"/>
                                 </constraints>
-                                <variation key="heightClass=regular-widthClass=regular" misplaced="YES">
-                                    <rect key="frame" x="20" y="25" width="168" height="64"/>
-                                </variation>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VoP-tE-Hzo" customClass="RoundedButton" customModule="Ottawa" customModuleProvider="target">
                                 <rect key="frame" x="520" y="25" width="45" height="30"/>
