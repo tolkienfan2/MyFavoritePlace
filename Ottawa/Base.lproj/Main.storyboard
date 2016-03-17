@@ -568,22 +568,10 @@
                                     <rect key="frame" x="314" y="25" width="101" height="42"/>
                                 </variation>
                             </stackView>
-                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.40000000000000002" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="&quot;Canada Ottawa Panorama&quot; by G. Baranski - Own work. Licensed under CC BY-SA 3.0 via Commons" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="unf-Ei-Ucg">
-                                <rect key="frame" x="0.0" y="360" width="482" height="12"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
-                                <nil key="highlightedColor"/>
-                                <variation key="heightClass=compact">
-                                    <fontDescription key="fontDescription" name="AvenirNextCondensed-Regular" family="Avenir Next Condensed" pointSize="10"/>
-                                </variation>
-                                <variation key="heightClass=regular-widthClass=compact">
-                                    <fontDescription key="fontDescription" name="AvenirNextCondensed-Regular" family="Avenir Next Condensed" pointSize="8"/>
-                                </variation>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="bgt-7j-tgh" firstAttribute="trailing" secondItem="7lM-9d-EbR" secondAttribute="trailing" constant="-7" id="1sB-aN-uc6"/>
-                            <constraint firstItem="unf-Ei-Ucg" firstAttribute="leading" secondItem="7lM-9d-EbR" secondAttribute="leading" id="3yu-LV-JCV"/>
                             <constraint firstAttribute="bottom" secondItem="7lM-9d-EbR" secondAttribute="bottom" id="9Iy-4l-0Z1"/>
                             <constraint firstAttribute="trailing" secondItem="7lM-9d-EbR" secondAttribute="trailing" id="AAL-KH-Ig7"/>
                             <constraint firstItem="0wf-cA-1zg" firstAttribute="leading" secondItem="XDT-Fy-ser" secondAttribute="leadingMargin" constant="40" id="D2C-h9-ubK"/>
@@ -617,11 +605,7 @@
                                 <variation key="heightClass=regular-widthClass=compact" constant="57"/>
                                 <variation key="heightClass=regular-widthClass=regular" constant="58"/>
                             </constraint>
-                            <constraint firstItem="unf-Ei-Ucg" firstAttribute="top" secondItem="PSY-Et-bsE" secondAttribute="top" id="jx1-1a-VSP"/>
                             <constraint firstItem="bgt-7j-tgh" firstAttribute="width" secondItem="wPr-V1-PF9" secondAttribute="width" multiplier="0.35" id="knl-XA-LCt"/>
-                            <constraint firstItem="0wf-cA-1zg" firstAttribute="top" secondItem="unf-Ei-Ucg" secondAttribute="bottom" id="n7r-ey-2fr">
-                                <variation key="heightClass=compact" constant="2"/>
-                            </constraint>
                             <constraint firstItem="0wf-cA-1zg" firstAttribute="width" secondItem="PSY-Et-bsE" secondAttribute="width" multiplier="0.8" id="r47-TI-A1s">
                                 <variation key="heightClass=regular-widthClass=regular" constant="40"/>
                             </constraint>
@@ -641,7 +625,6 @@
                                 <exclude reference="Gmh-Il-aiX"/>
                                 <exclude reference="R9J-CS-Pzf"/>
                                 <exclude reference="Z85-Uh-tmE"/>
-                                <exclude reference="n7r-ey-2fr"/>
                                 <exclude reference="r47-TI-A1s"/>
                                 <exclude reference="sc2-zQ-Waw"/>
                                 <exclude reference="uEB-nv-vYM"/>
@@ -662,7 +645,6 @@
                                 <include reference="R9J-CS-Pzf"/>
                                 <exclude reference="XYw-Mu-mNh"/>
                                 <exclude reference="Z85-Uh-tmE"/>
-                                <include reference="n7r-ey-2fr"/>
                                 <include reference="uEB-nv-vYM"/>
                             </mask>
                         </variation>
@@ -918,15 +900,6 @@
                                 </variation>
                                 <variation key="heightClass=regular-widthClass=regular" spacing="15"/>
                             </stackView>
-                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.5" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Photo by Y Anderson (Own work)  CC BY-SA 3.0 via Commons" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IwA-tw-CXL">
-                                <rect key="frame" x="280" y="537" width="300" height="12"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <nil key="highlightedColor"/>
-                                <variation key="heightClass=regular-widthClass=compact">
-                                    <fontDescription key="fontDescription" name="AvenirNextCondensed-Regular" family="Avenir Next Condensed" pointSize="8"/>
-                                </variation>
-                            </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g0i-QT-PtC">
                                 <rect key="frame" x="28" y="429" width="544" height="95"/>
                                 <string key="text">Ottawa is Canada’s capital, a dynamic showcase city of more than one million people. Located in Ontario at the Quebec border, it’s a place where you’ll hear English and French spoken in the streets; where you can discover Canada’s proud heritage at impressive national sites and famous landmarks, including the Rideau Canal (a UNESCO World Heritage Site). It’s a city steeped in culture, with world-class museums and galleries displaying stunning national collections and special exhibitions from Canada and around the world.</string>
@@ -963,6 +936,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="CsA-nG-SZI" firstAttribute="top" secondItem="g0i-QT-PtC" secondAttribute="bottom" constant="27" id="0cb-aD-LjT"/>
                             <constraint firstAttribute="trailing" secondItem="yIu-aq-In2" secondAttribute="trailing" id="22e-cg-lg1"/>
                             <constraint firstItem="chf-Xk-QRt" firstAttribute="top" secondItem="Amm-gE-CwW" secondAttribute="bottom" constant="8" id="9np-sQ-iZa">
                                 <variation key="heightClass=compact" constant="0.0"/>
@@ -970,7 +944,6 @@
                             <constraint firstAttribute="leadingMargin" secondItem="aIS-pv-jYv" secondAttribute="leading" id="Abu-X3-8ck">
                                 <variation key="heightClass=regular-widthClass=regular" constant="-20"/>
                             </constraint>
-                            <constraint firstItem="IwA-tw-CXL" firstAttribute="top" secondItem="g0i-QT-PtC" secondAttribute="bottom" constant="13" id="CQm-EC-n8p"/>
                             <constraint firstItem="yIu-aq-In2" firstAttribute="bottom" secondItem="CsA-nG-SZI" secondAttribute="top" id="HeM-CP-nQm"/>
                             <constraint firstItem="g0i-QT-PtC" firstAttribute="bottom" secondItem="yIu-aq-In2" secondAttribute="bottom" constant="-18" id="IGR-4n-aO4"/>
                             <constraint firstItem="g0i-QT-PtC" firstAttribute="width" secondItem="yIu-aq-In2" secondAttribute="width" multiplier="0.9" id="Onh-uo-gSM"/>
@@ -982,7 +955,6 @@
                             </constraint>
                             <constraint firstItem="g0i-QT-PtC" firstAttribute="centerX" secondItem="bmC-CN-88U" secondAttribute="centerX" id="YDN-YP-8AA"/>
                             <constraint firstItem="g0i-QT-PtC" firstAttribute="leading" secondItem="bmC-CN-88U" secondAttribute="leadingMargin" constant="8" id="bfY-4N-1bo"/>
-                            <constraint firstItem="CsA-nG-SZI" firstAttribute="top" secondItem="IwA-tw-CXL" secondAttribute="bottom" constant="2" id="hNP-WI-pfH"/>
                             <constraint firstItem="aIS-pv-jYv" firstAttribute="top" secondItem="Amm-gE-CwW" secondAttribute="bottom" id="ibt-KC-LGs">
                                 <variation key="heightClass=compact" constant="5"/>
                                 <variation key="heightClass=regular-widthClass=regular" constant="20"/>
@@ -998,7 +970,6 @@
                                 <variation key="heightClass=compact" constant="22"/>
                             </constraint>
                             <constraint firstAttribute="trailing" secondItem="yIu-aq-In2" secondAttribute="trailing" id="x61-V6-dm9"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="IwA-tw-CXL" secondAttribute="trailing" id="xlW-fX-OO0"/>
                             <constraint firstAttribute="trailingMargin" secondItem="g0i-QT-PtC" secondAttribute="trailing" constant="8" id="zqf-OF-sU3"/>
                         </constraints>
                         <variation key="default">
