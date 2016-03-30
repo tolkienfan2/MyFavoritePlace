@@ -973,12 +973,12 @@
                                 <include reference="x61-V6-dm9"/>
                                 <include reference="QPX-gP-6gi"/>
                                 <include reference="X3Q-Tc-wVv"/>
+                                <exclude reference="9np-sQ-iZa"/>
                                 <include reference="IGR-4n-aO4"/>
                                 <exclude reference="Onh-uo-gSM"/>
                                 <exclude reference="YDN-YP-8AA"/>
                                 <include reference="bfY-4N-1bo"/>
                                 <include reference="sxf-we-8lU"/>
-                                <exclude reference="9np-sQ-iZa"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=regular">
