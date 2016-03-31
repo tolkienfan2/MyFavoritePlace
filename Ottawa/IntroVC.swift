@@ -14,7 +14,7 @@ class IntroVC: UIViewController {
     
     @IBOutlet weak var clockDisplay: UILabel!
     @IBOutlet weak var temperatureDisplay: UILabel!
-    @IBOutlet weak var weatherImage: UIImageView!
+    @IBOutlet weak var weatherImage: UIImageView?
     @IBOutlet weak var introText: UITextView!
 
     @IBOutlet weak var returnButton: UIButton!
@@ -26,7 +26,7 @@ class IntroVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        timer = NSTimer.scheduledTimerWithTimeInterval(1.0, target: self, selector: "updateClock", userInfo: nil, repeats: true)
+        timer = NSTimer.scheduledTimerWithTimeInterval(1.0, target: self, selector: #selector(IntroVC.updateClock), userInfo: nil, repeats: true)
     }
     
     override func viewWillAppear(animated: Bool) {
@@ -50,9 +50,9 @@ class IntroVC: UIViewController {
         let weatherData = weather.getWeatherData()
         
         temperatureDisplay.text = weatherData.temperature
-
+            
         if let validURL = NSURL(string: weatherData.iconURL) {
-            weatherImage.contentMode = .ScaleAspectFit
+            weatherImage?.contentMode = .ScaleAspectFit
             downloadImage(validURL)
         }
     }
@@ -67,7 +67,7 @@ class IntroVC: UIViewController {
         getDataFromUrl(url) { (data, response, error)  in
             dispatch_async(dispatch_get_main_queue()) { () -> Void in
                 guard let data = data where error == nil else { return }
-                self.weatherImage.image = UIImage(data: data)
+                self.weatherImage?.image = UIImage(data: data)
             }
         }
     }

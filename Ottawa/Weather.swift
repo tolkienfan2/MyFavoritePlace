@@ -22,27 +22,30 @@ class Weather {
     init() {
     }
     
-    var temperature = "°C"
+    var temperature = "Offline"
     var iconURL = ""
-    var iconImage: UIImage?
+    var iconImage = UIImage()
     
     func getWeatherData() -> (temperature: String, iconURL: String) {
         
+        if Reachability.isConnectedToNetwork() == true {
+        
         let key = apiKey
         
-        let weatherURL: String = "http://api.openweathermap.org/data/2.5/weather?id=6094817" + "&units=metric" + "&APPID=\(key)"
-        
+        let weatherURL = "http://api.openweathermap.org/data/2.5/weather?id=6094817" + "&units=metric" + "&APPID=\(key)"
+
         let json = JSON(url: weatherURL)
-        
+
         let temp = json["main"]["temp"].asDouble!
         temperature = String(temp) + "°C"
-        
+                
         let weather = json["weather"]
-        
+                
         let icon = weather[0]["icon"].asString!
         iconURL = "http://api.openweathermap.org/img/w/\(icon).png"
+            
+        }
         
         return (temperature, iconURL)
     }
-    
 }
