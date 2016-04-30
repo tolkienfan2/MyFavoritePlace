@@ -14,14 +14,19 @@
 		455570D31C7A071500C62A44 /* Ottawa.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 455570D11C7A071500C62A44 /* Ottawa.xcdatamodeld */; };
 		455570D51C7A071500C62A44 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 455570D41C7A071500C62A44 /* Assets.xcassets */; };
 		455570D81C7A071500C62A44 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 455570D61C7A071500C62A44 /* LaunchScreen.storyboard */; };
+		456FD1281CB6D4F800AE8A1B /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 456FD1271CB6D4F800AE8A1B /* MapKit.framework */; };
 		457876F41C983BD5001A741C /* RoundedEdgeTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 457876F31C983BD5001A741C /* RoundedEdgeTextView.swift */; };
 		457876F61C983CC4001A741C /* RoundedEdgeLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 457876F51C983CC4001A741C /* RoundedEdgeLabel.swift */; };
 		457876F81C984619001A741C /* CustomTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 457876F71C984619001A741C /* CustomTabBarController.swift */; };
+		458851DB1CB35E500058612C /* landmarks.csv in Resources */ = {isa = PBXBuildFile; fileRef = 458851DA1CB35E500058612C /* landmarks.csv */; };
+		458851DD1CB35EBF0058612C /* CSV.swift in Sources */ = {isa = PBXBuildFile; fileRef = 458851DC1CB35EBF0058612C /* CSV.swift */; };
 		4596BAFA1C7CA0E000B338C0 /* IntroVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4596BAF91C7CA0E000B338C0 /* IntroVC.swift */; };
 		4596BAFC1C7CAFF300B338C0 /* Clock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4596BAFB1C7CAFF300B338C0 /* Clock.swift */; };
 		4596BB001C7D271E00B338C0 /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4596BAFF1C7D271E00B338C0 /* Weather.swift */; };
 		459A2D4E1C8289AE00C2AE9E /* AttractionsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 459A2D4D1C8289AE00C2AE9E /* AttractionsVC.swift */; };
 		45A23D4B1CAD85A400B5FE9D /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45A23D4A1CAD85A400B5FE9D /* Reachability.swift */; };
+		45A23DBF1CB00C4100B5FE9D /* SightsDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45A23DBE1CB00C4100B5FE9D /* SightsDetailVC.swift */; };
+		45A23DC11CB03A2000B5FE9D /* MapAnnotations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45A23DC01CB03A2000B5FE9D /* MapAnnotations.swift */; };
 		45A567B81C7A9E1400B7985F /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45A567B71C7A9E1400B7985F /* RoundedButton.swift */; };
 		45AFA9531C87A44F00533E18 /* SightsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45AFA9521C87A44F00533E18 /* SightsVC.swift */; };
 		45AFA9551C87AE1F00533E18 /* SightsDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45AFA9541C87AE1F00533E18 /* SightsDataSource.swift */; };
@@ -35,9 +40,11 @@
 		45C4053F1C986B220008E9AA /* CreditsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45C4053E1C986B220008E9AA /* CreditsVC.swift */; };
 		45C405411C986D2F0008E9AA /* CreditsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45C405401C986D2F0008E9AA /* CreditsTableViewCell.swift */; };
 		45D240981C95A24C007DAA96 /* Sight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45D240971C95A24C007DAA96 /* Sight.swift */; };
+		5666CF0F4C5733F7C48A3A84 /* Pods_Ottawa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A01F0D7F802DB6D5EDFFF692 /* Pods_Ottawa.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2A372764EA6389DB4942651E /* Pods-Ottawa.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ottawa.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Ottawa/Pods-Ottawa.debug.xcconfig"; sourceTree = "<group>"; };
 		4549B9AD1C8512B800AFD38D /* RoundedEdgeImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedEdgeImage.swift; sourceTree = "<group>"; };
 		455570C71C7A071500C62A44 /* Ottawa.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ottawa.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		455570CA1C7A071500C62A44 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -47,14 +54,19 @@
 		455570D41C7A071500C62A44 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		455570D71C7A071500C62A44 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		455570D91C7A071500C62A44 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		456FD1271CB6D4F800AE8A1B /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		457876F31C983BD5001A741C /* RoundedEdgeTextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedEdgeTextView.swift; sourceTree = "<group>"; };
 		457876F51C983CC4001A741C /* RoundedEdgeLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedEdgeLabel.swift; sourceTree = "<group>"; };
 		457876F71C984619001A741C /* CustomTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTabBarController.swift; sourceTree = "<group>"; };
+		458851DA1CB35E500058612C /* landmarks.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = landmarks.csv; sourceTree = "<group>"; };
+		458851DC1CB35EBF0058612C /* CSV.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CSV.swift; sourceTree = "<group>"; };
 		4596BAF91C7CA0E000B338C0 /* IntroVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntroVC.swift; sourceTree = "<group>"; };
 		4596BAFB1C7CAFF300B338C0 /* Clock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Clock.swift; sourceTree = "<group>"; };
 		4596BAFF1C7D271E00B338C0 /* Weather.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Weather.swift; sourceTree = "<group>"; };
 		459A2D4D1C8289AE00C2AE9E /* AttractionsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AttractionsVC.swift; sourceTree = "<group>"; };
 		45A23D4A1CAD85A400B5FE9D /* Reachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
+		45A23DBE1CB00C4100B5FE9D /* SightsDetailVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SightsDetailVC.swift; sourceTree = "<group>"; };
+		45A23DC01CB03A2000B5FE9D /* MapAnnotations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapAnnotations.swift; sourceTree = "<group>"; };
 		45A567B71C7A9E1400B7985F /* RoundedButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
 		45AFA9521C87A44F00533E18 /* SightsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SightsVC.swift; sourceTree = "<group>"; };
 		45AFA9541C87AE1F00533E18 /* SightsDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SightsDataSource.swift; sourceTree = "<group>"; };
@@ -68,6 +80,8 @@
 		45C4053E1C986B220008E9AA /* CreditsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreditsVC.swift; sourceTree = "<group>"; };
 		45C405401C986D2F0008E9AA /* CreditsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreditsTableViewCell.swift; sourceTree = "<group>"; };
 		45D240971C95A24C007DAA96 /* Sight.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Sight.swift; sourceTree = "<group>"; };
+		A01F0D7F802DB6D5EDFFF692 /* Pods_Ottawa.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Ottawa.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		ECE1C6E1053909ACDB44F4C3 /* Pods-Ottawa.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ottawa.release.xcconfig"; path = "Pods/Target Support Files/Pods-Ottawa/Pods-Ottawa.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +89,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				456FD1281CB6D4F800AE8A1B /* MapKit.framework in Frameworks */,
+				5666CF0F4C5733F7C48A3A84 /* Pods_Ottawa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -86,6 +102,8 @@
 			children = (
 				455570C91C7A071500C62A44 /* Ottawa */,
 				455570C81C7A071500C62A44 /* Products */,
+				ADFF90EE6CD5AE7E988AD09A /* Pods */,
+				F19608030FB543B24C9FF34E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -106,10 +124,19 @@
 				4596BAF41C7CA02C00B338C0 /* Utilities */,
 				455570CA1C7A071500C62A44 /* AppDelegate.swift */,
 				455570D41C7A071500C62A44 /* Assets.xcassets */,
+				458851D91CB35E1A0058612C /* Resources */,
 				455570D91C7A071500C62A44 /* Info.plist */,
 				455570D11C7A071500C62A44 /* Ottawa.xcdatamodeld */,
 			);
 			path = Ottawa;
+			sourceTree = "<group>";
+		};
+		458851D91CB35E1A0058612C /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				458851DA1CB35E500058612C /* landmarks.csv */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 		4596BAF31C7CA02400B338C0 /* Controllers */ = {
@@ -124,6 +151,7 @@
 				459A2D4D1C8289AE00C2AE9E /* AttractionsVC.swift */,
 				45AFA9521C87A44F00533E18 /* SightsVC.swift */,
 				45C4053E1C986B220008E9AA /* CreditsVC.swift */,
+				45A23DBE1CB00C4100B5FE9D /* SightsDetailVC.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -131,14 +159,16 @@
 		4596BAF41C7CA02C00B338C0 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
-				45A567B71C7A9E1400B7985F /* RoundedButton.swift */,
 				4596BAFB1C7CAFF300B338C0 /* Clock.swift */,
+				45A23D4A1CAD85A400B5FE9D /* Reachability.swift */,
 				4596BAFF1C7D271E00B338C0 /* Weather.swift */,
 				45BFFD0A1C7E1F7100E42D93 /* JSON.swift */,
+				458851DC1CB35EBF0058612C /* CSV.swift */,
+				45A23DC01CB03A2000B5FE9D /* MapAnnotations.swift */,
+				45A567B71C7A9E1400B7985F /* RoundedButton.swift */,
 				4549B9AD1C8512B800AFD38D /* RoundedEdgeImage.swift */,
 				457876F31C983BD5001A741C /* RoundedEdgeTextView.swift */,
 				457876F51C983CC4001A741C /* RoundedEdgeLabel.swift */,
-				45A23D4A1CAD85A400B5FE9D /* Reachability.swift */,
 			);
 			name = Utilities;
 			sourceTree = "<group>";
@@ -165,6 +195,24 @@
 			name = Views;
 			sourceTree = "<group>";
 		};
+		ADFF90EE6CD5AE7E988AD09A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2A372764EA6389DB4942651E /* Pods-Ottawa.debug.xcconfig */,
+				ECE1C6E1053909ACDB44F4C3 /* Pods-Ottawa.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		F19608030FB543B24C9FF34E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				456FD1271CB6D4F800AE8A1B /* MapKit.framework */,
+				A01F0D7F802DB6D5EDFFF692 /* Pods_Ottawa.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -172,9 +220,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 455570DC1C7A071500C62A44 /* Build configuration list for PBXNativeTarget "Ottawa" */;
 			buildPhases = (
+				02E506116583BFAE8F79A418 /* Check Pods Manifest.lock */,
 				455570C31C7A071500C62A44 /* Sources */,
 				455570C41C7A071500C62A44 /* Frameworks */,
 				455570C51C7A071500C62A44 /* Resources */,
+				E4704BBA01B5659018AEB7ED /* Embed Pods Frameworks */,
+				70673DB4A24114D6DD91F0B5 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -198,6 +249,11 @@
 					455570C61C7A071500C62A44 = {
 						CreatedOnToolsVersion = 7.2.1;
 						DevelopmentTeam = 7LVD7K98P2;
+						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -224,6 +280,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				458851DB1CB35E500058612C /* landmarks.csv in Resources */,
 				455570D81C7A071500C62A44 /* LaunchScreen.storyboard in Resources */,
 				455570D51C7A071500C62A44 /* Assets.xcassets in Resources */,
 				455570D01C7A071500C62A44 /* Main.storyboard in Resources */,
@@ -231,6 +288,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		02E506116583BFAE8F79A418 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		70673DB4A24114D6DD91F0B5 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Ottawa/Pods-Ottawa-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E4704BBA01B5659018AEB7ED /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Ottawa/Pods-Ottawa-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		455570C31C7A071500C62A44 /* Sources */ = {
@@ -240,6 +345,7 @@
 				4549B9AE1C8512B800AFD38D /* RoundedEdgeImage.swift in Sources */,
 				45C4053D1C9869A40008E9AA /* Credits.swift in Sources */,
 				457876F41C983BD5001A741C /* RoundedEdgeTextView.swift in Sources */,
+				45A23DC11CB03A2000B5FE9D /* MapAnnotations.swift in Sources */,
 				4596BB001C7D271E00B338C0 /* Weather.swift in Sources */,
 				4596BAFC1C7CAFF300B338C0 /* Clock.swift in Sources */,
 				4596BAFA1C7CA0E000B338C0 /* IntroVC.swift in Sources */,
@@ -248,6 +354,7 @@
 				45BFFD131C7F76D200E42D93 /* InfoVC.swift in Sources */,
 				455570D31C7A071500C62A44 /* Ottawa.xcdatamodeld in Sources */,
 				457876F81C984619001A741C /* CustomTabBarController.swift in Sources */,
+				458851DD1CB35EBF0058612C /* CSV.swift in Sources */,
 				459A2D4E1C8289AE00C2AE9E /* AttractionsVC.swift in Sources */,
 				455570CD1C7A071500C62A44 /* ViewController.swift in Sources */,
 				455570CB1C7A071500C62A44 /* AppDelegate.swift in Sources */,
@@ -260,6 +367,7 @@
 				45BFFD1E1C7F9E5400E42D93 /* EventsVC.swift in Sources */,
 				45C4053F1C986B220008E9AA /* CreditsVC.swift in Sources */,
 				45AFA9551C87AE1F00533E18 /* SightsDataSource.swift in Sources */,
+				45A23DBF1CB00C4100B5FE9D /* SightsDetailVC.swift in Sources */,
 				45A23D4B1CAD85A400B5FE9D /* Reachability.swift in Sources */,
 				457876F61C983CC4001A741C /* RoundedEdgeLabel.swift in Sources */,
 			);
@@ -372,6 +480,7 @@
 		};
 		455570DD1C7A071500C62A44 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2A372764EA6389DB4942651E /* Pods-Ottawa.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -386,6 +495,7 @@
 		};
 		455570DE1C7A071500C62A44 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = ECE1C6E1053909ACDB44F4C3 /* Pods-Ottawa.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";

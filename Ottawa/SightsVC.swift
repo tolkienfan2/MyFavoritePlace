@@ -51,6 +51,28 @@ class SightsVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
         }
     }
     
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        
+        if let sight = self.sights[indexPath.row] as? Sight {
+            
+            performSegueWithIdentifier("SightDetail", sender: sight)
+            
+        } else {
+            
+            print("no sight found")
+        }
+    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier == "SightDetail" {
+            if let detailVC = segue.destinationViewController as? SightsDetailVC {
+                if let sight = sender as? Sight {
+                    detailVC.sight = sight
+                }
+            }
+        }
+    }
+    
     @IBAction func goBack(sender: AnyObject) {
         self.dismissViewControllerAnimated(true, completion: nil)
     }
